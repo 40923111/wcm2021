@@ -1,0 +1,347 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+<meta property="head" content="H2">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>wcm 40923111</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">wcm 40923111</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='關於.html'>關於</a><li class='has-children'><a href='上課內容.html'>上課內容</a><ul class='dropdown'><li><a href='W1.html'>W1</a><li><a href='W2.html'>W2</a><li><a href='W3.html'>W3</a><li><a href='W4.html'>W4</a><li><a href='W5.html'>W5</a><li><a href='W6.html'>W6</a><li><a href='W7.html'>W7</a><li><a href='W8.html'>W8</a><li><a href='W9.html'>W9</a><li><a href='W10.html'>W10</a><li><a href='W11.html'>W11</a><li><a href='W12.html'>W12</a><li><a href='W13.html'>W13</a><li><a href='W14.html'>W14</a><li><a href='W15.html'>W15</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">W7 << <a href='W7.html'>Previous</a> <a href='W9.html'>Next</a> >> W9<br /><h1>W8</h1>
+<h6>網際 RoboDK 程式</h6>
+<h4>下半學期的教學目標之三:</h4>
+<p>利用<span> </span><a href="https://robodk.com/">RoboDK</a><span> </span>作為整合英文, 數學與網際內容管理相關技術的測試工具, 希望能夠透過網際程式控制特定的六軸機械手臂 (<a href="https://robodk.com/blog/online-programming/">參考</a>,<span> </span><a href="https://robodk.com/doc/en/Basic-Guide.html">Guide</a>).</p>
+<p>官方 Pick and Place 範例:<span> </span><a href="https://github.com/mdecourse/wcm2021/tree/main/downloads/robodk/pick_and_place">https://github.com/mdecourse/wcm2021/tree/main/downloads/robodk/pick_and_place</a></p>
+<h4>自行利用 Python API 建立 station:</h4>
+<p>從<span> </span><a href="https://github.com/mdecourse/wcm2021/tree/main/downloads/robodk/pick_and_place_kmol_mac">https://github.com/mdecourse/wcm2021/tree/main/downloads/robodk/pick_and_place_kmol_mac</a><span> </span>目錄, 可以使用 Python 建立 RoboDK station:</p>
+<p>程式碼:<span> </span><a href="https://github.com/mdecourse/wcm2021/blob/main/downloads/robodk/pick_and_place_kmol_mac/pick_and_place_kmol.py">https://github.com/mdecourse/wcm2021/blob/main/downloads/robodk/pick_and_place_kmol_mac/pick_and_place_kmol.py</a></p>
+<p>所完成的 station:</p>
+<p><img alt="" height="299" src="http://mde.tw/wcm2021/images/robodk_all_in_python.png" width="500"/></p>
+<p>RoboDK Forum:<span> </span><a href="https://robodk.com/forum">https://robodk.com/forum</a></p>
+<p>Euler Angles:<span> </span><a href="https://www.mecademic.com/en/how-is-orientation-in-space-represented-with-euler-angles">https://www.mecademic.com/en/how-is-orientation-in-space-represented-with-euler-angles</a></p>
+<p><a href="http://mde.tw/wcm2021/downloads/RoboDK-Doc-EN-Getting-Started.pdf">RoboDK-Doc-EN-Getting-Started.pdf</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Robotics_simulator">https://en.wikipedia.org/wiki/Robotics_simulator</a></p>
+<p><a href="https://github.com/RoboDK?tab=repositories">https://github.com/RoboDK?tab=repositories</a></p>
+<p><a href="https://robodk.com/doc/en/PythonAPI/">https://robodk.com/doc/en/PythonAPI/</a></p>
+<p><a href="https://robodk.com/offline-programming">https://robodk.com/offline-programming</a></p>
+<p><a href="https://robodk.com/doc/en/PythonAPI/robolink.html">https://robodk.com/doc/en/PythonAPI/robolink.html</a></p>
+<p><a href="https://www.automate.org/news/9-powerful-robodk-features-you-might-not-know-about">https://www.automate.org/news/9-powerful-robodk-features-you-might-not-know-about</a></p>
+<p><a href="http://mde.tw/wcm2021/downloads/2016_Flapping-wing%20mechanism%20for%20a%20bird-sizedUAVs%20%20design,%20modeling%20and%20control.pdf">2016_Flapping-wing mechanism for a bird-sizedUAVs design, modeling and control.pdf</a></p>
+<p><a href="http://mde.tw/wcm2021/downloads/2018_Implementation%20of%20a%20Simulation%20System%20for%20Additive%20Task%20Experiments.pdf">2018_Implementation of a Simulation System for Additive Task Experiments.pdf</a></p>
+<p><a href="http://mde.tw/wcm2021/downloads/2019_Multi-Robot%20Collaboration.pdf">2019_Multi-Robot Collaboration.pdf</a></p>
+<p><a href="http://mde.tw/wcm2021/downloads/2019_3D%20Printing%20using%20an%20Industrial%20Robotic%20Arm%20and%20a%20Cellulose%20based%20filament.pdf">2019_3D Printing using an Industrial Robotic Arm and a Cellulose based filament.pdf</a></p>
+<p><a href="http://mde.tw/wcm2021/downloads/2019_Towards%20the%20Development%20of%20Safe,%20Collaborative%20RoboticFreehand%20Ultrasound.pdf">2019_Towards the Development of Safe, Collaborative RoboticFreehand Ultrasound.pdf</a></p>
+<p><a href="http://mde.tw/wcm2021/downloads/2020_Simulator%20for%20Articulate%20Robots.pdf">2020_Simulator for Articulate Robots.pdf</a></p>
+<p><a href="https://link.springer.com/book/10.1007/978-3-030-38897-3">2020 Robot Adventures in Python and C.pdf</a></p>
+<p><a href="https://vmayoral.github.io/robots,/ai,/deep/learning,/rl,/reinforcement/learning/2016/07/06/rl-intro/">https://vmayoral.github.io/robots,/ai,/deep/learning,/rl,/reinforcement/learning/2016/07/06/rl-intro/</a></p>
+<p><a href="http://mde.tw/wcm2021/downloads/Industrial_robots1.pdf">Industrial_robots1.pdf</a></p>
+<p><a href="http://mde.tw/wcm2021/downloads/IntroRobotKinematics5.pdf">IntroRobotKinematics5.pdf</a></p>
+<h4>RoboDK 版本:<span> </span><a href="https://robodk.com/whatsnew">https://robodk.com/whatsnew</a></h4>
+<h4>RoboDK 5.2.2 安裝</h4>
+<p>內定安裝於 c:\robodk</p>
+<p>可附帶安裝 Python 3.7.3, 並安裝 robodk 模組</p>
+<p>會先安裝 vcredist_x64_2017</p>
+<p>安裝版 30 天內可存檔, 必須 IPv4 上網才能取得 free trial 30 天權限.</p>
+<p>RoboDK 的 remote API 必須先 IPv4 上網後, 經官方網站確認 License 後, 才可啟動 API server, 否則只能在 localhost 上執行 API 操控.</p>
+<h4>電腦輔助設計室網路連線順序:</h4>
+<ol>
+<li>以 IPv4 NAT 連線, 啟動可攜 RoboDK 取得 limited 連線授權.</li>
+<li>改以純 IPv6 網路連線, 內部建立 192.168.192.1XX 網路群, 按照組序與學員序取得 IPv4 固定網址.</li>
+<li>各學員可以透過 Proxy 取得 Robot library 中的資料, 並且透過 remote API 進行網際協同操控.</li>
+</ol>
+<p><a href="http://mde.tw/wcm2021/downloads/Setup%20and%20Interfacing%20of%20a%20KUKA%20RoboticsLab.pdf">Setup and Interfacing of a KUKA RoboticsLab.pdf</a></p>
+<p>RoboDK API for Python:</p>
+<p><a href="https://raw.githubusercontent.com/RoboDK/RoboDK-API/master/Python/robodk.py">https://raw.githubusercontent.com/RoboDK/RoboDK-API/master/Python/robodk.py</a></p>
+<p><a href="https://raw.githubusercontent.com/RoboDK/RoboDK-API/master/Python/robolink.py">https://raw.githubusercontent.com/RoboDK/RoboDK-API/master/Python/robolink.py</a></p>
+<p>The robolink module is the bridge between RoboDK and Python. Every object in the RoboDK item tree can be retrieved and it is represented by the object Item. An item can be a robot, a reference frame, a tool, an object or any other item visible in the station tree.</p>
+<p>The following example uses the robodk and robolink libraries to move a robot.</p>
+<div>
+<div class="syntaxhighlighter py" id="highlighter_851975">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+<div class="line number3 index2 alt2">3</div>
+<div class="line number4 index3 alt1">4</div>
+<div class="line number5 index4 alt2">5</div>
+<div class="line number6 index5 alt1">6</div>
+<div class="line number7 index6 alt2">7</div>
+<div class="line number8 index7 alt1">8</div>
+<div class="line number9 index8 alt2">9</div>
+<div class="line number10 index9 alt1">10</div>
+<div class="line number11 index10 alt2">11</div>
+<div class="line number12 index11 alt1">12</div>
+<div class="line number13 index12 alt2">13</div>
+<div class="line number14 index13 alt1">14</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="py keyword">from</code> <code class="py plain">robolink </code><code class="py keyword">import</code> <code class="py keyword">*</code>              <code class="py comments"># import the robolink library (bridge with RoboDK)</code></div>
+<div class="line number2 index1 alt1"><code class="py comments"># 假如跨網路執行 Python remote API, 則提供位於遠端的 RoboDK server ip</code></div>
+<div class="line number3 index2 alt2"><code class="py plain">RDK </code><code class="py keyword">=</code> <code class="py plain">Robolink(</code><code class="py string">'server_ipv4_ip_address'</code><code class="py plain">)                    </code><code class="py comments"># establish a link with the simulator</code></div>
+<div class="line number4 index3 alt1"><code class="py plain">robot </code><code class="py keyword">=</code> <code class="py plain">RDK.Item(</code><code class="py string">'ABB IRB 120-3/0.6'</code><code class="py plain">)      </code><code class="py comments"># retrieve the robot by name</code></div>
+<div class="line number5 index4 alt2"><code class="py plain">robot.setJoints([</code><code class="py value">0</code><code class="py plain">,</code><code class="py value">0</code><code class="py plain">,</code><code class="py value">0</code><code class="py plain">,</code><code class="py value">0</code><code class="py plain">,</code><code class="py value">0</code><code class="py plain">,</code><code class="py value">0</code><code class="py plain">])      </code><code class="py comments"># set all robot axes to zero</code></div>
+<div class="line number6 index5 alt1"> </div>
+<div class="line number7 index6 alt2"><code class="py plain">target </code><code class="py keyword">=</code> <code class="py plain">RDK.Item(</code><code class="py string">'Target'</code><code class="py plain">)         </code><code class="py comments"># retrieve the Target item</code></div>
+<div class="line number8 index7 alt1"><code class="py plain">robot.MoveJ(target)                 </code><code class="py comments"># move the robot to the target</code></div>
+<div class="line number9 index8 alt2"><code class="py comments">'''</code></div>
+<div class="line number10 index9 alt1"><code class="py comments"># calculate a new approach position 100 mm along the Z axis of the tool with respect to the target</code></div>
+<div class="line number11 index10 alt2"><code class="py comments">from robodk import *                # import the robodk library (robotics toolbox)</code></div>
+<div class="line number12 index11 alt1"><code class="py comments">approach = target.Pose()*transl(0,0,-100)</code></div>
+<div class="line number13 index12 alt2"><code class="py comments">robot.MoveL(approach)               # linear move to the approach position</code></div>
+<div class="line number14 index13 alt1"><code class="py comments">'''</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>有關 Python struct:<span> </span><a href="https://docs.python.org/3/library/struct.html">https://docs.python.org/3/library/struct.html</a></p>
+<p>command line option:<span> </span><a href="https://robodk.com/doc/en/RoboDK-API-Command-Line-Options.html">https://robodk.com/doc/en/RoboDK-API-Command-Line-Options.html</a></p>
+<p>RDK = Robolink(args='-ADDFRAME "-RENAME=Main Ref " load_object.stl')</p>
+<p>robolink modula:<span> </span><a href="https://robodk.com/doc/en/PythonAPI/robolink.html#robolink.Robolink.ShowRoboDK">https://robodk.com/doc/en/PythonAPI/robolink.html#robolink.Robolink.ShowRoboDK</a></p>
+<p>RoboDK Mac 最新版安裝檔:<span> </span><a href="https://robodk.com/downloads/Install-RoboDK.dmg">https://robodk.com/downloads/Install-RoboDK.dmg</a></p>
+<p>RoboDK Linux 最新安裝檔:<span> </span><a href="https://robodk.com/downloads/install-robodk-64.tar.gz">https://robodk.com/downloads/install-robodk-64.tar.gz</a></p>
+<h4>RoboDK 透過遠端桌面執行:</h4>
+<p>由於顯示卡硬體功能受到限制, 因此透過 remote desktop 執行 RoboDK 時, 必須使用 C:/RoboDK/RoboDK-Safe-Start-VM.bat 啟動 RoboDK, 批次檔案內容如下:</p>
+<div>
+<div class="syntaxhighlighter js" id="highlighter_724732">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+<div class="line number3 index2 alt2">3</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="js plain">cd bin</code></div>
+<div class="line number2 index1 alt1"><code class="js plain">set QT_OPENGL=software</code></div>
+<div class="line number3 index2 alt2"><code class="js plain">start </code><code class="js string">""</code> <code class="js plain">RoboDK-GL2.exe -DEBUG -SKIPINI</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h4>RoboDK allow external API (<a href="https://robodk.com/doc/en/PythonAPI/robolink.html#robolink.Robolink">reference</a>):</h4>
+<p>目前 RoboDK 的<span> </span><a href="https://raw.githubusercontent.com/RoboDK/RoboDK-API/master/Python/robolink.py">https://raw.githubusercontent.com/RoboDK/RoboDK-API/master/Python/robolink.py</a><span> </span>僅支援 IPv4, 必須將 socket 傳送改為 IPv6, 可參考:<span> </span><a href="https://hub.packtpub.com/ipv6-unix-domain-sockets-and-network-interfaces/">https://hub.packtpub.com/ipv6-unix-domain-sockets-and-network-interfaces/</a></p>
+<p>假如要在電腦輔助設計室中跨網路執行 RoboDK remote API, 可以在 IPv6 環境下創建一個內部 IPv4 群網路進行測試.</p>
+<p>設定 RoboDK remote API 位於 Tools - Options - Other - RoboDK API, 啟動 RoboDK remote API server 後, 必須讓 RoboDK 通過操作系統的防火牆.</p>
+<h4>RoboDK on Virtualbox (<a href="https://robodk.com/forum/Thread-Running-RoboDK-on-an-oracle-Virtual-machine">reference</a>):</h4>
+<p>I recommend you to start RoboDK by selecting:<br/>C:/RoboDK/RoboDK-Safe-Start-VM.bat<br/><br/>Make sure to install graphic card drivers and allocate hardware accelerated GPU with support for OpenGL, if possible.<br/><br/>If it fails, we can better debug this issue by following these steps.<br/><br/>    Start RoboDK by double clicking the file:<br/>    C:/RoboDK/RoboDK-Debug.bat<br/>    Try to reproduce the problem in RoboDK until it crashes.<br/>    Right after the crash, provide the following file:<br/>    C:/RoboDK/bin/RoboDK.debug.txt</p>
+<h4>Hint:</h4>
+<p>MoveJ(self, target, blocking=True)<span> </span><a href="https://robodk.com/forum/Thread-Get-robot-pose-while-the-robot-is-moving-to-a-target">reference</a><br/>Moves a robot to a specific target ("Move Joint" mode). self function blocks until the robot finishes its movements.<br/>In  1 : joints/pose/item -&gt; target to move to. It can be the robot joints (Nx1 or 1xN), the pose (4x4) or an item (item pointer)<br/>In  2 (optional): blocking -&gt; True if we want the instruction to wait until the robot finished the movement (default=True)</p>
+<p>add Camera:<span> </span><a href="https://robodk.com/doc/en/PythonAPI/robolink.html#robolink.Robolink.Cam2D_Add">https://robodk.com/doc/en/PythonAPI/robolink.html#robolink.Robolink.Cam2D_Add</a></p>
+<h4>Temp py programs:</h4>
+<p><a href="https://robodk.com/forum/Thread-Convert-a-main-program-to-a-python-script">https://robodk.com/forum/Thread-Convert-a-main-program-to-a-python-script</a></p>
+<h4>Set Robot base:</h4>
+<div>
+<div class="syntaxhighlighter py" id="highlighter_851029">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+<div class="line number3 index2 alt2">3</div>
+<div class="line number4 index3 alt1">4</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="py plain">RDK </code><code class="py keyword">=</code> <code class="py plain">robolink()</code></div>
+<div class="line number2 index1 alt1"> </div>
+<div class="line number3 index2 alt2"><code class="py plain">robot_base </code><code class="py keyword">=</code> <code class="py plain">RDK.Item(</code><code class="py string">'Robot Base Name'</code><code class="py plain">, ITEM_TYPE_FRAME)</code></div>
+<div class="line number4 index3 alt1"><code class="py plain">robot_base.setPose(</code><code class="py value">4x4</code> <code class="py plain">mat with the position)</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>參考:</p>
+<p>提供原始碼的<span> </span><a href="http://animatlab.com/">http://animatlab.com/</a></p>
+<br />W7 << <a href='W7.html'>Previous</a> <a href='W9.html'>Next</a> >> W9</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
