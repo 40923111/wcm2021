@@ -123,7 +123,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='關於.html'>關於</a><li class='has-children'><a href='上課內容.html'>上課內容</a><ul class='dropdown'><li><a href='W1.html'>W1</a><li><a href='W2.html'>W2</a><li><a href='W3.html'>W3</a><li><a href='W4.html'>W4</a><li><a href='W5.html'>W5</a><li><a href='W6.html'>W6</a><li><a href='W7.html'>W7</a><li><a href='W8.html'>W8</a><li><a href='W9.html'>W9</a><li><a href='W10.html'>W10</a><li><a href='W11.html'>W11</a><li><a href='W12.html'>W12</a><li><a href='W13.html'>W13</a><li><a href='W14.html'>W14</a><li><a href='W15.html'>W15</a><li><a href='W16.html'>W16</a></li>
+                     <li><a href='關於.html'>關於</a><li class='has-children'><a href='上課內容.html'>上課內容</a><ul class='dropdown'><li><a href='W1.html'>W1</a><li><a href='W2.html'>W2</a><li><a href='W3.html'>W3</a><li><a href='W4.html'>W4</a><li><a href='W5.html'>W5</a><li><a href='W6.html'>W6</a><li><a href='W7.html'>W7</a><li><a href='W8.html'>W8</a><li><a href='W9.html'>W9</a><li><a href='W10.html'>W10</a><li><a href='W11.html'>W11</a><li><a href='W12.html'>W12</a><li class='has-children'><a href='W13.html'>W13</a><ul class='dropdown'><li><a href='ROBOTDK 解說影片.html'>ROBOTDK 解說影片</a></li></ul><li><a href='W14.html'>W14</a><li><a href='W15.html'>W15</a><li><a href='W16.html'>W16</a></li>
                       </ul>
                 </nav>
               </div>
@@ -135,214 +135,17 @@ img.add_border {
           
         </header>
     <div id="tipue_search_content">W6 << <a href='W6.html'>Previous</a> <a href='W8.html'>Next</a> >> W8<br /><h1>W7</h1>
-<p>之前的 git 倉儲都是先在 Github 網際平台上建立後, 再設法 git clone 到近端改版, 但是這樣的前提是在 Github 建立倉儲時, 至少新增一個檔案 README.md,  但是假如在 Github 建立一個空倉儲則通常會建議使用者先在近端以 git init 產生一個空的 git 倉儲後, 納入改版資料然後再透過 git remote add 設定與遠端的 Github 倉儲 URL 進行對應.</p>
-<p>而通常針對特定倉儲的 defualt 遠端 URL 連結的 git remote add 會以 origin 作為代號.</p>
-<p>以下列 nfumde 近端的 .git/config 設定檔案為例:</p>
+<p>1.創新的Heroku，不能用已經推送過的，不然會一直錯誤。</p>
+<p>2.創新的Github，然後把<span> </span><a href="https://github.com/mdecourse/nfulist/blob/master/Procfile">Procfile</a><span>,<span> </span></span><a href="https://github.com/mdecourse/nfulist/blob/master/requirements.txt">requirements.txt</a><span><span> </span>與<span> </span></span><a href="https://github.com/mdecourse/nfulist/blob/master/runtime.txt">runtime.txt</a><span>,<span> ，都推送上去。</span></span></p>
+<p>3.設定wsgi.py(負責打開6~9樓教室課表)(最下面)</p>
+<p>4.最後就是推送，<span>Github跟Heroku，(打開Heroku網址後在網址後加上?<code class="py plain">classroomno<span> </span></code><code class="py keyword">=</code><span><span> </span></span><code class="py string">BGAxxxx可改變教室)</code></span></p>
+<p></p>
 <div>
-<div class="syntaxhighlighter js" id="highlighter_451276">
-<table border="0" cellpadding="0" cellspacing="0">
+<div class="syntaxhighlighter py" id="highlighter_249531">
+<table border="0" cellpadding="0" cellspacing="0" style="width: 565.263px;">
 <tbody>
-<tr>
-<td class="gutter">
-<div class="line number1 index0 alt2">1</div>
-<div class="line number2 index1 alt1">2</div>
-<div class="line number3 index2 alt2">3</div>
-<div class="line number4 index3 alt1">4</div>
-<div class="line number5 index4 alt2">5</div>
-<div class="line number6 index5 alt1">6</div>
-<div class="line number7 index6 alt2">7</div>
-<div class="line number8 index7 alt1">8</div>
-<div class="line number9 index8 alt2">9</div>
-<div class="line number10 index9 alt1">10</div>
-<div class="line number11 index10 alt2">11</div>
-<div class="line number12 index11 alt1">12</div>
-<div class="line number13 index12 alt2">13</div>
-<div class="line number14 index13 alt1">14</div>
-<div class="line number15 index14 alt2">15</div>
-<div class="line number16 index15 alt1">16</div>
-</td>
-<td class="code">
-<div class="container">
-<div class="line number1 index0 alt2"><code class="js plain">[core]</code></div>
-<div class="line number2 index1 alt1"><code class="js spaces">    </code><code class="js plain">repositoryformatversion = 0</code></div>
-<div class="line number3 index2 alt2"><code class="js spaces">    </code><code class="js plain">filemode = </code><code class="js keyword">false</code></div>
-<div class="line number4 index3 alt1"><code class="js spaces">    </code><code class="js plain">bare = </code><code class="js keyword">false</code></div>
-<div class="line number5 index4 alt2"><code class="js spaces">    </code><code class="js plain">logallrefupdates = </code><code class="js keyword">true</code></div>
-<div class="line number6 index5 alt1"><code class="js spaces">    </code><code class="js plain">symlinks = </code><code class="js keyword">false</code></div>
-<div class="line number7 index6 alt2"><code class="js spaces">    </code><code class="js plain">ignorecase = </code><code class="js keyword">true</code></div>
-<div class="line number8 index7 alt1"><code class="js plain">[remote </code><code class="js string">"origin"</code><code class="js plain">]</code></div>
-<div class="line number9 index8 alt2"><code class="js spaces">    </code><code class="js plain">url = git@github.com:mdecourse/nfumde.git</code></div>
-<div class="line number10 index9 alt1"><code class="js spaces">    </code><code class="js plain">fetch = +refs/heads/*:refs/remotes/origin/*</code></div>
-<div class="line number11 index10 alt2"><code class="js plain">[remote </code><code class="js string">"heroku"</code><code class="js plain">]</code></div>
-<div class="line number12 index11 alt1"><code class="js spaces">    </code><code class="js plain">url = https:</code><code class="js comments">//git.heroku.com/nfumde.git</code></div>
-<div class="line number13 index12 alt2"><code class="js spaces">    </code><code class="js plain">fetch = +refs/heads/*:refs/remotes/heroku/*</code></div>
-<div class="line number14 index13 alt1"><code class="js plain">[branch </code><code class="js string">"main"</code><code class="js plain">]</code></div>
-<div class="line number15 index14 alt2"><code class="js spaces">    </code><code class="js plain">remote = origin</code></div>
-<div class="line number16 index15 alt1"><code class="js spaces">    </code><code class="js plain">merge = refs/heads/main</code></div>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<p>當使用者在命令列中的特定目錄中以 git init 建立 .git 目錄時, .git/config 中只會有以下資料, 表示此目錄為 git 空倉儲, 尚未與遠端 Github 有任何對應:</p>
-<div>
-<div class="syntaxhighlighter js" id="highlighter_834374">
-<table border="0" cellpadding="0" cellspacing="0">
-<tbody>
-<tr>
-<td class="gutter">
-<div class="line number1 index0 alt2">1</div>
-<div class="line number2 index1 alt1">2</div>
-<div class="line number3 index2 alt2">3</div>
-<div class="line number4 index3 alt1">4</div>
-<div class="line number5 index4 alt2">5</div>
-<div class="line number6 index5 alt1">6</div>
-<div class="line number7 index6 alt2">7</div>
-</td>
-<td class="code">
-<div class="container">
-<div class="line number1 index0 alt2"><code class="js plain">[core]</code></div>
-<div class="line number2 index1 alt1"><code class="js spaces">    </code><code class="js plain">repositoryformatversion = 0</code></div>
-<div class="line number3 index2 alt2"><code class="js spaces">    </code><code class="js plain">filemode = </code><code class="js keyword">false</code></div>
-<div class="line number4 index3 alt1"><code class="js spaces">    </code><code class="js plain">bare = </code><code class="js keyword">false</code></div>
-<div class="line number5 index4 alt2"><code class="js spaces">    </code><code class="js plain">logallrefupdates = </code><code class="js keyword">true</code></div>
-<div class="line number6 index5 alt1"><code class="js spaces">    </code><code class="js plain">symlinks = </code><code class="js keyword">false</code></div>
-<div class="line number7 index6 alt2"><code class="js spaces">    </code><code class="js plain">ignorecase = </code><code class="js keyword">true</code></div>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<p>當使用者在該倉儲中, 執行 git remote add origin<span> </span><a href="mailto:git@github.com:mdecourse/nfumde.git">git@github.com:mdecourse/nfumde.git</a><span> </span>後, .git/config 中將增加此一 git remote add 設定資料而成為:</p>
-<div>
-<div class="syntaxhighlighter js" id="highlighter_896615">
-<table border="0" cellpadding="0" cellspacing="0">
-<tbody>
-<tr>
-<td class="gutter">
-<div class="line number1 index0 alt2">1</div>
-<div class="line number2 index1 alt1">2</div>
-<div class="line number3 index2 alt2">3</div>
-<div class="line number4 index3 alt1">4</div>
-<div class="line number5 index4 alt2">5</div>
-<div class="line number6 index5 alt1">6</div>
-<div class="line number7 index6 alt2">7</div>
-<div class="line number8 index7 alt1">8</div>
-<div class="line number9 index8 alt2">9</div>
-<div class="line number10 index9 alt1">10</div>
-</td>
-<td class="code">
-<div class="container">
-<div class="line number1 index0 alt2"><code class="js plain">[core]</code></div>
-<div class="line number2 index1 alt1"><code class="js spaces">    </code><code class="js plain">repositoryformatversion = 0</code></div>
-<div class="line number3 index2 alt2"><code class="js spaces">    </code><code class="js plain">filemode = </code><code class="js keyword">false</code></div>
-<div class="line number4 index3 alt1"><code class="js spaces">    </code><code class="js plain">bare = </code><code class="js keyword">false</code></div>
-<div class="line number5 index4 alt2"><code class="js spaces">    </code><code class="js plain">logallrefupdates = </code><code class="js keyword">true</code></div>
-<div class="line number6 index5 alt1"><code class="js spaces">    </code><code class="js plain">symlinks = </code><code class="js keyword">false</code></div>
-<div class="line number7 index6 alt2"><code class="js spaces">    </code><code class="js plain">ignorecase = </code><code class="js keyword">true</code></div>
-<div class="line number8 index7 alt1"><code class="js plain">[remote </code><code class="js string">"origin"</code><code class="js plain">]</code></div>
-<div class="line number9 index8 alt2"><code class="js spaces">    </code><code class="js plain">url = git@github.com:mdecourse/nfumde.git</code></div>
-<div class="line number10 index9 alt1"><code class="js spaces">    </code><code class="js plain">fetch = +refs/heads/*:refs/remotes/origin/*</code></div>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<p>當使用者在執行 git push --set-upstream origin main 或 git push -u origin main 時, 由於附加設定內建的 upstream 為 main 分支, 因此之後的 git push 與 git pull 若從 orgin 存取版本資料, 可以不用宣告分支, git 會假定存取 main 分支, 意即 git push 就是指 git push origin main. 此時.git/config 中將增加以下 upstream 設定:</p>
-<div>
-<div class="syntaxhighlighter js" id="highlighter_119370">
-<table border="0" cellpadding="0" cellspacing="0">
-<tbody>
-<tr>
-<td class="gutter">
-<div class="line number1 index0 alt2">1</div>
-<div class="line number2 index1 alt1">2</div>
-<div class="line number3 index2 alt2">3</div>
-</td>
-<td class="code">
-<div class="container">
-<div class="line number1 index0 alt2"><code class="js plain">[branch </code><code class="js string">"main"</code><code class="js plain">]</code></div>
-<div class="line number2 index1 alt1"><code class="js spaces">    </code><code class="js plain">remote = origin</code></div>
-<div class="line number3 index2 alt2"><code class="js spaces">    </code><code class="js plain">merge = refs/heads/main</code></div>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<p>最後若再執行 heroku login -i 以及 heroku git:remote -a nfumde, 也就是針對 Heroku 中的 nfumde app 設定 git remote add, 則最後的 .git/config 將成為:</p>
-<div>
-<div class="syntaxhighlighter js" id="highlighter_213384">
-<table border="0" cellpadding="0" cellspacing="0">
-<tbody>
-<tr>
-<td class="gutter">
-<div class="line number1 index0 alt2">1</div>
-<div class="line number2 index1 alt1">2</div>
-<div class="line number3 index2 alt2">3</div>
-<div class="line number4 index3 alt1">4</div>
-<div class="line number5 index4 alt2">5</div>
-<div class="line number6 index5 alt1">6</div>
-<div class="line number7 index6 alt2">7</div>
-<div class="line number8 index7 alt1">8</div>
-<div class="line number9 index8 alt2">9</div>
-<div class="line number10 index9 alt1">10</div>
-<div class="line number11 index10 alt2">11</div>
-<div class="line number12 index11 alt1">12</div>
-<div class="line number13 index12 alt2">13</div>
-<div class="line number14 index13 alt1">14</div>
-<div class="line number15 index14 alt2">15</div>
-<div class="line number16 index15 alt1">16</div>
-</td>
-<td class="code">
-<div class="container">
-<div class="line number1 index0 alt2"><code class="js plain">[core]</code></div>
-<div class="line number2 index1 alt1"><code class="js spaces">    </code><code class="js plain">repositoryformatversion = 0</code></div>
-<div class="line number3 index2 alt2"><code class="js spaces">    </code><code class="js plain">filemode = </code><code class="js keyword">false</code></div>
-<div class="line number4 index3 alt1"><code class="js spaces">    </code><code class="js plain">bare = </code><code class="js keyword">false</code></div>
-<div class="line number5 index4 alt2"><code class="js spaces">    </code><code class="js plain">logallrefupdates = </code><code class="js keyword">true</code></div>
-<div class="line number6 index5 alt1"><code class="js spaces">    </code><code class="js plain">symlinks = </code><code class="js keyword">false</code></div>
-<div class="line number7 index6 alt2"><code class="js spaces">    </code><code class="js plain">ignorecase = </code><code class="js keyword">true</code></div>
-<div class="line number8 index7 alt1"><code class="js plain">[remote </code><code class="js string">"origin"</code><code class="js plain">]</code></div>
-<div class="line number9 index8 alt2"><code class="js spaces">    </code><code class="js plain">url = git@github.com:mdecourse/nfumde.git</code></div>
-<div class="line number10 index9 alt1"><code class="js spaces">    </code><code class="js plain">fetch = +refs/heads/*:refs/remotes/origin/*</code></div>
-<div class="line number11 index10 alt2"><code class="js plain">[remote </code><code class="js string">"heroku"</code><code class="js plain">]</code></div>
-<div class="line number12 index11 alt1"><code class="js spaces">    </code><code class="js plain">url = https:</code><code class="js comments">//git.heroku.com/nfumde.git</code></div>
-<div class="line number13 index12 alt2"><code class="js spaces">    </code><code class="js plain">fetch = +refs/heads/*:refs/remotes/heroku/*</code></div>
-<div class="line number14 index13 alt1"><code class="js plain">[branch </code><code class="js string">"main"</code><code class="js plain">]</code></div>
-<div class="line number15 index14 alt2"><code class="js spaces">    </code><code class="js plain">remote = origin</code></div>
-<div class="line number16 index15 alt1"><code class="js spaces">    </code><code class="js plain">merge = refs/heads/main</code></div>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<p>現在假如連倉儲的 origin url 都選擇自行設定, 其步驟如下:</p>
-<ol>
-<li>在近端命令視窗中, 以 git init (為了配合使用 main 作為主分支名稱, 可以使用 git config --global init.defaultBranch main 將設定寫入 home_ipv6\.gitconfig 中) 建立空的倉儲, 取得 Github 空倉儲的 url 後, 可以採用 https 或 SSH 模式進行 git remote add 的設定.</li>
-<li>假如遠端的 Github 倉儲使用者帳號為 mdecourse, 而空倉儲名稱為 nfumde, 則其 https 的 url 為 <a href="https://github.com/mdecourse/nfumde">https://github.com/mdecourse/nfumde</a><a href="https://github.com/mdecourse/wcm_midterm,">,</a><span> </span>若採用 SSH 則其 url 為<span> </span><a href="mailto:git@my_putty_session:mdecourse/nfumde.git">git@my_putty_session:mdecourse/nfumde.git</a></li>
-<li>步驟 2. 的指令為 git remote add origin https://github.com/mdecourse/nfumde.git, 或者使用 git remote add origin git@my_putty_session:mdecourse/nfumde.git</li>
-<li>另外若將此一倉儲在近端使用 Heroku 的指令與遠端的 Heroku 名稱為 nfumde 的 app 進行對應設定, 則命令在 heroku login -i 之後, 以 heroku git:remote -a nfumde, 之後就可以透過 git push heroku 將此一倉儲的版本推向 Heroku.</li>
-</ol>
-<p>操作過程, 第一時間在近端以 git init 建立空倉儲時發現仍使用 master 作為主分支名稱, 因此利用 git config --global init.defaultBranch main 將設定存入 home_ipv6\.gitconfig 中, 將主分支名稱設為 main. 畫面如下:</p>
-<p><img alt="" height="418" src="http://mde.tw/wcm2021/images/nfumde_heroku_app.png" width="800"/></p>
-<p>以上所完成的 Heroku 網際程式:<span> </span><a href="http://nfumde.herokuapp.com/table">http://nfumde.herokuapp.com/table</a></p>
-<p>假如要將上列網際程式改為 AJAX 模式, 可以參考下列程式碼, 以 button 的方式送出 AJAX 所需的 POST 變數:</p>
-<div>
-<div class="syntaxhighlighter py" id="highlighter_58175">
-<table border="0" cellpadding="0" cellspacing="0">
-<tbody>
-<tr>
-<td class="gutter">
+<tr style="height: 1399.8px;">
+<td class="gutter" style="width: 15px; height: 1399.8px;">
 <div class="line number1 index0 alt2">1</div>
 <div class="line number2 index1 alt1">2</div>
 <div class="line number3 index2 alt2">3</div>
@@ -406,80 +209,127 @@ img.add_border {
 <div class="line number61 index60 alt2">61</div>
 <div class="line number62 index61 alt1">62</div>
 <div class="line number63 index62 alt2">63</div>
+<div class="line number64 index63 alt1">64</div>
+<div class="line number65 index64 alt2">65</div>
+<div class="line number66 index65 alt1">66</div>
+<div class="line number67 index66 alt2">67</div>
+<div class="line number68 index67 alt1">68</div>
+<div class="line number69 index68 alt2">69</div>
+<div class="line number70 index69 alt1">70</div>
+<div class="line number71 index70 alt2">71</div>
+<div class="line number72 index71 alt1">72</div>
+<div class="line number73 index72 alt2">73</div>
+<div class="line number74 index73 alt1">74</div>
+<div class="line number75 index74 alt2">75</div>
+<div class="line number76 index75 alt1">76</div>
+<div class="line number77 index76 alt2">77</div>
+<div class="line number78 index77 alt1">78</div>
+<div class="line number79 index78 alt2">79</div>
+<div class="line number80 index79 alt1">80</div>
+<div class="line number81 index80 alt2">81</div>
+<div class="line number82 index81 alt1">82</div>
+<div class="line number83 index82 alt2">83</div>
+<div class="line number84 index83 alt1">84</div>
+<div class="line number85 index84 alt2">85</div>
+<div class="line number86 index85 alt1">86</div>
+<div class="line number87 index86 alt2">87</div>
+<div class="line number88 index87 alt1">88</div>
 </td>
-<td class="code">
+<td class="code" style="width: 544.263px; height: 1399.8px;">
 <div class="container">
-<div class="line number1 index0 alt2"><code class="py keyword">from</code> <code class="py plain">flask </code><code class="py keyword">import</code> <code class="py plain">(Flask, request, jsonify)</code></div>
-<div class="line number2 index1 alt1"><code class="py spaces">                   </code> </div>
-<div class="line number3 index2 alt2"><code class="py plain">app </code><code class="py keyword">=</code> <code class="py plain">Flask(__name__)</code></div>
-<div class="line number4 index3 alt1"> </div>
-<div class="line number5 index4 alt2"><code class="py plain">html_page </code><code class="py keyword">=</code> <code class="py comments">"""&lt;!DOCTYPE HTML&gt;</code></div>
-<div class="line number6 index5 alt1"><code class="py comments">&lt;html&gt;</code></div>
-<div class="line number7 index6 alt2"><code class="py comments">&lt;head&gt;</code></div>
-<div class="line number8 index7 alt1"><code class="py comments">&lt;title&gt;Rough AJAX Test&lt;/title&gt;</code></div>
-<div class="line number9 index8 alt2"><code class="py comments">&lt;script&gt;</code></div>
-<div class="line number10 index9 alt1"><code class="py spaces">    </code><code class="py comments">function loadXMLDoc()</code></div>
-<div class="line number11 index10 alt2"><code class="py spaces">    </code><code class="py comments">{</code></div>
-<div class="line number12 index11 alt1"><code class="py spaces">        </code><code class="py comments">var req = new XMLHttpRequest()</code></div>
-<div class="line number13 index12 alt2"><code class="py spaces">        </code><code class="py comments">req.onreadystatechange = function()</code></div>
-<div class="line number14 index13 alt1"><code class="py spaces">        </code><code class="py comments">{</code></div>
-<div class="line number15 index14 alt2"><code class="py spaces">            </code><code class="py comments">if (req.readyState == 4)</code></div>
-<div class="line number16 index15 alt1"><code class="py spaces">            </code><code class="py comments">{</code></div>
-<div class="line number17 index16 alt2"><code class="py spaces">                </code><code class="py comments">if (req.status != 200)</code></div>
-<div class="line number18 index17 alt1"><code class="py spaces">                </code><code class="py comments">{</code></div>
-<div class="line number19 index18 alt2"><code class="py spaces">                    </code><code class="py comments">//error handling code here</code></div>
-<div class="line number20 index19 alt1"><code class="py spaces">                </code><code class="py comments">}</code></div>
-<div class="line number21 index20 alt2"><code class="py spaces">                </code><code class="py comments">else</code></div>
-<div class="line number22 index21 alt1"><code class="py spaces">                </code><code class="py comments">{</code></div>
-<div class="line number23 index22 alt2"><code class="py spaces">                    </code><code class="py comments">var response = JSON.parse(req.responseText)</code></div>
-<div class="line number24 index23 alt1"><code class="py spaces">                    </code><code class="py comments">document.getElementById('myDiv').innerHTML = response.username</code></div>
-<div class="line number25 index24 alt2"><code class="py spaces">                </code><code class="py comments">}</code></div>
-<div class="line number26 index25 alt1"><code class="py spaces">            </code><code class="py comments">}</code></div>
-<div class="line number27 index26 alt2"><code class="py spaces">        </code><code class="py comments">}</code></div>
-<div class="line number28 index27 alt1"><code class="py spaces">    </code> </div>
-<div class="line number29 index28 alt2"><code class="py spaces">        </code><code class="py comments">req.open('POST', '/ajax')</code></div>
-<div class="line number30 index29 alt1"><code class="py spaces">        </code><code class="py comments">req.setRequestHeader("Content-type", "application/x-www-form-urlencoded")</code></div>
-<div class="line number31 index30 alt2"><code class="py spaces">        </code><code class="py comments">var un = document.getElementById('scname').value</code></div>
-<div class="line number32 index31 alt1"><code class="py spaces">        </code><code class="py comments">var sec = document.getElementById('secret').value</code></div>
-<div class="line number33 index32 alt2"><code class="py spaces">        </code><code class="py comments">var postVars = 'username='+un+'&amp;secret='+sec</code></div>
-<div class="line number34 index33 alt1"><code class="py spaces">        </code><code class="py comments">req.send(postVars)</code></div>
-<div class="line number35 index34 alt2"><code class="py spaces">        </code> </div>
-<div class="line number36 index35 alt1"><code class="py spaces">        </code><code class="py comments">return false</code></div>
-<div class="line number37 index36 alt2"><code class="py spaces">    </code><code class="py comments">}</code></div>
-<div class="line number38 index37 alt1"><code class="py comments">&lt;/script&gt;</code></div>
-<div class="line number39 index38 alt2"><code class="py comments">&lt;/head&gt;</code></div>
-<div class="line number40 index39 alt1"><code class="py comments">&lt;body&gt;</code></div>
-<div class="line number41 index40 alt2"><code class="py comments">&lt;h1&gt;Flask AJAX Test&lt;/h1&gt;</code></div>
-<div class="line number42 index41 alt1"><code class="py comments">&lt;form action="" method="POST"&gt;</code></div>
-<div class="line number43 index42 alt2"><code class="py comments">&lt;input type="text" name="scname" id="scname"&gt;</code></div>
-<div class="line number44 index43 alt1"><code class="py comments">&lt;input type="hidden" name="secret" id="secret" value="shhh"&gt;</code></div>
-<div class="line number45 index44 alt2"><code class="py comments">&lt;input type="button" value="Submit" onclick="return loadXMLDoc()"&gt;</code></div>
-<div class="line number46 index45 alt1"><code class="py comments">&lt;/form&gt;</code></div>
-<div class="line number47 index46 alt2"><code class="py comments">&lt;div id="myDiv"&gt;&lt;/div&gt;</code></div>
-<div class="line number48 index47 alt1"><code class="py comments">&lt;/body&gt;</code></div>
-<div class="line number49 index48 alt2"><code class="py comments">&lt;/html&gt;"""</code></div>
-<div class="line number50 index49 alt1"> </div>
-<div class="line number51 index50 alt2"><code class="py decorator">@app</code><code class="py plain">.route(</code><code class="py string">'/'</code><code class="py plain">)</code></div>
-<div class="line number52 index51 alt1"><code class="py keyword">def</code> <code class="py plain">index():</code></div>
-<div class="line number53 index52 alt2"><code class="py spaces">    </code><code class="py keyword">return</code> <code class="py plain">html_page</code></div>
-<div class="line number54 index53 alt1"><code class="py spaces">        </code> </div>
-<div class="line number55 index54 alt2"><code class="py spaces">        </code> </div>
-<div class="line number56 index55 alt1"><code class="py decorator">@app</code><code class="py plain">.route(</code><code class="py string">'/ajax'</code><code class="py plain">, methods </code><code class="py keyword">=</code> <code class="py plain">[</code><code class="py string">'POST'</code><code class="py plain">])</code></div>
-<div class="line number57 index56 alt2"><code class="py keyword">def</code> <code class="py plain">ajax_request():</code></div>
-<div class="line number58 index57 alt1"><code class="py spaces">    </code><code class="py plain">username </code><code class="py keyword">=</code> <code class="py plain">request.form[</code><code class="py string">'username'</code><code class="py plain">]</code></div>
-<div class="line number59 index58 alt2"><code class="py spaces">    </code><code class="py keyword">return</code> <code class="py plain">jsonify(username</code><code class="py keyword">=</code><code class="py plain">username)</code></div>
-<div class="line number60 index59 alt1"><code class="py spaces">    </code> </div>
-<div class="line number61 index60 alt2"><code class="py spaces">    </code> </div>
-<div class="line number62 index61 alt1"><code class="py keyword">if</code> <code class="py plain">__name__ </code><code class="py keyword">=</code><code class="py keyword">=</code> <code class="py string">"__main__"</code><code class="py plain">:</code></div>
-<div class="line number63 index62 alt2"><code class="py spaces">    </code><code class="py plain">app.run(debug </code><code class="py keyword">=</code> <code class="py color1">True</code><code class="py plain">)</code></div>
+<div class="line number1 index0 alt2"><code class="py keyword">import</code> <code class="py plain">requests</code></div>
+<div class="line number2 index1 alt1"><code class="py keyword">import</code> <code class="py plain">bs4</code></div>
+<div class="line number3 index2 alt2"><code class="py comments"># for os.environ and os.system</code></div>
+<div class="line number4 index3 alt1"><code class="py keyword">import</code> <code class="py plain">os</code></div>
+<div class="line number5 index4 alt2"><code class="py comments"># for geting html file path</code></div>
+<div class="line number6 index5 alt1"><code class="py keyword">import</code> <code class="py plain">pathlib</code></div>
+<div class="line number7 index6 alt2"><code class="py comments"># 以下因應改為 Heroku based 程式所需導入模組,  修改步驟 1/6</code></div>
+<div class="line number8 index7 alt1"><code class="py keyword">from</code> <code class="py plain">flask </code><code class="py keyword">import</code> <code class="py plain">Flask, request </code></div>
+<div class="line number9 index8 alt2"><code class="py keyword">from</code> <code class="py plain">flask_cors </code><code class="py keyword">import</code> <code class="py plain">CORS</code></div>
+<div class="line number10 index9 alt1"><code class="py spaces"> </code> </div>
+<div class="line number11 index10 alt2"><code class="py spaces"> </code> </div>
+<div class="line number12 index11 alt1"><code class="py comments"># 修改步驟 2/6 , 加入 Flask 相關物件設定</code></div>
+<div class="line number13 index12 alt2"><code class="py plain">app </code><code class="py keyword">=</code> <code class="py plain">Flask(__name__)</code></div>
+<div class="line number14 index13 alt1"><code class="py comments"># 此一設定可以讓程式跨網域擷取資料</code></div>
+<div class="line number15 index14 alt2"><code class="py plain">CORS(app)</code></div>
+<div class="line number16 index15 alt1"><code class="py spaces"> </code> </div>
+<div class="line number17 index16 alt2"><code class="py comments"># for pythn 3.9,  在近端測試時仍需要設定 proxy, 若使用 Python 3.8 執行則會自動使用系統的 Proxy 設定</code></div>
+<div class="line number18 index17 alt1"><code class="py plain">proxy </code><code class="py keyword">=</code> <code class="py string">'http://[2001:288:6004:17::69]:3128'</code></div>
+<div class="line number19 index18 alt2"><code class="py spaces"> </code> </div>
+<div class="line number20 index19 alt1"><code class="py plain">os.environ[</code><code class="py string">'http_proxy'</code><code class="py plain">] </code><code class="py keyword">=</code> <code class="py plain">proxy </code></div>
+<div class="line number21 index20 alt2"><code class="py plain">os.environ[</code><code class="py string">'HTTP_PROXY'</code><code class="py plain">] </code><code class="py keyword">=</code> <code class="py plain">proxy</code></div>
+<div class="line number22 index21 alt1"><code class="py plain">os.environ[</code><code class="py string">'https_proxy'</code><code class="py plain">] </code><code class="py keyword">=</code> <code class="py plain">proxy</code></div>
+<div class="line number23 index22 alt2"><code class="py plain">os.environ[</code><code class="py string">'HTTPS_PROXY'</code><code class="py plain">] </code><code class="py keyword">=</code> <code class="py plain">proxy</code></div>
+<div class="line number24 index23 alt1"><code class="py comments">'''</code></div>
+<div class="line number25 index24 alt2"><code class="py comments">url:  'jclassroom_ajax.php',</code></div>
+<div class="line number26 index25 alt1"><code class="py comments">data: { pselyr: pselyr, pselclssroom: pselclssroom },</code></div>
+<div class="line number27 index26 alt2"><code class="py comments">'''</code></div>
+<div class="line number28 index27 alt1"><code class="py spaces"> </code> </div>
+<div class="line number29 index28 alt2"><code class="py comments"># 修改步驟 3/6, 試著將程式改為網際模式, 需要套用 Flask 的網際 decorator</code></div>
+<div class="line number30 index29 alt1"><code class="py decorator">@app</code><code class="py plain">.route(</code><code class="py string">'/'</code><code class="py plain">)</code></div>
+<div class="line number31 index30 alt2"><code class="py keyword">def</code> <code class="py plain">timeTableList():</code></div>
+<div class="line number32 index31 alt1"><code class="py spaces">    </code><code class="py plain">semester </code><code class="py keyword">=</code> <code class="py string">'1092'</code></div>
+<div class="line number33 index32 alt2"><code class="py spaces">    </code><code class="py plain">classroomno </code><code class="py keyword">=</code> <code class="py string">'BGA0810'</code></div>
+<div class="line number34 index33 alt1"><code class="py spaces">    </code><code class="py plain">column </code><code class="py keyword">=</code> <code class="py color1">True</code></div>
+<div class="line number35 index34 alt2"><code class="py spaces"> </code> </div>
+<div class="line number36 index35 alt1"><code class="py spaces">    </code><code class="py keyword">if</code> <code class="py plain">semester </code><code class="py keyword">=</code><code class="py keyword">=</code> <code class="py color1">None</code><code class="py plain">:</code></div>
+<div class="line number37 index36 alt2"><code class="py spaces">        </code><code class="py plain">semester </code><code class="py keyword">=</code> <code class="py string">'1092'</code></div>
+<div class="line number38 index37 alt1"><code class="py spaces">    </code><code class="py keyword">if</code> <code class="py plain">classroomno </code><code class="py keyword">=</code><code class="py keyword">=</code> <code class="py color1">None</code><code class="py plain">:</code></div>
+<div class="line number39 index38 alt2"><code class="py spaces">        </code><code class="py comments"># BGA0810 電腦輔助設計室</code></div>
+<div class="line number40 index39 alt1"><code class="py spaces">        </code><code class="py plain">classroomno </code><code class="py keyword">=</code> <code class="py string">'BGA0810'</code></div>
+<div class="line number41 index40 alt2"><code class="py spaces">         </code> </div>
+<div class="line number42 index41 alt1"><code class="py spaces">    </code><code class="py plain">headers </code><code class="py keyword">=</code> <code class="py plain">{</code><code class="py string">'X-Requested-With'</code><code class="py plain">: </code><code class="py string">'XMLHttpRequest'</code><code class="py plain">}</code></div>
+<div class="line number43 index42 alt2"><code class="py spaces"> </code> </div>
+<div class="line number44 index43 alt1"><code class="py spaces">    </code><code class="py plain">url </code><code class="py keyword">=</code> <code class="py string">'https://qry.nfu.edu.tw/jclassroom_ajax.php'</code></div>
+<div class="line number45 index44 alt2"><code class="py spaces">    </code><code class="py plain">post_var </code><code class="py keyword">=</code> <code class="py plain">{</code><code class="py string">'pselyr'</code><code class="py plain">: semester, </code><code class="py string">'pselclssroom'</code><code class="py plain">: classroomno}</code></div>
+<div class="line number46 index45 alt1"><code class="py spaces"> </code> </div>
+<div class="line number47 index46 alt2"><code class="py spaces">    </code><code class="py plain">result </code><code class="py keyword">=</code> <code class="py plain">requests.post(url, data </code><code class="py keyword">=</code> <code class="py plain">post_var, headers </code><code class="py keyword">=</code> <code class="py plain">headers)</code></div>
+<div class="line number48 index47 alt1"><code class="py spaces"> </code> </div>
+<div class="line number49 index48 alt2"><code class="py spaces">    </code><code class="py plain">soup </code><code class="py keyword">=</code> <code class="py plain">bs4.BeautifulSoup(result.content, </code><code class="py string">'lxml'</code><code class="py plain">)</code></div>
+<div class="line number50 index49 alt1"><code class="py spaces"> </code> </div>
+<div class="line number51 index50 alt2"><code class="py spaces">    </code><code class="py comments"># 先除掉所有 anchor</code></div>
+<div class="line number52 index51 alt1"><code class="py spaces">    </code><code class="py keyword">for</code> <code class="py plain">a </code><code class="py keyword">in</code> <code class="py plain">soup.findAll(</code><code class="py string">'a'</code><code class="py plain">):</code></div>
+<div class="line number53 index52 alt2"><code class="py spaces">        </code><code class="py comments"># bs3 語法</code></div>
+<div class="line number54 index53 alt1"><code class="py spaces">        </code><code class="py comments">#a.replaceWithChildren()</code></div>
+<div class="line number55 index54 alt2"><code class="py spaces">        </code><code class="py comments"># bs4 語法, 將標註與內容拆開</code></div>
+<div class="line number56 index55 alt1"><code class="py spaces">        </code><code class="py plain">a.unwrap()</code></div>
+<div class="line number57 index56 alt2"><code class="py spaces"> </code> </div>
+<div class="line number58 index57 alt1"><code class="py spaces">    </code><code class="py comments"># 根據輸出設定, 取出 class='tbcls' 的 table 資料</code></div>
+<div class="line number59 index58 alt2"><code class="py spaces">    </code><code class="py plain">table </code><code class="py keyword">=</code> <code class="py plain">soup.find(</code><code class="py string">'table'</code><code class="py plain">, {</code><code class="py string">'class'</code><code class="py plain">: </code><code class="py string">'tbcls'</code><code class="py plain">})</code></div>
+<div class="line number60 index59 alt1"><code class="py spaces"> </code> </div>
+<div class="line number61 index60 alt2"><code class="py spaces">    </code><code class="py comments"># 重建 table, 設定邊線為 1 pixel</code></div>
+<div class="line number62 index61 alt1"><code class="py spaces">    </code><code class="py plain">output </code><code class="py keyword">=</code> <code class="py string">"&lt;table border='1'&gt;"</code></div>
+<div class="line number63 index62 alt2"><code class="py spaces"> </code> </div>
+<div class="line number64 index63 alt1"><code class="py spaces">    </code><code class="py keyword">for</code> <code class="py plain">i </code><code class="py keyword">in</code> <code class="py plain">table.contents:</code></div>
+<div class="line number65 index64 alt2"><code class="py spaces">        </code><code class="py comments"># 利用 replace 復原  </code></div>
+<div class="line number66 index65 alt1"><code class="py spaces">        </code><code class="py plain">output </code><code class="py keyword">+</code><code class="py keyword">=</code> <code class="py functions">str</code><code class="py plain">(i).replace(</code><code class="py string">" "</code><code class="py plain">, </code><code class="py string">" "</code><code class="py plain">)</code></div>
+<div class="line number67 index66 alt2"><code class="py spaces">    </code><code class="py plain">output </code><code class="py keyword">+</code><code class="py keyword">=</code> <code class="py string">"&lt;/table&gt;"</code></div>
+<div class="line number68 index67 alt1"><code class="py spaces">    </code><code class="py comments">#print(output)</code></div>
+<div class="line number69 index68 alt2"><code class="py spaces">    </code><code class="py comments"># 修改步驟 5/6 , 因為已經將原先可列印出程式的步驟改為 function, 因此必須以 return 將擷取到的網頁資料傳回</code></div>
+<div class="line number70 index69 alt1"><code class="py spaces">    </code><code class="py keyword">return</code> <code class="py plain">output</code></div>
+<div class="line number71 index70 alt2"><code class="py spaces">     </code> </div>
+<div class="line number72 index71 alt1"><code class="py comments"># 修改步驟 4/6 , 因為改寫為網際程式後, 下列將內容存檔並自動呼叫 Firefox 的程式碼不再適用, 必須蓋掉</code></div>
+<div class="line number73 index72 alt2"><code class="py comments">'''</code></div>
+<div class="line number74 index73 alt1"><code class="py comments"># 將 output 寫入 w1_classroom.html</code></div>
+<div class="line number75 index74 alt2"><code class="py comments">fileName = "w1_classroom.html"</code></div>
+<div class="line number76 index75 alt1"><code class="py comments">with open(fileName, "w", encoding="utf-8") as file:</code></div>
+<div class="line number77 index76 alt2"><code class="py spaces">    </code><code class="py comments">file.write(output)</code></div>
+<div class="line number78 index77 alt1"><code class="py comments"># 利用 os.system() 以 default browser 開啟 w1_class_local.html</code></div>
+<div class="line number79 index78 alt2"><code class="py comments">filePath = pathlib.Path(__file__).parent.absolute()</code></div>
+<div class="line number80 index79 alt1"><code class="py comments">#print(filePath)</code></div>
+<div class="line number81 index80 alt2"><code class="py comments"># set firefox as default browser and start url to open html file</code></div>
+<div class="line number82 index81 alt1"><code class="py comments">os.system("start file:///" + str(filePath) + "\\" + fileName)</code></div>
+<div class="line number83 index82 alt2"><code class="py comments">'''</code></div>
+<div class="line number84 index83 alt1"><code class="py spaces"> </code> </div>
+<div class="line number85 index84 alt2"><code class="py comments"># 修改步驟 6/6, 配合網際程式啟動,  以及 Python 程式執行與納入其他程式執行的特定進行配置</code></div>
+<div class="line number86 index85 alt1"><code class="py spaces"> </code> </div>
+<div class="line number87 index86 alt2"><code class="py keyword">if</code> <code class="py plain">__name__ </code><code class="py keyword">=</code><code class="py keyword">=</code> <code class="py string">'__main__'</code><code class="py plain">:</code></div>
+<div class="line number88 index87 alt1"><code class="py spaces">    </code><code class="py plain">app.run(host</code><code class="py keyword">=</code><code class="py string">'127.0.0.1'</code><code class="py plain">, port</code><code class="py keyword">=</code><code class="py value">8080</code><code class="py plain">, debug</code><code class="py keyword">=</code><code class="py color1">True</code><code class="py plain">)</code></div>
 </div>
 </td>
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-<p>以上的 html 原始碼可以利用<span> </span><a href="https://html-online.com/editor/">https://html-online.com/editor/</a><span> </span>進行編輯.</p>
 <br />W6 << <a href='W6.html'>Previous</a> <a href='W8.html'>Next</a> >> W8</div>
         
     <!-- footer -->

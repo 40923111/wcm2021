@@ -35,75 +35,41 @@
 <p>請將下列 paper 重新打字整理為 .txt 純文字檔案, 之後再利用 LaTeX 整理為 pdf 檔案.</p>
 <p><a href="http://mde.tw/cd2021/downloads/typing_practice/1990_evaluating_the_use_of_cad_systems_in_mechanical_design_engineering.pdf">1990_evaluating_the_use_of_cad_systems_in_mechanical_design_engineering.pdf</a></p>
 <h2>W5</h2>
-<p><span>假如您使用的 cmsimde 並不是最新版本, 可以設法進入 cmsimde 子目錄後, 以 git pull origin master 拉回最新版本的程式碼, 並且注意是否 cmsimde/up_dir 目錄中有檔案更新, 若是則必須將這些隨著版次更新的檔案, 從 up_dir 複製到倉儲根目錄.</span></p>
-<p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/WvkJ1wMAUE4" width="560"></iframe></span></p>
-<p><span>為了要讓各組組員更清楚網際內容管理課程內容, 以及期中簡報必須涵蓋的內容,  特別將 W1-W4 與課程相關的頁面及內容加以說明.</span></p>
-<p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/4IXLYSmtRT0" width="560"></iframe></span></p>
-<p><span>說明如何利用 Putty 設定以 SSH 將近端版本推送至 Github</span></p>
-<p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/l5vJYuwb2uU" width="560"></iframe></span></p>
-<p>實習目的:</p>
-<ol>
-<li>利用網際模組擷取資料 (<a href="https://requests.readthedocs.io/en/master/">Python requests</a>)</li>
-<li>利用 bs4 擷取網頁資料</li>
-<li>利用 Flask 編寫網際程式</li>
-<li>利用 Heroku 部署網際程式</li>
-<li>利用 Ubuntu 虛擬主機作為伺服器</li>
-</ol>
-<p>先看懂<span> </span><a href="https://github.com/mdecourse/scissor-rock-paper2/blob/main/wsgi.py">https://github.com/mdecourse/scissor-rock-paper2/blob/main/wsgi.py</a></p>
-<p><span class="pl-s1">request</span>.<span class="pl-s1">args</span>.<span class="pl-en">get</span>(<span class="pl-s">'user'</span>) 以 GET 方式取得 user 出拳變數值</p>
-<p>電腦出拳以亂數取值</p>
-<p>兩者比較後傳回超文件顯示比賽結果</p>
-<p>部署到 Heroku 需要<span> </span><a href="https://raw.githubusercontent.com/mdecourse/scissor-rock-paper2/main/requirements.txt">requirements.txt</a>,<span> </span><a href="https://raw.githubusercontent.com/mdecourse/scissor-rock-paper2/main/runtime.txt">runtime.txt</a><span> </span>與<span> </span><a href="https://raw.githubusercontent.com/mdecourse/scissor-rock-paper2/main/Procfile">Procfile</a>.</p>
-<p>接著請試著透過<span> </span><a href="http://mde.tw/lab/content/Heroku.html">http://mde.tw/lab/content/Heroku.html</a><span> </span>與<span> </span><a href="http://mde.tw/cp2020/content/Heroku.html">http://mde.tw/cp2020/content/Heroku.html</a><span> </span>的導引, 將<span> </span><a href="http://mde.tw/wcm2021/content/Topic%200.html">Topic0</a><span> </span>中的機械設計系實驗室排課時間表程式部署到 Heroku. 至於個人 Github 靜態網站也可以同步一份到 Heroku.</p>
-<p>Beautifulsoup 參考教材:</p>
-<p><a href="http://mde.tw/wcm2021/downloads/beautifulsoup.pdf">beautifulsoup.pdf</a></p>
-<p><a href="http://mde.tw/wcm2021/downloads/WebScraping_with_bs4.pdf">WebScraping_with_bs4.pdf</a></p>
-<p><a href="http://mde.tw/wcm2021/downloads/beautiful_soup_tutorial.pdf">beautiful_soup_tutorial.pdf</a></p>
-<p><a href="http://mde.tw/wcm2021/downloads/2019_beautifulsoup_document.pdf">2019_beautifulsoup_document.pd</a></p>
-<p>Flask 參考教材:</p>
-<p><a href="http://mde.tw/wcm2021/downloads/flask.pdf">flask.pdf</a></p>
-<p><a href="http://mde.tw/wcm2021/downloads/flask_tutorial.pdf">flask_tutorial.pdf</a></p>
-<p><a href="http://mde.tw/wcm2021/downloads/flask_document.pdf">flask_document.pdf</a></p>
-<p><a href="http://mde.tw/wcm2021/downloads/2021_flask_document.pdf">2021_flask_document.pdf</a></p>
-<p><a href="https://realpython.com/primer-on-python-decorators/">https://realpython.com/primer-on-python-decorators/</a></p>
-<p><a href="https://www.programiz.com/python-programming/decorator">https://www.programiz.com/python-programming/decorator</a></p>
-<p><a href="https://www.python-course.eu/python3_decorators.php">https://www.python-course.eu/python3_decorators.php</a></p>
-<p>Python has a feature called decorators to add functionality to an existing code. This is also called metaprogramming because a part of the program tries to modify another part of the program at compile time.</p>
-<p>Decorators allow us to wrap another function in order to extend the behavior of the wrapped function, without permanently modifying it.</p>
-<p>Heroku 參考教材:</p>
-<p><a href="http://mde.tw/cp2020/content/Heroku.html">http://mde.tw/cp2020/content/Heroku.html</a></p>
-<p><a href="http://mde.tw/cp2020/content/scissor-rock-paper.html">http://mde.tw/cp2020/content/scissor-rock-paper.html</a><span> </span>(<a href="https://scissor-rock-paper.herokuapp.com/">https://scissor-rock-paper.herokuapp.com</a>)</p>
-<p><a href="https://github.com/mdecourse/scissor-rock-paper2">https://github.com/mdecourse/scissor-rock-paper2</a><span> </span>(<a href="https://scissor-rock-paper2.herokuapp.com/">https://scissor-rock-paper2.herokuapp.com/</a>)</p>
-<p><a href="http://mde.tw/wcm2021/downloads/heroku.pdf">heroku.pdf</a></p>
-<p><a href="http://mde.tw/wcm2021/downloads/2017_web_apps.pdf">2017_web_apps.pdf</a></p>
-<p><a href="https://assets.ubuntu.com/v1/f954307f-ubuntu-server-guide.pdf">Ubuntu server 參考教材</a>.</p>
-<p><a href="http://mde.tw/wcm2021/content/Topic%200.html">Topic 0</a><span> </span>已經列出兩組可以從學校教務主機擷取資料的程式, 分別可以根據學期代號與班級代號取出班級排課表, 還有利用學期代號與實習實驗室代號擷取排客時間表.</p>
-<p>接下來實習的目標是希望寫一組程式可以擷取機械設計工程系各實習實驗室排課表, 並且統計各實驗室每週排課總時數.</p>
-<p>我們先來看<span> </span><a href="https://requests.readthedocs.io/en/master/">Python requests</a><span> </span>的用法:</p>
-<p>W5_requests_ex1.py</p>
+<p>1.首先我們需要登入github在自己的帳號中開啟設定，在設定中尋找SSH and GPG keys ，然後先按New SSHkey做準備。</p>
+<p>2.在 start_ipv6.bat (編輯器)加入<span> </span><span>set GIT_SSH=%Disk%:\putty\plink.exe。</span></p>
+<p><span>3.開啟 Putty 目錄中的 puttygen.exe,(沒有putty從a.kmol.info:88下載)，點擊Generate下載新Key(移動滑鼠進度條才會動)，最上面出現的亂碼為新鑰匙，全選後丟進剛剛在github預備的New SSHkey(記得存)，記得用SciTE 編輯儲存鑰匙(_rsa 檔)，然後用Save private key再存一次(.ppk檔)，兩個檔案存在tmp/keys裡</span></p>
+<p>4.開啟<span>putty.exe建立一個 session用於以 ssh 協定連線到 github.com(在hostname),名稱可任意但Proxy須設定學校的(筆電不用Proxy可以選None)，Auth記得選之前儲存.ppk的檔案，最後回開頭存檔</span></p>
+<p>5.最後則是要修改tmp/wcm2021/.git裡面config的url(之前的可在前面加#即可)，url改成git@(<span>session的名子)</span>:(帳號)/(倉儲名子).git(原url下面)(是origin下面的url)</p>
+<p>名子盡量相同會增加成功率，失敗就多試幾次說不定會成功</p>
+<h2>W6</h2>
+<p>開始準備期中分組報告</p>
+<p>heroku連結到倉儲，需要</p>
+<p>從a.kmol.info:88下載Heroku，放到data下，再用編輯器把啟動器的Heroku路徑打上。</p>
+<p>測試是否有連接上，<span>輸入 heroku version，有出現版本號便成。</span></p>
+<p><span>未出現原因</span></p>
+<p><span>1.編輯器未編寫正確</span></p>
+<p>2.檔案不完整</p>
+<p>完成後推送方法</p>
+<p>1.<code class="py plain">heroku login<span> </span></code><code class="py keyword">-</code><code class="py plain">i  (<span>以 interactive 模式登入 Heroku)(記得打帳號密碼)</span></code></p>
+<p><span face="monospace">2cd到要推送得倉儲</span></p>
+<p><span face="monospace">3.<code class="py plain">heroku git:remote<span> </span></code><code class="py keyword">-</code><code class="py plain">a s40923148(自己的)</code><code class="py plain"> (<span>針對已經登入的 Heroku 帳號下的 s40923148 app, 設為此倉儲的 remote 同步倉儲</span></code></span></p>
+<p><span face="monospace"><code class="py plain"><span>4.</span></code></span>git add .</p>
+<p>5.git commit -am "make it better"</p>
+<pre>6.git push heroku </pre>
+<p><span face="monospace"></span></p>
+<p></p>
+<p>編輯器設定</p>
 <div>
-<div class="syntaxhighlighter py" id="highlighter_169857">
+<div class="syntaxhighlighter py" id="highlighter_482864">
 <table border="0" cellpadding="0" cellspacing="0">
 <tbody>
 <tr>
 <td class="gutter">
 <div class="line number1 index0 alt2">1</div>
-<div class="line number2 index1 alt1">2</div>
-<div class="line number3 index2 alt2">3</div>
-<div class="line number4 index3 alt1">4</div>
-<div class="line number5 index4 alt2">5</div>
-<div class="line number6 index5 alt1">6</div>
-<div class="line number7 index6 alt2">7</div>
 </td>
 <td class="code">
 <div class="container">
-<div class="line number1 index0 alt2"><code class="py keyword">import</code> <code class="py plain">requests</code></div>
-<div class="line number2 index1 alt1"> </div>
-<div class="line number3 index2 alt2"><code class="py plain">r </code><code class="py keyword">=</code> <code class="py plain">requests.get(</code><code class="py string">"https://mde.tw"</code><code class="py plain">)</code></div>
-<div class="line number4 index3 alt1"><code class="py functions">print</code><code class="py plain">(</code><code class="py string">"status_code:"</code><code class="py plain">, r.status_code)</code></div>
-<div class="line number5 index4 alt2"><code class="py functions">print</code><code class="py plain">(</code><code class="py string">"content-type:"</code><code class="py plain">, r.headers[</code><code class="py string">'content-type'</code><code class="py plain">])</code></div>
-<div class="line number6 index5 alt1"><code class="py functions">print</code><code class="py plain">(</code><code class="py string">"encoding:"</code><code class="py plain">, r.encoding)</code></div>
-<div class="line number7 index6 alt2"><code class="py functions">print</code><code class="py plain">(</code><code class="py string">"text:"</code><code class="py plain">, r.text)</code></div>
+<div class="line number1 index0 alt2"><code class="py plain">path</code><code class="py keyword">=</code><code class="py keyword">%</code><code class="py plain">Disk</code><code class="py keyword">%</code><code class="py plain">:;</code><code class="py keyword">%</code><code class="py plain">path_python</code><code class="py keyword">%</code><code class="py plain">;</code><code class="py keyword">%</code><code class="py plain">path_portablegit</code><code class="py keyword">%</code><code class="py plain">;</code><code class="py keyword">%</code><code class="py plain">path_heroku</code><code class="py keyword">%</code><code class="py plain">;</code><code class="py keyword">%</code><code class="py plain">path</code><code class="py keyword">%</code><code class="py plain">;</code></div>
 </div>
 </td>
 </tr>
@@ -111,13 +77,46 @@
 </table>
 </div>
 </div>
-<p>要看懂下列程式, 必須知道何謂<span> </span><a href="https://developer.mozilla.org/en-US/docs/Glossary/Entity">html entity</a>, 而且要會使用 requests.post() 與 bs4.BeautifulSoup()</p>
+<p>路近加上Heroku</p>
 <div>
-<div class="syntaxhighlighter py" id="highlighter_660358">
+<div class="syntaxhighlighter py" id="highlighter_986111">
 <table border="0" cellpadding="0" cellspacing="0">
 <tbody>
 <tr>
 <td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="py spaces"> </code><code class="py functions">set</code> <code class="py plain">path_heroku</code><code class="py keyword">=</code><code class="py keyword">%</code><code class="py plain">Disk</code><code class="py keyword">%</code><code class="py plain">:\heroku\</code><code class="py functions">bin</code><code class="py plain">;</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>標示路徑<br/><br/></p>
+<p>學校電腦需要</p>
+<div class="line number1 index0 alt2"><code class="js plain">REM<span> </span></code><code class="js keyword">for</code><span> </span><code class="js plain">heroku login</code></div>
+<div class="line number2 index1 alt1"><code class="js plain">set HTTP_PROXY=http:</code><code class="js comments">//[2001:288:6004:17::53]:3128</code></div>
+<div class="line number3 index2 alt2"><code class="js plain">set HTTPS_PROXY=http:</code><code class="js comments">//[2001:288:6004:17::53]:3128</code></div>
+<p></p>
+<p></p>
+<p></p>
+<p>再次教學如何設定SSH跟解釋</p>
+<h2>W7</h2>
+<p>1.創新的Heroku，不能用已經推送過的，不然會一直錯誤。</p>
+<p>2.創新的Github，然後把<span> </span><a href="https://github.com/mdecourse/nfulist/blob/master/Procfile">Procfile</a><span>,<span> </span></span><a href="https://github.com/mdecourse/nfulist/blob/master/requirements.txt">requirements.txt</a><span><span> </span>與<span> </span></span><a href="https://github.com/mdecourse/nfulist/blob/master/runtime.txt">runtime.txt</a><span>,<span> ，都推送上去。</span></span></p>
+<p>3.設定wsgi.py(負責打開6~9樓教室課表)(最下面)</p>
+<p>4.最後就是推送，<span>Github跟Heroku，(打開Heroku網址後在網址後加上?<code class="py plain">classroomno<span> </span></code><code class="py keyword">=</code><span><span> </span></span><code class="py string">BGAxxxx可改變教室)</code></span></p>
+<p></p>
+<div>
+<div class="syntaxhighlighter py" id="highlighter_249531">
+<table border="0" cellpadding="0" cellspacing="0" style="width: 565.263px;">
+<tbody>
+<tr style="height: 1399.8px;">
+<td class="gutter" style="width: 15px; height: 1399.8px;">
 <div class="line number1 index0 alt2">1</div>
 <div class="line number2 index1 alt1">2</div>
 <div class="line number3 index2 alt2">3</div>
@@ -187,748 +186,127 @@
 <div class="line number67 index66 alt2">67</div>
 <div class="line number68 index67 alt1">68</div>
 <div class="line number69 index68 alt2">69</div>
+<div class="line number70 index69 alt1">70</div>
+<div class="line number71 index70 alt2">71</div>
+<div class="line number72 index71 alt1">72</div>
+<div class="line number73 index72 alt2">73</div>
+<div class="line number74 index73 alt1">74</div>
+<div class="line number75 index74 alt2">75</div>
+<div class="line number76 index75 alt1">76</div>
+<div class="line number77 index76 alt2">77</div>
+<div class="line number78 index77 alt1">78</div>
+<div class="line number79 index78 alt2">79</div>
+<div class="line number80 index79 alt1">80</div>
+<div class="line number81 index80 alt2">81</div>
+<div class="line number82 index81 alt1">82</div>
+<div class="line number83 index82 alt2">83</div>
+<div class="line number84 index83 alt1">84</div>
+<div class="line number85 index84 alt2">85</div>
+<div class="line number86 index85 alt1">86</div>
+<div class="line number87 index86 alt2">87</div>
+<div class="line number88 index87 alt1">88</div>
 </td>
-<td class="code">
+<td class="code" style="width: 544.263px; height: 1399.8px;">
 <div class="container">
 <div class="line number1 index0 alt2"><code class="py keyword">import</code> <code class="py plain">requests</code></div>
 <div class="line number2 index1 alt1"><code class="py keyword">import</code> <code class="py plain">bs4</code></div>
-<div class="line number3 index2 alt2"><code class="py comments"># for os.environ and os.system()</code></div>
+<div class="line number3 index2 alt2"><code class="py comments"># for os.environ and os.system</code></div>
 <div class="line number4 index3 alt1"><code class="py keyword">import</code> <code class="py plain">os</code></div>
 <div class="line number5 index4 alt2"><code class="py comments"># for geting html file path</code></div>
 <div class="line number6 index5 alt1"><code class="py keyword">import</code> <code class="py plain">pathlib</code></div>
-<div class="line number7 index6 alt2"><code class="py spaces"> </code> </div>
-<div class="line number8 index7 alt1"><code class="py comments"># for pythn 3.9</code></div>
-<div class="line number9 index8 alt2"><code class="py plain">proxy </code><code class="py keyword">=</code> <code class="py string">'http://[2001:288:6004:17::69]:3128'</code></div>
+<div class="line number7 index6 alt2"><code class="py comments"># 以下因應改為 Heroku based 程式所需導入模組,  修改步驟 1/6</code></div>
+<div class="line number8 index7 alt1"><code class="py keyword">from</code> <code class="py plain">flask </code><code class="py keyword">import</code> <code class="py plain">Flask, request </code></div>
+<div class="line number9 index8 alt2"><code class="py keyword">from</code> <code class="py plain">flask_cors </code><code class="py keyword">import</code> <code class="py plain">CORS</code></div>
 <div class="line number10 index9 alt1"><code class="py spaces"> </code> </div>
-<div class="line number11 index10 alt2"><code class="py plain">os.environ[</code><code class="py string">'http_proxy'</code><code class="py plain">] </code><code class="py keyword">=</code> <code class="py plain">proxy </code></div>
-<div class="line number12 index11 alt1"><code class="py plain">os.environ[</code><code class="py string">'HTTP_PROXY'</code><code class="py plain">] </code><code class="py keyword">=</code> <code class="py plain">proxy</code></div>
-<div class="line number13 index12 alt2"><code class="py plain">os.environ[</code><code class="py string">'https_proxy'</code><code class="py plain">] </code><code class="py keyword">=</code> <code class="py plain">proxy</code></div>
-<div class="line number14 index13 alt1"><code class="py plain">os.environ[</code><code class="py string">'HTTPS_PROXY'</code><code class="py plain">] </code><code class="py keyword">=</code> <code class="py plain">proxy</code></div>
-<div class="line number15 index14 alt2"><code class="py spaces"> </code> </div>
-<div class="line number16 index15 alt1"><code class="py comments">'''</code></div>
-<div class="line number17 index16 alt2"><code class="py comments">url:  'class_ajax.php',</code></div>
-<div class="line number18 index17 alt1"><code class="py comments">data: { pselyr: pselyr, pselclss: pselclss</code></div>
-<div class="line number19 index18 alt2"><code class="py comments">'''</code></div>
-<div class="line number20 index19 alt1"><code class="py plain">semester </code><code class="py keyword">=</code> <code class="py string">'1092'</code></div>
-<div class="line number21 index20 alt2"><code class="py plain">classno </code><code class="py keyword">=</code> <code class="py string">'42311'</code></div>
-<div class="line number22 index21 alt1"><code class="py plain">column </code><code class="py keyword">=</code> <code class="py color1">True</code></div>
-<div class="line number23 index22 alt2"><code class="py spaces"> </code> </div>
-<div class="line number24 index23 alt1"><code class="py keyword">if</code> <code class="py plain">semester </code><code class="py keyword">=</code><code class="py keyword">=</code> <code class="py color1">None</code><code class="py plain">:</code></div>
-<div class="line number25 index24 alt2"><code class="py spaces">    </code><code class="py plain">semester </code><code class="py keyword">=</code> <code class="py string">'1091'</code></div>
-<div class="line number26 index25 alt1"><code class="py keyword">if</code> <code class="py plain">classno </code><code class="py keyword">=</code><code class="py keyword">=</code> <code class="py color1">None</code><code class="py plain">:</code></div>
-<div class="line number27 index26 alt2"><code class="py spaces">    </code><code class="py comments"># 42311 is 設一甲</code></div>
-<div class="line number28 index27 alt1"><code class="py spaces">    </code><code class="py plain">classno </code><code class="py keyword">=</code> <code class="py string">'42311'</code></div>
-<div class="line number29 index28 alt2"><code class="py spaces">     </code> </div>
-<div class="line number30 index29 alt1"><code class="py plain">headers </code><code class="py keyword">=</code> <code class="py plain">{</code><code class="py string">'X-Requested-With'</code><code class="py plain">: </code><code class="py string">'XMLHttpRequest'</code><code class="py plain">}</code></div>
-<div class="line number31 index30 alt2"><code class="py spaces"> </code> </div>
-<div class="line number32 index31 alt1"><code class="py plain">url </code><code class="py keyword">=</code> <code class="py string">'https://qry.nfu.edu.tw/class_ajax.php'</code></div>
-<div class="line number33 index32 alt2"><code class="py plain">post_var </code><code class="py keyword">=</code> <code class="py plain">{</code><code class="py string">'pselyr'</code><code class="py plain">: semester, </code><code class="py string">'pselclss'</code><code class="py plain">: classno}</code></div>
-<div class="line number34 index33 alt1"><code class="py spaces"> </code> </div>
-<div class="line number35 index34 alt2"><code class="py plain">result </code><code class="py keyword">=</code> <code class="py plain">requests.post(url, data </code><code class="py keyword">=</code> <code class="py plain">post_var, headers </code><code class="py keyword">=</code> <code class="py plain">headers)</code></div>
-<div class="line number36 index35 alt1"><code class="py spaces"> </code> </div>
-<div class="line number37 index36 alt2"><code class="py comments"># result.content 傳回 binary 資料</code></div>
-<div class="line number38 index37 alt1"><code class="py comments"># soup = bs4.BeautifulSoup(result.content, 'lxml')</code></div>
-<div class="line number39 index38 alt2"><code class="py comments"># result.text 傳回純文字資料</code></div>
-<div class="line number40 index39 alt1"><code class="py plain">soup </code><code class="py keyword">=</code> <code class="py plain">bs4.BeautifulSoup(result.text, </code><code class="py string">'lxml'</code><code class="py plain">)</code></div>
-<div class="line number41 index40 alt2"><code class="py spaces"> </code> </div>
-<div class="line number42 index41 alt1"><code class="py comments"># 先除掉所有 anchor</code></div>
-<div class="line number43 index42 alt2"><code class="py keyword">for</code> <code class="py plain">a </code><code class="py keyword">in</code> <code class="py plain">soup.findAll(</code><code class="py string">'a'</code><code class="py plain">):</code></div>
-<div class="line number44 index43 alt1"><code class="py spaces">    </code><code class="py comments"># bs3 語法</code></div>
-<div class="line number45 index44 alt2"><code class="py spaces">    </code><code class="py comments">#a.replaceWithChildren()</code></div>
-<div class="line number46 index45 alt1"><code class="py spaces">    </code><code class="py comments"># bs4 語法, 將標註與內容拆開</code></div>
-<div class="line number47 index46 alt2"><code class="py spaces">    </code><code class="py plain">a.unwrap()</code></div>
-<div class="line number48 index47 alt1"><code class="py spaces"> </code> </div>
-<div class="line number49 index48 alt2"><code class="py comments"># 根據輸出設定, 取出 class='tbcls' 的 table 資料</code></div>
-<div class="line number50 index49 alt1"><code class="py plain">table </code><code class="py keyword">=</code> <code class="py plain">soup.find(</code><code class="py string">'table'</code><code class="py plain">, {</code><code class="py string">'class'</code><code class="py plain">: </code><code class="py string">'tbcls'</code><code class="py plain">})</code></div>
-<div class="line number51 index50 alt2"><code class="py spaces"> </code> </div>
-<div class="line number52 index51 alt1"><code class="py comments"># 重建 table, 設定邊線為 1 pixel</code></div>
-<div class="line number53 index52 alt2"><code class="py plain">output </code><code class="py keyword">=</code> <code class="py string">"&lt;table border='1'&gt;"</code></div>
-<div class="line number54 index53 alt1"><code class="py spaces"> </code> </div>
-<div class="line number55 index54 alt2"><code class="py keyword">for</code> <code class="py plain">i </code><code class="py keyword">in</code> <code class="py plain">table.contents:</code></div>
-<div class="line number56 index55 alt1"><code class="py spaces">    </code><code class="py comments"># 利用 replace 復原  </code></div>
-<div class="line number57 index56 alt2"><code class="py spaces">    </code><code class="py comments"># https://www.w3schools.com/html/html_entities.asp</code></div>
-<div class="line number58 index57 alt1"><code class="py spaces">    </code><code class="py comments"># https://developer.mozilla.org/en-US/docs/Glossary/Entity</code></div>
-<div class="line number59 index58 alt2"><code class="py spaces">    </code><code class="py plain">output </code><code class="py keyword">+</code><code class="py keyword">=</code> <code class="py functions">str</code><code class="py plain">(i).replace(</code><code class="py string">"&amp;amp;nbsp"</code><code class="py plain">, </code><code class="py string">" "</code><code class="py plain">)</code></div>
-<div class="line number60 index59 alt1"><code class="py plain">output </code><code class="py keyword">+</code><code class="py keyword">=</code> <code class="py string">"&lt;/table&gt;"</code></div>
-<div class="line number61 index60 alt2"><code class="py comments"># print(output)</code></div>
-<div class="line number62 index61 alt1"><code class="py comments"># 將 output 寫入 w1_class_local.html</code></div>
-<div class="line number63 index62 alt2"><code class="py plain">with </code><code class="py functions">open</code><code class="py plain">(</code><code class="py string">"w1_class_local.html"</code><code class="py plain">, </code><code class="py string">"w"</code><code class="py plain">, encoding</code><code class="py keyword">=</code><code class="py string">"utf-8"</code><code class="py plain">) as </code><code class="py functions">file</code><code class="py plain">:</code></div>
-<div class="line number64 index63 alt1"><code class="py spaces">    </code><code class="py functions">file</code><code class="py plain">.write(output)</code></div>
-<div class="line number65 index64 alt2"><code class="py comments"># 利用 os.system() 以 default browser 開啟 w1_class_local.html</code></div>
-<div class="line number66 index65 alt1"><code class="py plain">filePath </code><code class="py keyword">=</code> <code class="py plain">pathlib.Path(__file__).parent.absolute()</code></div>
-<div class="line number67 index66 alt2"><code class="py comments">#print(filePath)</code></div>
-<div class="line number68 index67 alt1"><code class="py comments"># set firefox as default browser and start url to open html file</code></div>
-<div class="line number69 index68 alt2"><code class="py plain">os.system(</code><code class="py string">"start file:///"</code> <code class="py keyword">+</code> <code class="py functions">str</code><code class="py plain">(filePath) </code><code class="py keyword">+</code> <code class="py string">"\\w1_class_local.html"</code><code class="py plain">)</code></div>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<p>以上在 CMSMDE 列出程式碼, 有一個技巧, 針對<span> </span><a href="https://developer.mozilla.org/en-US/docs/Glossary/Entity">Html entity</a><span> </span>符號必須將 &amp; 表示為 &amp;amp; 否則在頁面程式引用時無法正確顯示出原始碼內容.</p>
-<p>Flask example:</p>
-<div>
-<div class="syntaxhighlighter py" id="highlighter_408855">
-<table border="0" cellpadding="0" cellspacing="0">
-<tbody>
-<tr>
-<td class="gutter">
-<div class="line number1 index0 alt2">1</div>
-<div class="line number2 index1 alt1">2</div>
-<div class="line number3 index2 alt2">3</div>
-<div class="line number4 index3 alt1">4</div>
-<div class="line number5 index4 alt2">5</div>
-<div class="line number6 index5 alt1">6</div>
-<div class="line number7 index6 alt2">7</div>
-<div class="line number8 index7 alt1">8</div>
-<div class="line number9 index8 alt2">9</div>
-<div class="line number10 index9 alt1">10</div>
-<div class="line number11 index10 alt2">11</div>
-<div class="line number12 index11 alt1">12</div>
-<div class="line number13 index12 alt2">13</div>
-<div class="line number14 index13 alt1">14</div>
-<div class="line number15 index14 alt2">15</div>
-<div class="line number16 index15 alt1">16</div>
-<div class="line number17 index16 alt2">17</div>
-<div class="line number18 index17 alt1">18</div>
-<div class="line number19 index18 alt2">19</div>
-<div class="line number20 index19 alt1">20</div>
-<div class="line number21 index20 alt2">21</div>
-<div class="line number22 index21 alt1">22</div>
-<div class="line number23 index22 alt2">23</div>
-<div class="line number24 index23 alt1">24</div>
-<div class="line number25 index24 alt2">25</div>
-<div class="line number26 index25 alt1">26</div>
-<div class="line number27 index26 alt2">27</div>
-<div class="line number28 index27 alt1">28</div>
-<div class="line number29 index28 alt2">29</div>
-<div class="line number30 index29 alt1">30</div>
-<div class="line number31 index30 alt2">31</div>
-<div class="line number32 index31 alt1">32</div>
-<div class="line number33 index32 alt2">33</div>
-<div class="line number34 index33 alt1">34</div>
-</td>
-<td class="code">
-<div class="container">
-<div class="line number1 index0 alt2"><code class="py keyword">from</code> <code class="py plain">flask </code><code class="py keyword">import</code> <code class="py plain">Flask, request</code></div>
-<div class="line number2 index1 alt1"><code class="py keyword">from</code> <code class="py plain">datetime </code><code class="py keyword">import</code> <code class="py plain">datetime</code></div>
-<div class="line number3 index2 alt2"><code class="py keyword">import</code> <code class="py plain">os</code></div>
-<div class="line number4 index3 alt1"> </div>
-<div class="line number5 index4 alt2"><code class="py comments"># for pythn 3.9</code></div>
-<div class="line number6 index5 alt1"><code class="py plain">proxy </code><code class="py keyword">=</code> <code class="py string">'http://[2001:288:6004:17::69]:3128'</code></div>
-<div class="line number7 index6 alt2"><code class="py comments">''' </code></div>
-<div class="line number8 index7 alt1"><code class="py comments">os.environ['http_proxy'] = proxy </code></div>
-<div class="line number9 index8 alt2"><code class="py comments">os.environ['HTTP_PROXY'] = proxy</code></div>
-<div class="line number10 index9 alt1"><code class="py comments">os.environ['https_proxy'] = proxy</code></div>
-<div class="line number11 index10 alt2"><code class="py comments">os.environ['HTTPS_PROXY'] = proxy</code></div>
-<div class="line number12 index11 alt1"><code class="py comments">'''</code></div>
+<div class="line number11 index10 alt2"><code class="py spaces"> </code> </div>
+<div class="line number12 index11 alt1"><code class="py comments"># 修改步驟 2/6 , 加入 Flask 相關物件設定</code></div>
 <div class="line number13 index12 alt2"><code class="py plain">app </code><code class="py keyword">=</code> <code class="py plain">Flask(__name__)</code></div>
-<div class="line number14 index13 alt1"> </div>
-<div class="line number15 index14 alt2"><code class="py comments"># https://realpython.com/primer-on-python-decorators/</code></div>
-<div class="line number16 index15 alt1"><code class="py decorator">@app</code><code class="py plain">.route(</code><code class="py string">'/'</code><code class="py plain">)</code></div>
-<div class="line number17 index16 alt2"><code class="py keyword">def</code> <code class="py plain">hello():</code></div>
-<div class="line number18 index17 alt1"><code class="py spaces">    </code><code class="py comments"># 若取不到 name 則 name = None</code></div>
-<div class="line number19 index18 alt2"><code class="py spaces">    </code><code class="py plain">name </code><code class="py keyword">=</code> <code class="py plain">request.args.get(</code><code class="py string">'name'</code><code class="py plain">)</code></div>
-<div class="line number20 index19 alt1"><code class="py spaces">    </code><code class="py keyword">if</code> <code class="py plain">name </code><code class="py keyword">=</code><code class="py keyword">=</code> <code class="py color1">None</code><code class="py plain">:</code></div>
-<div class="line number21 index20 alt2"><code class="py spaces">        </code><code class="py plain">name </code><code class="py keyword">=</code> <code class="py string">"test"</code></div>
-<div class="line number22 index21 alt1"><code class="py spaces">    </code><code class="py comments"># https://realpython.com/python-formatted-output/</code></div>
-<div class="line number23 index22 alt2"><code class="py spaces">    </code><code class="py keyword">return</code> <code class="py plain">HELLO_HTML.</code><code class="py functions">format</code><code class="py plain">(</code></div>
-<div class="line number24 index23 alt1"><code class="py spaces">            </code><code class="py plain">name, </code><code class="py functions">str</code><code class="py plain">(datetime.now()))</code></div>
-<div class="line number25 index24 alt2"> </div>
-<div class="line number26 index25 alt1"><code class="py plain">HELLO_HTML </code><code class="py keyword">=</code> <code class="py comments">"""</code></div>
-<div class="line number27 index26 alt2"><code class="py spaces">    </code><code class="py comments">&lt;html&gt;&lt;body&gt;</code></div>
-<div class="line number28 index27 alt1"><code class="py spaces">        </code><code class="py comments">&lt;h1&gt;Hello, {0}!&lt;/h1&gt;</code></div>
-<div class="line number29 index28 alt2"><code class="py spaces">        </code><code class="py comments">現在時間為: {1}.</code></div>
-<div class="line number30 index29 alt1"><code class="py spaces">    </code><code class="py comments">&lt;/body&gt;&lt;/html&gt;"""</code></div>
-<div class="line number31 index30 alt2"> </div>
-<div class="line number32 index31 alt1"><code class="py keyword">if</code> <code class="py plain">__name__ </code><code class="py keyword">=</code><code class="py keyword">=</code> <code class="py string">"__main__"</code><code class="py plain">:</code></div>
-<div class="line number33 index32 alt2"><code class="py spaces">    </code><code class="py comments"># Launch the Flask dev server</code></div>
-<div class="line number34 index33 alt1"><code class="py spaces">    </code><code class="py plain">app.run(host</code><code class="py keyword">=</code><code class="py string">"localhost"</code><code class="py plain">, debug</code><code class="py keyword">=</code><code class="py color1">True</code><code class="py plain">)</code></div>
+<div class="line number14 index13 alt1"><code class="py comments"># 此一設定可以讓程式跨網域擷取資料</code></div>
+<div class="line number15 index14 alt2"><code class="py plain">CORS(app)</code></div>
+<div class="line number16 index15 alt1"><code class="py spaces"> </code> </div>
+<div class="line number17 index16 alt2"><code class="py comments"># for pythn 3.9,  在近端測試時仍需要設定 proxy, 若使用 Python 3.8 執行則會自動使用系統的 Proxy 設定</code></div>
+<div class="line number18 index17 alt1"><code class="py plain">proxy </code><code class="py keyword">=</code> <code class="py string">'http://[2001:288:6004:17::69]:3128'</code></div>
+<div class="line number19 index18 alt2"><code class="py spaces"> </code> </div>
+<div class="line number20 index19 alt1"><code class="py plain">os.environ[</code><code class="py string">'http_proxy'</code><code class="py plain">] </code><code class="py keyword">=</code> <code class="py plain">proxy </code></div>
+<div class="line number21 index20 alt2"><code class="py plain">os.environ[</code><code class="py string">'HTTP_PROXY'</code><code class="py plain">] </code><code class="py keyword">=</code> <code class="py plain">proxy</code></div>
+<div class="line number22 index21 alt1"><code class="py plain">os.environ[</code><code class="py string">'https_proxy'</code><code class="py plain">] </code><code class="py keyword">=</code> <code class="py plain">proxy</code></div>
+<div class="line number23 index22 alt2"><code class="py plain">os.environ[</code><code class="py string">'HTTPS_PROXY'</code><code class="py plain">] </code><code class="py keyword">=</code> <code class="py plain">proxy</code></div>
+<div class="line number24 index23 alt1"><code class="py comments">'''</code></div>
+<div class="line number25 index24 alt2"><code class="py comments">url:  'jclassroom_ajax.php',</code></div>
+<div class="line number26 index25 alt1"><code class="py comments">data: { pselyr: pselyr, pselclssroom: pselclssroom },</code></div>
+<div class="line number27 index26 alt2"><code class="py comments">'''</code></div>
+<div class="line number28 index27 alt1"><code class="py spaces"> </code> </div>
+<div class="line number29 index28 alt2"><code class="py comments"># 修改步驟 3/6, 試著將程式改為網際模式, 需要套用 Flask 的網際 decorator</code></div>
+<div class="line number30 index29 alt1"><code class="py decorator">@app</code><code class="py plain">.route(</code><code class="py string">'/'</code><code class="py plain">)</code></div>
+<div class="line number31 index30 alt2"><code class="py keyword">def</code> <code class="py plain">timeTableList():</code></div>
+<div class="line number32 index31 alt1"><code class="py spaces">    </code><code class="py plain">semester </code><code class="py keyword">=</code> <code class="py string">'1092'</code></div>
+<div class="line number33 index32 alt2"><code class="py spaces">    </code><code class="py plain">classroomno </code><code class="py keyword">=</code> <code class="py string">'BGA0810'</code></div>
+<div class="line number34 index33 alt1"><code class="py spaces">    </code><code class="py plain">column </code><code class="py keyword">=</code> <code class="py color1">True</code></div>
+<div class="line number35 index34 alt2"><code class="py spaces"> </code> </div>
+<div class="line number36 index35 alt1"><code class="py spaces">    </code><code class="py keyword">if</code> <code class="py plain">semester </code><code class="py keyword">=</code><code class="py keyword">=</code> <code class="py color1">None</code><code class="py plain">:</code></div>
+<div class="line number37 index36 alt2"><code class="py spaces">        </code><code class="py plain">semester </code><code class="py keyword">=</code> <code class="py string">'1092'</code></div>
+<div class="line number38 index37 alt1"><code class="py spaces">    </code><code class="py keyword">if</code> <code class="py plain">classroomno </code><code class="py keyword">=</code><code class="py keyword">=</code> <code class="py color1">None</code><code class="py plain">:</code></div>
+<div class="line number39 index38 alt2"><code class="py spaces">        </code><code class="py comments"># BGA0810 電腦輔助設計室</code></div>
+<div class="line number40 index39 alt1"><code class="py spaces">        </code><code class="py plain">classroomno </code><code class="py keyword">=</code> <code class="py string">'BGA0810'</code></div>
+<div class="line number41 index40 alt2"><code class="py spaces">         </code> </div>
+<div class="line number42 index41 alt1"><code class="py spaces">    </code><code class="py plain">headers </code><code class="py keyword">=</code> <code class="py plain">{</code><code class="py string">'X-Requested-With'</code><code class="py plain">: </code><code class="py string">'XMLHttpRequest'</code><code class="py plain">}</code></div>
+<div class="line number43 index42 alt2"><code class="py spaces"> </code> </div>
+<div class="line number44 index43 alt1"><code class="py spaces">    </code><code class="py plain">url </code><code class="py keyword">=</code> <code class="py string">'https://qry.nfu.edu.tw/jclassroom_ajax.php'</code></div>
+<div class="line number45 index44 alt2"><code class="py spaces">    </code><code class="py plain">post_var </code><code class="py keyword">=</code> <code class="py plain">{</code><code class="py string">'pselyr'</code><code class="py plain">: semester, </code><code class="py string">'pselclssroom'</code><code class="py plain">: classroomno}</code></div>
+<div class="line number46 index45 alt1"><code class="py spaces"> </code> </div>
+<div class="line number47 index46 alt2"><code class="py spaces">    </code><code class="py plain">result </code><code class="py keyword">=</code> <code class="py plain">requests.post(url, data </code><code class="py keyword">=</code> <code class="py plain">post_var, headers </code><code class="py keyword">=</code> <code class="py plain">headers)</code></div>
+<div class="line number48 index47 alt1"><code class="py spaces"> </code> </div>
+<div class="line number49 index48 alt2"><code class="py spaces">    </code><code class="py plain">soup </code><code class="py keyword">=</code> <code class="py plain">bs4.BeautifulSoup(result.content, </code><code class="py string">'lxml'</code><code class="py plain">)</code></div>
+<div class="line number50 index49 alt1"><code class="py spaces"> </code> </div>
+<div class="line number51 index50 alt2"><code class="py spaces">    </code><code class="py comments"># 先除掉所有 anchor</code></div>
+<div class="line number52 index51 alt1"><code class="py spaces">    </code><code class="py keyword">for</code> <code class="py plain">a </code><code class="py keyword">in</code> <code class="py plain">soup.findAll(</code><code class="py string">'a'</code><code class="py plain">):</code></div>
+<div class="line number53 index52 alt2"><code class="py spaces">        </code><code class="py comments"># bs3 語法</code></div>
+<div class="line number54 index53 alt1"><code class="py spaces">        </code><code class="py comments">#a.replaceWithChildren()</code></div>
+<div class="line number55 index54 alt2"><code class="py spaces">        </code><code class="py comments"># bs4 語法, 將標註與內容拆開</code></div>
+<div class="line number56 index55 alt1"><code class="py spaces">        </code><code class="py plain">a.unwrap()</code></div>
+<div class="line number57 index56 alt2"><code class="py spaces"> </code> </div>
+<div class="line number58 index57 alt1"><code class="py spaces">    </code><code class="py comments"># 根據輸出設定, 取出 class='tbcls' 的 table 資料</code></div>
+<div class="line number59 index58 alt2"><code class="py spaces">    </code><code class="py plain">table </code><code class="py keyword">=</code> <code class="py plain">soup.find(</code><code class="py string">'table'</code><code class="py plain">, {</code><code class="py string">'class'</code><code class="py plain">: </code><code class="py string">'tbcls'</code><code class="py plain">})</code></div>
+<div class="line number60 index59 alt1"><code class="py spaces"> </code> </div>
+<div class="line number61 index60 alt2"><code class="py spaces">    </code><code class="py comments"># 重建 table, 設定邊線為 1 pixel</code></div>
+<div class="line number62 index61 alt1"><code class="py spaces">    </code><code class="py plain">output </code><code class="py keyword">=</code> <code class="py string">"&lt;table border='1'&gt;"</code></div>
+<div class="line number63 index62 alt2"><code class="py spaces"> </code> </div>
+<div class="line number64 index63 alt1"><code class="py spaces">    </code><code class="py keyword">for</code> <code class="py plain">i </code><code class="py keyword">in</code> <code class="py plain">table.contents:</code></div>
+<div class="line number65 index64 alt2"><code class="py spaces">        </code><code class="py comments"># 利用 replace 復原  </code></div>
+<div class="line number66 index65 alt1"><code class="py spaces">        </code><code class="py plain">output </code><code class="py keyword">+</code><code class="py keyword">=</code> <code class="py functions">str</code><code class="py plain">(i).replace(</code><code class="py string">" "</code><code class="py plain">, </code><code class="py string">" "</code><code class="py plain">)</code></div>
+<div class="line number67 index66 alt2"><code class="py spaces">    </code><code class="py plain">output </code><code class="py keyword">+</code><code class="py keyword">=</code> <code class="py string">"&lt;/table&gt;"</code></div>
+<div class="line number68 index67 alt1"><code class="py spaces">    </code><code class="py comments">#print(output)</code></div>
+<div class="line number69 index68 alt2"><code class="py spaces">    </code><code class="py comments"># 修改步驟 5/6 , 因為已經將原先可列印出程式的步驟改為 function, 因此必須以 return 將擷取到的網頁資料傳回</code></div>
+<div class="line number70 index69 alt1"><code class="py spaces">    </code><code class="py keyword">return</code> <code class="py plain">output</code></div>
+<div class="line number71 index70 alt2"><code class="py spaces">     </code> </div>
+<div class="line number72 index71 alt1"><code class="py comments"># 修改步驟 4/6 , 因為改寫為網際程式後, 下列將內容存檔並自動呼叫 Firefox 的程式碼不再適用, 必須蓋掉</code></div>
+<div class="line number73 index72 alt2"><code class="py comments">'''</code></div>
+<div class="line number74 index73 alt1"><code class="py comments"># 將 output 寫入 w1_classroom.html</code></div>
+<div class="line number75 index74 alt2"><code class="py comments">fileName = "w1_classroom.html"</code></div>
+<div class="line number76 index75 alt1"><code class="py comments">with open(fileName, "w", encoding="utf-8") as file:</code></div>
+<div class="line number77 index76 alt2"><code class="py spaces">    </code><code class="py comments">file.write(output)</code></div>
+<div class="line number78 index77 alt1"><code class="py comments"># 利用 os.system() 以 default browser 開啟 w1_class_local.html</code></div>
+<div class="line number79 index78 alt2"><code class="py comments">filePath = pathlib.Path(__file__).parent.absolute()</code></div>
+<div class="line number80 index79 alt1"><code class="py comments">#print(filePath)</code></div>
+<div class="line number81 index80 alt2"><code class="py comments"># set firefox as default browser and start url to open html file</code></div>
+<div class="line number82 index81 alt1"><code class="py comments">os.system("start file:///" + str(filePath) + "\\" + fileName)</code></div>
+<div class="line number83 index82 alt2"><code class="py comments">'''</code></div>
+<div class="line number84 index83 alt1"><code class="py spaces"> </code> </div>
+<div class="line number85 index84 alt2"><code class="py comments"># 修改步驟 6/6, 配合網際程式啟動,  以及 Python 程式執行與納入其他程式執行的特定進行配置</code></div>
+<div class="line number86 index85 alt1"><code class="py spaces"> </code> </div>
+<div class="line number87 index86 alt2"><code class="py keyword">if</code> <code class="py plain">__name__ </code><code class="py keyword">=</code><code class="py keyword">=</code> <code class="py string">'__main__'</code><code class="py plain">:</code></div>
+<div class="line number88 index87 alt1"><code class="py spaces">    </code><code class="py plain">app.run(host</code><code class="py keyword">=</code><code class="py string">'127.0.0.1'</code><code class="py plain">, port</code><code class="py keyword">=</code><code class="py value">8080</code><code class="py plain">, debug</code><code class="py keyword">=</code><code class="py color1">True</code><code class="py plain">)</code></div>
 </div>
 </td>
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-<h2>W6</h2>
-<p><span>步驟一:</span><span> </span>(<span>建立 Heroku 帳號</span>) 進入<span> </span><a href="https://heroku.com/">https://heroku.com</a>, 利用學校配發的 @gm 登記一個 Heroku 帳號, 關鍵在於密碼設定必須要至少 8 個字元, 且字元中必須包含符號, 英文字母及數字,  並且登記後要進入 @gm 帳號進行確認後才能開通 Heroku 帳號.</p>
-<p>完成帳號登記後, 必須知道目前 Heroku 只允許免費建立五個應用程式, 且每個程式的最大容量為 500MB.</p>
-<p><span>步驟二:</span><span> </span>(<span>建立 Heroku app</span>) 登入 Heroku 後, 先以 s + 學號 建立第一個 app, 完成後, 將可至 https://s學號.herokuapp.com 連線取得網站最初內容.</p>
-<p><span>步驟三:</span><span> </span>(下載 Heroku CLI) 從<span> </span><a href="http://a.kmol.info:88/heroku.7z">http://a.kmol.info:88/heroku.7z</a><span> </span>下載 Heroku cli 程式檔案, 解開至隨身碟 Y: 所在位置或者是 Hybrid 設定的位置.</p>
-<p><span>步驟四:</span><span> </span>(<span>修改命令搜尋路徑</span>) 修改隨身系統的啟動批次檔案, 讓 Windows 的命令視窗中可以執行 heroku.exe, 或者稱作"設法將 heroku.exe 所在目錄位置, 設為 Windows 搜尋路徑之一".</p>
-<p>重新啟動已經納入可執行 heroku.exe 的隨身碟 start_ipv6.bat 或 start_ipv4.bat</p>
-<p><span>步驟五:</span><span> </span>(<span>測試 heroku 執行</span>) 測試是否能夠在修改後的命令列中執行 heroku.exe, 輸入 heroku version 若回應所使用的版本表示上述路徑設定已經成功.</p>
-<p><span>步驟六:</span><span> </span>(<span>設定 heroku 代理主機</span>) 先前我們已經知道網路的應用包含 client 與 server, 不同 client 採用不同的 proxy 設定與 server 連線, 其中 firefox 作為 WWW 網路協定的 client, 有其自己的網路 Proxy 設定, 也可以直接使用操作系統的 Proxy 設定.</p>
-<p>Chrome 作為 WWW 網路協定的 client, 目前 Windows 下的最新版, 只能使用操作系統的 Proxy 設定.</p>
-<p>而 git 作為 git client 與 github server 連線的 Proxy 設定, 則寫在 y:\home_ipv6 下的 .giconfig 中,  以 git config --global http.proxy "http://your_proxy:port" 進行設定.</p>
-<p>相同的道理 heroku cli 作為<span> </span><a href="https://heroku.com/">https://heroku.com</a><span> </span>伺服器的 client 端, 也有其 Proxy 的設定方式, 也就是在 start_ipv6.bat 中加入:</p>
-<div>
-<div class="syntaxhighlighter js" id="highlighter_24078">
-<table border="0" cellpadding="0" cellspacing="0">
-<tbody>
-<tr>
-<td class="gutter">
-<div class="line number1 index0 alt2">1</div>
-<div class="line number2 index1 alt1">2</div>
-<div class="line number3 index2 alt2">3</div>
-</td>
-<td class="code">
-<div class="container">
-<div class="line number1 index0 alt2"><code class="js plain">REM </code><code class="js keyword">for</code> <code class="js plain">heroku login</code></div>
-<div class="line number2 index1 alt1"><code class="js plain">set HTTP_PROXY=http:</code><code class="js comments">//[2001:288:6004:17::53]:3128</code></div>
-<div class="line number3 index2 alt2"><code class="js plain">set HTTPS_PROXY=http:</code><code class="js comments">//[2001:288:6004:17::53]:3128</code></div>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<p><span>步驟七:</span><span> </span>(<span>設定同步倉儲</span>) 針對利用 Heroku 同步 Github Pages 上的網站內容, 只需要透過 git remote add (Heroku 指令為 heroku git:remote -a heroku_倉儲_名稱, 之後只要在 heroku login 狀態下, 可以直接利用 git push) 在近端設定一個連線到 Heroku 倉儲的代號, 就能在每次更新 Github Pages 倉儲後, 再將內容同步至 Heroku. 網際內容管理課程將使用兩種 Heroku app 設定, 也就是靜態網頁與動態網頁:</p>
-<p>靜態網頁 - 採用 php 方式部署, 讓 Heroku 將靜態網頁視為 PHP 程式, 利用 index.php 跳轉到 index.html</p>
-<p>動態網頁 - 讓 Heroku 執行 cmsimde/wsgi.py 的方式進行雲端伺服.</p>
-<p><span>步驟八:</span><span> </span>(<span>以 git 進行提交推送</span>) 利用 heroku git:remote -a 設定的同步倉儲其推送名稱內定為 "heroku", 使用者只要使用 git push heroku 就可以將改版內容推送到對應的 Heroku app 倉儲.</p>
-<p>指令操作步驟:</p>
-<div>
-<div class="syntaxhighlighter py" id="highlighter_471474">
-<table border="0" cellpadding="0" cellspacing="0">
-<tbody>
-<tr>
-<td class="gutter">
-<div class="line number1 index0 alt2">1</div>
-<div class="line number2 index1 alt1">2</div>
-<div class="line number3 index2 alt2">3</div>
-<div class="line number4 index3 alt1">4</div>
-</td>
-<td class="code">
-<div class="container">
-<div class="line number1 index0 alt2"><code class="py comments"># 以 interactive 模式登入 Heroku, 完成後產生 y:\home_ipv6\_netrc</code></div>
-<div class="line number2 index1 alt1"><code class="py plain">heroku login </code><code class="py keyword">-</code><code class="py plain">i</code></div>
-<div class="line number3 index2 alt2"><code class="py comments"># 針對已經登入的 Heroku 帳號下的 taiwan-01 app, 設為此倉儲的 remote 同步倉儲, 且在倉儲中會自建名稱為 heroku 的 remoate site.</code></div>
-<div class="line number4 index3 alt1"><code class="py plain">heroku git:remote </code><code class="py keyword">-</code><code class="py plain">a taiwan</code><code class="py keyword">-</code><code class="py plain">no1</code></div>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<p>上述步驟完成後的 Heroku 網站:<span> </span><a href="https://taiwan-no1.herokuapp.com/">https://taiwan-no1.herokuapp.com</a></p>
-<h4>參考資料:</h4>
-<p><a href="https://github.com/twtrubiks/Deploying-Flask-To-Heroku">https://github.com/twtrubiks/Deploying-Flask-To-Heroku</a></p>
-<p><a href="https://gist.github.com/bradtraversy/0029d655269c8a972df726ed0ac56b88">https://gist.github.com/bradtraversy/0029d655269c8a972df726ed0ac56b88</a></p>
-<p><a href="https://github.com/gmolveau/flask-sqlalchemy-heroku">https://github.com/gmolveau/flask-sqlalchemy-heroku</a></p>
-<h2>W7</h2>
-<p>之前的 git 倉儲都是先在 Github 網際平台上建立後, 再設法 git clone 到近端改版, 但是這樣的前提是在 Github 建立倉儲時, 至少新增一個檔案 README.md,  但是假如在 Github 建立一個空倉儲則通常會建議使用者先在近端以 git init 產生一個空的 git 倉儲後, 納入改版資料然後再透過 git remote add 設定與遠端的 Github 倉儲 URL 進行對應.</p>
-<p>而通常針對特定倉儲的 defualt 遠端 URL 連結的 git remote add 會以 origin 作為代號.</p>
-<p>以下列 nfumde 近端的 .git/config 設定檔案為例:</p>
-<div>
-<div class="syntaxhighlighter js" id="highlighter_451276">
-<table border="0" cellpadding="0" cellspacing="0">
-<tbody>
-<tr>
-<td class="gutter">
-<div class="line number1 index0 alt2">1</div>
-<div class="line number2 index1 alt1">2</div>
-<div class="line number3 index2 alt2">3</div>
-<div class="line number4 index3 alt1">4</div>
-<div class="line number5 index4 alt2">5</div>
-<div class="line number6 index5 alt1">6</div>
-<div class="line number7 index6 alt2">7</div>
-<div class="line number8 index7 alt1">8</div>
-<div class="line number9 index8 alt2">9</div>
-<div class="line number10 index9 alt1">10</div>
-<div class="line number11 index10 alt2">11</div>
-<div class="line number12 index11 alt1">12</div>
-<div class="line number13 index12 alt2">13</div>
-<div class="line number14 index13 alt1">14</div>
-<div class="line number15 index14 alt2">15</div>
-<div class="line number16 index15 alt1">16</div>
-</td>
-<td class="code">
-<div class="container">
-<div class="line number1 index0 alt2"><code class="js plain">[core]</code></div>
-<div class="line number2 index1 alt1"><code class="js spaces">    </code><code class="js plain">repositoryformatversion = 0</code></div>
-<div class="line number3 index2 alt2"><code class="js spaces">    </code><code class="js plain">filemode = </code><code class="js keyword">false</code></div>
-<div class="line number4 index3 alt1"><code class="js spaces">    </code><code class="js plain">bare = </code><code class="js keyword">false</code></div>
-<div class="line number5 index4 alt2"><code class="js spaces">    </code><code class="js plain">logallrefupdates = </code><code class="js keyword">true</code></div>
-<div class="line number6 index5 alt1"><code class="js spaces">    </code><code class="js plain">symlinks = </code><code class="js keyword">false</code></div>
-<div class="line number7 index6 alt2"><code class="js spaces">    </code><code class="js plain">ignorecase = </code><code class="js keyword">true</code></div>
-<div class="line number8 index7 alt1"><code class="js plain">[remote </code><code class="js string">"origin"</code><code class="js plain">]</code></div>
-<div class="line number9 index8 alt2"><code class="js spaces">    </code><code class="js plain">url = git@github.com:mdecourse/nfumde.git</code></div>
-<div class="line number10 index9 alt1"><code class="js spaces">    </code><code class="js plain">fetch = +refs/heads/*:refs/remotes/origin/*</code></div>
-<div class="line number11 index10 alt2"><code class="js plain">[remote </code><code class="js string">"heroku"</code><code class="js plain">]</code></div>
-<div class="line number12 index11 alt1"><code class="js spaces">    </code><code class="js plain">url = https:</code><code class="js comments">//git.heroku.com/nfumde.git</code></div>
-<div class="line number13 index12 alt2"><code class="js spaces">    </code><code class="js plain">fetch = +refs/heads/*:refs/remotes/heroku/*</code></div>
-<div class="line number14 index13 alt1"><code class="js plain">[branch </code><code class="js string">"main"</code><code class="js plain">]</code></div>
-<div class="line number15 index14 alt2"><code class="js spaces">    </code><code class="js plain">remote = origin</code></div>
-<div class="line number16 index15 alt1"><code class="js spaces">    </code><code class="js plain">merge = refs/heads/main</code></div>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<p>當使用者在命令列中的特定目錄中以 git init 建立 .git 目錄時, .git/config 中只會有以下資料, 表示此目錄為 git 空倉儲, 尚未與遠端 Github 有任何對應:</p>
-<div>
-<div class="syntaxhighlighter js" id="highlighter_834374">
-<table border="0" cellpadding="0" cellspacing="0">
-<tbody>
-<tr>
-<td class="gutter">
-<div class="line number1 index0 alt2">1</div>
-<div class="line number2 index1 alt1">2</div>
-<div class="line number3 index2 alt2">3</div>
-<div class="line number4 index3 alt1">4</div>
-<div class="line number5 index4 alt2">5</div>
-<div class="line number6 index5 alt1">6</div>
-<div class="line number7 index6 alt2">7</div>
-</td>
-<td class="code">
-<div class="container">
-<div class="line number1 index0 alt2"><code class="js plain">[core]</code></div>
-<div class="line number2 index1 alt1"><code class="js spaces">    </code><code class="js plain">repositoryformatversion = 0</code></div>
-<div class="line number3 index2 alt2"><code class="js spaces">    </code><code class="js plain">filemode = </code><code class="js keyword">false</code></div>
-<div class="line number4 index3 alt1"><code class="js spaces">    </code><code class="js plain">bare = </code><code class="js keyword">false</code></div>
-<div class="line number5 index4 alt2"><code class="js spaces">    </code><code class="js plain">logallrefupdates = </code><code class="js keyword">true</code></div>
-<div class="line number6 index5 alt1"><code class="js spaces">    </code><code class="js plain">symlinks = </code><code class="js keyword">false</code></div>
-<div class="line number7 index6 alt2"><code class="js spaces">    </code><code class="js plain">ignorecase = </code><code class="js keyword">true</code></div>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<p>當使用者在該倉儲中, 執行 git remote add origin<span> </span><a href="mailto:git@github.com:mdecourse/nfumde.git">git@github.com:mdecourse/nfumde.git</a><span> </span>後, .git/config 中將增加此一 git remote add 設定資料而成為:</p>
-<div>
-<div class="syntaxhighlighter js" id="highlighter_896615">
-<table border="0" cellpadding="0" cellspacing="0">
-<tbody>
-<tr>
-<td class="gutter">
-<div class="line number1 index0 alt2">1</div>
-<div class="line number2 index1 alt1">2</div>
-<div class="line number3 index2 alt2">3</div>
-<div class="line number4 index3 alt1">4</div>
-<div class="line number5 index4 alt2">5</div>
-<div class="line number6 index5 alt1">6</div>
-<div class="line number7 index6 alt2">7</div>
-<div class="line number8 index7 alt1">8</div>
-<div class="line number9 index8 alt2">9</div>
-<div class="line number10 index9 alt1">10</div>
-</td>
-<td class="code">
-<div class="container">
-<div class="line number1 index0 alt2"><code class="js plain">[core]</code></div>
-<div class="line number2 index1 alt1"><code class="js spaces">    </code><code class="js plain">repositoryformatversion = 0</code></div>
-<div class="line number3 index2 alt2"><code class="js spaces">    </code><code class="js plain">filemode = </code><code class="js keyword">false</code></div>
-<div class="line number4 index3 alt1"><code class="js spaces">    </code><code class="js plain">bare = </code><code class="js keyword">false</code></div>
-<div class="line number5 index4 alt2"><code class="js spaces">    </code><code class="js plain">logallrefupdates = </code><code class="js keyword">true</code></div>
-<div class="line number6 index5 alt1"><code class="js spaces">    </code><code class="js plain">symlinks = </code><code class="js keyword">false</code></div>
-<div class="line number7 index6 alt2"><code class="js spaces">    </code><code class="js plain">ignorecase = </code><code class="js keyword">true</code></div>
-<div class="line number8 index7 alt1"><code class="js plain">[remote </code><code class="js string">"origin"</code><code class="js plain">]</code></div>
-<div class="line number9 index8 alt2"><code class="js spaces">    </code><code class="js plain">url = git@github.com:mdecourse/nfumde.git</code></div>
-<div class="line number10 index9 alt1"><code class="js spaces">    </code><code class="js plain">fetch = +refs/heads/*:refs/remotes/origin/*</code></div>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<p>當使用者在執行 git push --set-upstream origin main 或 git push -u origin main 時, 由於附加設定內建的 upstream 為 main 分支, 因此之後的 git push 與 git pull 若從 orgin 存取版本資料, 可以不用宣告分支, git 會假定存取 main 分支, 意即 git push 就是指 git push origin main. 此時.git/config 中將增加以下 upstream 設定:</p>
-<div>
-<div class="syntaxhighlighter js" id="highlighter_119370">
-<table border="0" cellpadding="0" cellspacing="0">
-<tbody>
-<tr>
-<td class="gutter">
-<div class="line number1 index0 alt2">1</div>
-<div class="line number2 index1 alt1">2</div>
-<div class="line number3 index2 alt2">3</div>
-</td>
-<td class="code">
-<div class="container">
-<div class="line number1 index0 alt2"><code class="js plain">[branch </code><code class="js string">"main"</code><code class="js plain">]</code></div>
-<div class="line number2 index1 alt1"><code class="js spaces">    </code><code class="js plain">remote = origin</code></div>
-<div class="line number3 index2 alt2"><code class="js spaces">    </code><code class="js plain">merge = refs/heads/main</code></div>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<p>最後若再執行 heroku login -i 以及 heroku git:remote -a nfumde, 也就是針對 Heroku 中的 nfumde app 設定 git remote add, 則最後的 .git/config 將成為:</p>
-<div>
-<div class="syntaxhighlighter js" id="highlighter_213384">
-<table border="0" cellpadding="0" cellspacing="0">
-<tbody>
-<tr>
-<td class="gutter">
-<div class="line number1 index0 alt2">1</div>
-<div class="line number2 index1 alt1">2</div>
-<div class="line number3 index2 alt2">3</div>
-<div class="line number4 index3 alt1">4</div>
-<div class="line number5 index4 alt2">5</div>
-<div class="line number6 index5 alt1">6</div>
-<div class="line number7 index6 alt2">7</div>
-<div class="line number8 index7 alt1">8</div>
-<div class="line number9 index8 alt2">9</div>
-<div class="line number10 index9 alt1">10</div>
-<div class="line number11 index10 alt2">11</div>
-<div class="line number12 index11 alt1">12</div>
-<div class="line number13 index12 alt2">13</div>
-<div class="line number14 index13 alt1">14</div>
-<div class="line number15 index14 alt2">15</div>
-<div class="line number16 index15 alt1">16</div>
-</td>
-<td class="code">
-<div class="container">
-<div class="line number1 index0 alt2"><code class="js plain">[core]</code></div>
-<div class="line number2 index1 alt1"><code class="js spaces">    </code><code class="js plain">repositoryformatversion = 0</code></div>
-<div class="line number3 index2 alt2"><code class="js spaces">    </code><code class="js plain">filemode = </code><code class="js keyword">false</code></div>
-<div class="line number4 index3 alt1"><code class="js spaces">    </code><code class="js plain">bare = </code><code class="js keyword">false</code></div>
-<div class="line number5 index4 alt2"><code class="js spaces">    </code><code class="js plain">logallrefupdates = </code><code class="js keyword">true</code></div>
-<div class="line number6 index5 alt1"><code class="js spaces">    </code><code class="js plain">symlinks = </code><code class="js keyword">false</code></div>
-<div class="line number7 index6 alt2"><code class="js spaces">    </code><code class="js plain">ignorecase = </code><code class="js keyword">true</code></div>
-<div class="line number8 index7 alt1"><code class="js plain">[remote </code><code class="js string">"origin"</code><code class="js plain">]</code></div>
-<div class="line number9 index8 alt2"><code class="js spaces">    </code><code class="js plain">url = git@github.com:mdecourse/nfumde.git</code></div>
-<div class="line number10 index9 alt1"><code class="js spaces">    </code><code class="js plain">fetch = +refs/heads/*:refs/remotes/origin/*</code></div>
-<div class="line number11 index10 alt2"><code class="js plain">[remote </code><code class="js string">"heroku"</code><code class="js plain">]</code></div>
-<div class="line number12 index11 alt1"><code class="js spaces">    </code><code class="js plain">url = https:</code><code class="js comments">//git.heroku.com/nfumde.git</code></div>
-<div class="line number13 index12 alt2"><code class="js spaces">    </code><code class="js plain">fetch = +refs/heads/*:refs/remotes/heroku/*</code></div>
-<div class="line number14 index13 alt1"><code class="js plain">[branch </code><code class="js string">"main"</code><code class="js plain">]</code></div>
-<div class="line number15 index14 alt2"><code class="js spaces">    </code><code class="js plain">remote = origin</code></div>
-<div class="line number16 index15 alt1"><code class="js spaces">    </code><code class="js plain">merge = refs/heads/main</code></div>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<p>現在假如連倉儲的 origin url 都選擇自行設定, 其步驟如下:</p>
-<ol>
-<li>在近端命令視窗中, 以 git init (為了配合使用 main 作為主分支名稱, 可以使用 git config --global init.defaultBranch main 將設定寫入 home_ipv6\.gitconfig 中) 建立空的倉儲, 取得 Github 空倉儲的 url 後, 可以採用 https 或 SSH 模式進行 git remote add 的設定.</li>
-<li>假如遠端的 Github 倉儲使用者帳號為 mdecourse, 而空倉儲名稱為 nfumde, 則其 https 的 url 為 <a href="https://github.com/mdecourse/nfumde">https://github.com/mdecourse/nfumde</a><a href="https://github.com/mdecourse/wcm_midterm,">,</a><span> </span>若採用 SSH 則其 url 為<span> </span><a href="mailto:git@my_putty_session:mdecourse/nfumde.git">git@my_putty_session:mdecourse/nfumde.git</a></li>
-<li>步驟 2. 的指令為 git remote add origin https://github.com/mdecourse/nfumde.git, 或者使用 git remote add origin git@my_putty_session:mdecourse/nfumde.git</li>
-<li>另外若將此一倉儲在近端使用 Heroku 的指令與遠端的 Heroku 名稱為 nfumde 的 app 進行對應設定, 則命令在 heroku login -i 之後, 以 heroku git:remote -a nfumde, 之後就可以透過 git push heroku 將此一倉儲的版本推向 Heroku.</li>
-</ol>
-<p>操作過程, 第一時間在近端以 git init 建立空倉儲時發現仍使用 master 作為主分支名稱, 因此利用 git config --global init.defaultBranch main 將設定存入 home_ipv6\.gitconfig 中, 將主分支名稱設為 main. 畫面如下:</p>
-<p><img alt="" height="418" src="http://mde.tw/wcm2021/images/nfumde_heroku_app.png" width="800"/></p>
-<p>以上所完成的 Heroku 網際程式:<span> </span><a href="http://nfumde.herokuapp.com/table">http://nfumde.herokuapp.com/table</a></p>
-<p>假如要將上列網際程式改為 AJAX 模式, 可以參考下列程式碼, 以 button 的方式送出 AJAX 所需的 POST 變數:</p>
-<div>
-<div class="syntaxhighlighter py" id="highlighter_58175">
-<table border="0" cellpadding="0" cellspacing="0">
-<tbody>
-<tr>
-<td class="gutter">
-<div class="line number1 index0 alt2">1</div>
-<div class="line number2 index1 alt1">2</div>
-<div class="line number3 index2 alt2">3</div>
-<div class="line number4 index3 alt1">4</div>
-<div class="line number5 index4 alt2">5</div>
-<div class="line number6 index5 alt1">6</div>
-<div class="line number7 index6 alt2">7</div>
-<div class="line number8 index7 alt1">8</div>
-<div class="line number9 index8 alt2">9</div>
-<div class="line number10 index9 alt1">10</div>
-<div class="line number11 index10 alt2">11</div>
-<div class="line number12 index11 alt1">12</div>
-<div class="line number13 index12 alt2">13</div>
-<div class="line number14 index13 alt1">14</div>
-<div class="line number15 index14 alt2">15</div>
-<div class="line number16 index15 alt1">16</div>
-<div class="line number17 index16 alt2">17</div>
-<div class="line number18 index17 alt1">18</div>
-<div class="line number19 index18 alt2">19</div>
-<div class="line number20 index19 alt1">20</div>
-<div class="line number21 index20 alt2">21</div>
-<div class="line number22 index21 alt1">22</div>
-<div class="line number23 index22 alt2">23</div>
-<div class="line number24 index23 alt1">24</div>
-<div class="line number25 index24 alt2">25</div>
-<div class="line number26 index25 alt1">26</div>
-<div class="line number27 index26 alt2">27</div>
-<div class="line number28 index27 alt1">28</div>
-<div class="line number29 index28 alt2">29</div>
-<div class="line number30 index29 alt1">30</div>
-<div class="line number31 index30 alt2">31</div>
-<div class="line number32 index31 alt1">32</div>
-<div class="line number33 index32 alt2">33</div>
-<div class="line number34 index33 alt1">34</div>
-<div class="line number35 index34 alt2">35</div>
-<div class="line number36 index35 alt1">36</div>
-<div class="line number37 index36 alt2">37</div>
-<div class="line number38 index37 alt1">38</div>
-<div class="line number39 index38 alt2">39</div>
-<div class="line number40 index39 alt1">40</div>
-<div class="line number41 index40 alt2">41</div>
-<div class="line number42 index41 alt1">42</div>
-<div class="line number43 index42 alt2">43</div>
-<div class="line number44 index43 alt1">44</div>
-<div class="line number45 index44 alt2">45</div>
-<div class="line number46 index45 alt1">46</div>
-<div class="line number47 index46 alt2">47</div>
-<div class="line number48 index47 alt1">48</div>
-<div class="line number49 index48 alt2">49</div>
-<div class="line number50 index49 alt1">50</div>
-<div class="line number51 index50 alt2">51</div>
-<div class="line number52 index51 alt1">52</div>
-<div class="line number53 index52 alt2">53</div>
-<div class="line number54 index53 alt1">54</div>
-<div class="line number55 index54 alt2">55</div>
-<div class="line number56 index55 alt1">56</div>
-<div class="line number57 index56 alt2">57</div>
-<div class="line number58 index57 alt1">58</div>
-<div class="line number59 index58 alt2">59</div>
-<div class="line number60 index59 alt1">60</div>
-<div class="line number61 index60 alt2">61</div>
-<div class="line number62 index61 alt1">62</div>
-<div class="line number63 index62 alt2">63</div>
-</td>
-<td class="code">
-<div class="container">
-<div class="line number1 index0 alt2"><code class="py keyword">from</code> <code class="py plain">flask </code><code class="py keyword">import</code> <code class="py plain">(Flask, request, jsonify)</code></div>
-<div class="line number2 index1 alt1"><code class="py spaces">                   </code> </div>
-<div class="line number3 index2 alt2"><code class="py plain">app </code><code class="py keyword">=</code> <code class="py plain">Flask(__name__)</code></div>
-<div class="line number4 index3 alt1"> </div>
-<div class="line number5 index4 alt2"><code class="py plain">html_page </code><code class="py keyword">=</code> <code class="py comments">"""&lt;!DOCTYPE HTML&gt;</code></div>
-<div class="line number6 index5 alt1"><code class="py comments">&lt;html&gt;</code></div>
-<div class="line number7 index6 alt2"><code class="py comments">&lt;head&gt;</code></div>
-<div class="line number8 index7 alt1"><code class="py comments">&lt;title&gt;Rough AJAX Test&lt;/title&gt;</code></div>
-<div class="line number9 index8 alt2"><code class="py comments">&lt;script&gt;</code></div>
-<div class="line number10 index9 alt1"><code class="py spaces">    </code><code class="py comments">function loadXMLDoc()</code></div>
-<div class="line number11 index10 alt2"><code class="py spaces">    </code><code class="py comments">{</code></div>
-<div class="line number12 index11 alt1"><code class="py spaces">        </code><code class="py comments">var req = new XMLHttpRequest()</code></div>
-<div class="line number13 index12 alt2"><code class="py spaces">        </code><code class="py comments">req.onreadystatechange = function()</code></div>
-<div class="line number14 index13 alt1"><code class="py spaces">        </code><code class="py comments">{</code></div>
-<div class="line number15 index14 alt2"><code class="py spaces">            </code><code class="py comments">if (req.readyState == 4)</code></div>
-<div class="line number16 index15 alt1"><code class="py spaces">            </code><code class="py comments">{</code></div>
-<div class="line number17 index16 alt2"><code class="py spaces">                </code><code class="py comments">if (req.status != 200)</code></div>
-<div class="line number18 index17 alt1"><code class="py spaces">                </code><code class="py comments">{</code></div>
-<div class="line number19 index18 alt2"><code class="py spaces">                    </code><code class="py comments">//error handling code here</code></div>
-<div class="line number20 index19 alt1"><code class="py spaces">                </code><code class="py comments">}</code></div>
-<div class="line number21 index20 alt2"><code class="py spaces">                </code><code class="py comments">else</code></div>
-<div class="line number22 index21 alt1"><code class="py spaces">                </code><code class="py comments">{</code></div>
-<div class="line number23 index22 alt2"><code class="py spaces">                    </code><code class="py comments">var response = JSON.parse(req.responseText)</code></div>
-<div class="line number24 index23 alt1"><code class="py spaces">                    </code><code class="py comments">document.getElementById('myDiv').innerHTML = response.username</code></div>
-<div class="line number25 index24 alt2"><code class="py spaces">                </code><code class="py comments">}</code></div>
-<div class="line number26 index25 alt1"><code class="py spaces">            </code><code class="py comments">}</code></div>
-<div class="line number27 index26 alt2"><code class="py spaces">        </code><code class="py comments">}</code></div>
-<div class="line number28 index27 alt1"><code class="py spaces">    </code> </div>
-<div class="line number29 index28 alt2"><code class="py spaces">        </code><code class="py comments">req.open('POST', '/ajax')</code></div>
-<div class="line number30 index29 alt1"><code class="py spaces">        </code><code class="py comments">req.setRequestHeader("Content-type", "application/x-www-form-urlencoded")</code></div>
-<div class="line number31 index30 alt2"><code class="py spaces">        </code><code class="py comments">var un = document.getElementById('scname').value</code></div>
-<div class="line number32 index31 alt1"><code class="py spaces">        </code><code class="py comments">var sec = document.getElementById('secret').value</code></div>
-<div class="line number33 index32 alt2"><code class="py spaces">        </code><code class="py comments">var postVars = 'username='+un+'&amp;secret='+sec</code></div>
-<div class="line number34 index33 alt1"><code class="py spaces">        </code><code class="py comments">req.send(postVars)</code></div>
-<div class="line number35 index34 alt2"><code class="py spaces">        </code> </div>
-<div class="line number36 index35 alt1"><code class="py spaces">        </code><code class="py comments">return false</code></div>
-<div class="line number37 index36 alt2"><code class="py spaces">    </code><code class="py comments">}</code></div>
-<div class="line number38 index37 alt1"><code class="py comments">&lt;/script&gt;</code></div>
-<div class="line number39 index38 alt2"><code class="py comments">&lt;/head&gt;</code></div>
-<div class="line number40 index39 alt1"><code class="py comments">&lt;body&gt;</code></div>
-<div class="line number41 index40 alt2"><code class="py comments">&lt;h1&gt;Flask AJAX Test&lt;/h1&gt;</code></div>
-<div class="line number42 index41 alt1"><code class="py comments">&lt;form action="" method="POST"&gt;</code></div>
-<div class="line number43 index42 alt2"><code class="py comments">&lt;input type="text" name="scname" id="scname"&gt;</code></div>
-<div class="line number44 index43 alt1"><code class="py comments">&lt;input type="hidden" name="secret" id="secret" value="shhh"&gt;</code></div>
-<div class="line number45 index44 alt2"><code class="py comments">&lt;input type="button" value="Submit" onclick="return loadXMLDoc()"&gt;</code></div>
-<div class="line number46 index45 alt1"><code class="py comments">&lt;/form&gt;</code></div>
-<div class="line number47 index46 alt2"><code class="py comments">&lt;div id="myDiv"&gt;&lt;/div&gt;</code></div>
-<div class="line number48 index47 alt1"><code class="py comments">&lt;/body&gt;</code></div>
-<div class="line number49 index48 alt2"><code class="py comments">&lt;/html&gt;"""</code></div>
-<div class="line number50 index49 alt1"> </div>
-<div class="line number51 index50 alt2"><code class="py decorator">@app</code><code class="py plain">.route(</code><code class="py string">'/'</code><code class="py plain">)</code></div>
-<div class="line number52 index51 alt1"><code class="py keyword">def</code> <code class="py plain">index():</code></div>
-<div class="line number53 index52 alt2"><code class="py spaces">    </code><code class="py keyword">return</code> <code class="py plain">html_page</code></div>
-<div class="line number54 index53 alt1"><code class="py spaces">        </code> </div>
-<div class="line number55 index54 alt2"><code class="py spaces">        </code> </div>
-<div class="line number56 index55 alt1"><code class="py decorator">@app</code><code class="py plain">.route(</code><code class="py string">'/ajax'</code><code class="py plain">, methods </code><code class="py keyword">=</code> <code class="py plain">[</code><code class="py string">'POST'</code><code class="py plain">])</code></div>
-<div class="line number57 index56 alt2"><code class="py keyword">def</code> <code class="py plain">ajax_request():</code></div>
-<div class="line number58 index57 alt1"><code class="py spaces">    </code><code class="py plain">username </code><code class="py keyword">=</code> <code class="py plain">request.form[</code><code class="py string">'username'</code><code class="py plain">]</code></div>
-<div class="line number59 index58 alt2"><code class="py spaces">    </code><code class="py keyword">return</code> <code class="py plain">jsonify(username</code><code class="py keyword">=</code><code class="py plain">username)</code></div>
-<div class="line number60 index59 alt1"><code class="py spaces">    </code> </div>
-<div class="line number61 index60 alt2"><code class="py spaces">    </code> </div>
-<div class="line number62 index61 alt1"><code class="py keyword">if</code> <code class="py plain">__name__ </code><code class="py keyword">=</code><code class="py keyword">=</code> <code class="py string">"__main__"</code><code class="py plain">:</code></div>
-<div class="line number63 index62 alt2"><code class="py spaces">    </code><code class="py plain">app.run(debug </code><code class="py keyword">=</code> <code class="py color1">True</code><code class="py plain">)</code></div>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<p>以上的 html 原始碼可以利用<span> </span><a href="https://html-online.com/editor/">https://html-online.com/editor/</a><span> </span>進行編輯.</p>
 <h2>W8</h2>
-<h6>網際 RoboDK 程式</h6>
-<h4>下半學期的教學目標之三:</h4>
-<p>利用<span> </span><a href="https://robodk.com/">RoboDK</a><span> </span>作為整合英文, 數學與網際內容管理相關技術的測試工具, 希望能夠透過網際程式控制特定的六軸機械手臂 (<a href="https://robodk.com/blog/online-programming/">參考</a>,<span> </span><a href="https://robodk.com/doc/en/Basic-Guide.html">Guide</a>).</p>
-<p>官方 Pick and Place 範例:<span> </span><a href="https://github.com/mdecourse/wcm2021/tree/main/downloads/robodk/pick_and_place">https://github.com/mdecourse/wcm2021/tree/main/downloads/robodk/pick_and_place</a></p>
-<h4>自行利用 Python API 建立 station:</h4>
-<p>從<span> </span><a href="https://github.com/mdecourse/wcm2021/tree/main/downloads/robodk/pick_and_place_kmol_mac">https://github.com/mdecourse/wcm2021/tree/main/downloads/robodk/pick_and_place_kmol_mac</a><span> </span>目錄, 可以使用 Python 建立 RoboDK station:</p>
-<p>程式碼:<span> </span><a href="https://github.com/mdecourse/wcm2021/blob/main/downloads/robodk/pick_and_place_kmol_mac/pick_and_place_kmol.py">https://github.com/mdecourse/wcm2021/blob/main/downloads/robodk/pick_and_place_kmol_mac/pick_and_place_kmol.py</a></p>
-<p>所完成的 station:</p>
-<p><img alt="" height="299" src="http://mde.tw/wcm2021/images/robodk_all_in_python.png" width="500"/></p>
-<p>RoboDK Forum:<span> </span><a href="https://robodk.com/forum">https://robodk.com/forum</a></p>
-<p>Euler Angles:<span> </span><a href="https://www.mecademic.com/en/how-is-orientation-in-space-represented-with-euler-angles">https://www.mecademic.com/en/how-is-orientation-in-space-represented-with-euler-angles</a></p>
-<p><a href="http://mde.tw/wcm2021/downloads/RoboDK-Doc-EN-Getting-Started.pdf">RoboDK-Doc-EN-Getting-Started.pdf</a></p>
-<p><a href="https://en.wikipedia.org/wiki/Robotics_simulator">https://en.wikipedia.org/wiki/Robotics_simulator</a></p>
-<p><a href="https://github.com/RoboDK?tab=repositories">https://github.com/RoboDK?tab=repositories</a></p>
-<p><a href="https://robodk.com/doc/en/PythonAPI/">https://robodk.com/doc/en/PythonAPI/</a></p>
-<p><a href="https://robodk.com/offline-programming">https://robodk.com/offline-programming</a></p>
-<p><a href="https://robodk.com/doc/en/PythonAPI/robolink.html">https://robodk.com/doc/en/PythonAPI/robolink.html</a></p>
-<p><a href="https://www.automate.org/news/9-powerful-robodk-features-you-might-not-know-about">https://www.automate.org/news/9-powerful-robodk-features-you-might-not-know-about</a></p>
-<p><a href="http://mde.tw/wcm2021/downloads/2016_Flapping-wing%20mechanism%20for%20a%20bird-sizedUAVs%20%20design,%20modeling%20and%20control.pdf">2016_Flapping-wing mechanism for a bird-sizedUAVs design, modeling and control.pdf</a></p>
-<p><a href="http://mde.tw/wcm2021/downloads/2018_Implementation%20of%20a%20Simulation%20System%20for%20Additive%20Task%20Experiments.pdf">2018_Implementation of a Simulation System for Additive Task Experiments.pdf</a></p>
-<p><a href="http://mde.tw/wcm2021/downloads/2019_Multi-Robot%20Collaboration.pdf">2019_Multi-Robot Collaboration.pdf</a></p>
-<p><a href="http://mde.tw/wcm2021/downloads/2019_3D%20Printing%20using%20an%20Industrial%20Robotic%20Arm%20and%20a%20Cellulose%20based%20filament.pdf">2019_3D Printing using an Industrial Robotic Arm and a Cellulose based filament.pdf</a></p>
-<p><a href="http://mde.tw/wcm2021/downloads/2019_Towards%20the%20Development%20of%20Safe,%20Collaborative%20RoboticFreehand%20Ultrasound.pdf">2019_Towards the Development of Safe, Collaborative RoboticFreehand Ultrasound.pdf</a></p>
-<p><a href="http://mde.tw/wcm2021/downloads/2020_Simulator%20for%20Articulate%20Robots.pdf">2020_Simulator for Articulate Robots.pdf</a></p>
-<p><a href="https://link.springer.com/book/10.1007/978-3-030-38897-3">2020 Robot Adventures in Python and C.pdf</a></p>
-<p><a href="https://vmayoral.github.io/robots,/ai,/deep/learning,/rl,/reinforcement/learning/2016/07/06/rl-intro/">https://vmayoral.github.io/robots,/ai,/deep/learning,/rl,/reinforcement/learning/2016/07/06/rl-intro/</a></p>
-<p><a href="http://mde.tw/wcm2021/downloads/Industrial_robots1.pdf">Industrial_robots1.pdf</a></p>
-<p><a href="http://mde.tw/wcm2021/downloads/IntroRobotKinematics5.pdf">IntroRobotKinematics5.pdf</a></p>
-<h4>RoboDK 版本:<span> </span><a href="https://robodk.com/whatsnew">https://robodk.com/whatsnew</a></h4>
-<h4>RoboDK 5.2.2 安裝</h4>
-<p>內定安裝於 c:\robodk</p>
-<p>可附帶安裝 Python 3.7.3, 並安裝 robodk 模組</p>
-<p>會先安裝 vcredist_x64_2017</p>
-<p>安裝版 30 天內可存檔, 必須 IPv4 上網才能取得 free trial 30 天權限.</p>
-<p>RoboDK 的 remote API 必須先 IPv4 上網後, 經官方網站確認 License 後, 才可啟動 API server, 否則只能在 localhost 上執行 API 操控.</p>
-<h4>電腦輔助設計室網路連線順序:</h4>
-<ol>
-<li>以 IPv4 NAT 連線, 啟動可攜 RoboDK 取得 limited 連線授權.</li>
-<li>改以純 IPv6 網路連線, 內部建立 192.168.192.1XX 網路群, 按照組序與學員序取得 IPv4 固定網址.</li>
-<li>各學員可以透過 Proxy 取得 Robot library 中的資料, 並且透過 remote API 進行網際協同操控.</li>
-</ol>
-<p><a href="http://mde.tw/wcm2021/downloads/Setup%20and%20Interfacing%20of%20a%20KUKA%20RoboticsLab.pdf">Setup and Interfacing of a KUKA RoboticsLab.pdf</a></p>
-<p>RoboDK API for Python:</p>
-<p><a href="https://raw.githubusercontent.com/RoboDK/RoboDK-API/master/Python/robodk.py">https://raw.githubusercontent.com/RoboDK/RoboDK-API/master/Python/robodk.py</a></p>
-<p><a href="https://raw.githubusercontent.com/RoboDK/RoboDK-API/master/Python/robolink.py">https://raw.githubusercontent.com/RoboDK/RoboDK-API/master/Python/robolink.py</a></p>
-<p>The robolink module is the bridge between RoboDK and Python. Every object in the RoboDK item tree can be retrieved and it is represented by the object Item. An item can be a robot, a reference frame, a tool, an object or any other item visible in the station tree.</p>
-<p>The following example uses the robodk and robolink libraries to move a robot.</p>
-<div>
-<div class="syntaxhighlighter py" id="highlighter_851975">
-<table border="0" cellpadding="0" cellspacing="0">
-<tbody>
-<tr>
-<td class="gutter">
-<div class="line number1 index0 alt2">1</div>
-<div class="line number2 index1 alt1">2</div>
-<div class="line number3 index2 alt2">3</div>
-<div class="line number4 index3 alt1">4</div>
-<div class="line number5 index4 alt2">5</div>
-<div class="line number6 index5 alt1">6</div>
-<div class="line number7 index6 alt2">7</div>
-<div class="line number8 index7 alt1">8</div>
-<div class="line number9 index8 alt2">9</div>
-<div class="line number10 index9 alt1">10</div>
-<div class="line number11 index10 alt2">11</div>
-<div class="line number12 index11 alt1">12</div>
-<div class="line number13 index12 alt2">13</div>
-<div class="line number14 index13 alt1">14</div>
-</td>
-<td class="code">
-<div class="container">
-<div class="line number1 index0 alt2"><code class="py keyword">from</code> <code class="py plain">robolink </code><code class="py keyword">import</code> <code class="py keyword">*</code>              <code class="py comments"># import the robolink library (bridge with RoboDK)</code></div>
-<div class="line number2 index1 alt1"><code class="py comments"># 假如跨網路執行 Python remote API, 則提供位於遠端的 RoboDK server ip</code></div>
-<div class="line number3 index2 alt2"><code class="py plain">RDK </code><code class="py keyword">=</code> <code class="py plain">Robolink(</code><code class="py string">'server_ipv4_ip_address'</code><code class="py plain">)                    </code><code class="py comments"># establish a link with the simulator</code></div>
-<div class="line number4 index3 alt1"><code class="py plain">robot </code><code class="py keyword">=</code> <code class="py plain">RDK.Item(</code><code class="py string">'ABB IRB 120-3/0.6'</code><code class="py plain">)      </code><code class="py comments"># retrieve the robot by name</code></div>
-<div class="line number5 index4 alt2"><code class="py plain">robot.setJoints([</code><code class="py value">0</code><code class="py plain">,</code><code class="py value">0</code><code class="py plain">,</code><code class="py value">0</code><code class="py plain">,</code><code class="py value">0</code><code class="py plain">,</code><code class="py value">0</code><code class="py plain">,</code><code class="py value">0</code><code class="py plain">])      </code><code class="py comments"># set all robot axes to zero</code></div>
-<div class="line number6 index5 alt1"> </div>
-<div class="line number7 index6 alt2"><code class="py plain">target </code><code class="py keyword">=</code> <code class="py plain">RDK.Item(</code><code class="py string">'Target'</code><code class="py plain">)         </code><code class="py comments"># retrieve the Target item</code></div>
-<div class="line number8 index7 alt1"><code class="py plain">robot.MoveJ(target)                 </code><code class="py comments"># move the robot to the target</code></div>
-<div class="line number9 index8 alt2"><code class="py comments">'''</code></div>
-<div class="line number10 index9 alt1"><code class="py comments"># calculate a new approach position 100 mm along the Z axis of the tool with respect to the target</code></div>
-<div class="line number11 index10 alt2"><code class="py comments">from robodk import *                # import the robodk library (robotics toolbox)</code></div>
-<div class="line number12 index11 alt1"><code class="py comments">approach = target.Pose()*transl(0,0,-100)</code></div>
-<div class="line number13 index12 alt2"><code class="py comments">robot.MoveL(approach)               # linear move to the approach position</code></div>
-<div class="line number14 index13 alt1"><code class="py comments">'''</code></div>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<p>有關 Python struct:<span> </span><a href="https://docs.python.org/3/library/struct.html">https://docs.python.org/3/library/struct.html</a></p>
-<p>command line option:<span> </span><a href="https://robodk.com/doc/en/RoboDK-API-Command-Line-Options.html">https://robodk.com/doc/en/RoboDK-API-Command-Line-Options.html</a></p>
-<p>RDK = Robolink(args='-ADDFRAME "-RENAME=Main Ref " load_object.stl')</p>
-<p>robolink modula:<span> </span><a href="https://robodk.com/doc/en/PythonAPI/robolink.html#robolink.Robolink.ShowRoboDK">https://robodk.com/doc/en/PythonAPI/robolink.html#robolink.Robolink.ShowRoboDK</a></p>
-<p>RoboDK Mac 最新版安裝檔:<span> </span><a href="https://robodk.com/downloads/Install-RoboDK.dmg">https://robodk.com/downloads/Install-RoboDK.dmg</a></p>
-<p>RoboDK Linux 最新安裝檔:<span> </span><a href="https://robodk.com/downloads/install-robodk-64.tar.gz">https://robodk.com/downloads/install-robodk-64.tar.gz</a></p>
-<h4>RoboDK 透過遠端桌面執行:</h4>
-<p>由於顯示卡硬體功能受到限制, 因此透過 remote desktop 執行 RoboDK 時, 必須使用 C:/RoboDK/RoboDK-Safe-Start-VM.bat 啟動 RoboDK, 批次檔案內容如下:</p>
-<div>
-<div class="syntaxhighlighter js" id="highlighter_724732">
-<table border="0" cellpadding="0" cellspacing="0">
-<tbody>
-<tr>
-<td class="gutter">
-<div class="line number1 index0 alt2">1</div>
-<div class="line number2 index1 alt1">2</div>
-<div class="line number3 index2 alt2">3</div>
-</td>
-<td class="code">
-<div class="container">
-<div class="line number1 index0 alt2"><code class="js plain">cd bin</code></div>
-<div class="line number2 index1 alt1"><code class="js plain">set QT_OPENGL=software</code></div>
-<div class="line number3 index2 alt2"><code class="js plain">start </code><code class="js string">""</code> <code class="js plain">RoboDK-GL2.exe -DEBUG -SKIPINI</code></div>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<h4>RoboDK allow external API (<a href="https://robodk.com/doc/en/PythonAPI/robolink.html#robolink.Robolink">reference</a>):</h4>
-<p>目前 RoboDK 的<span> </span><a href="https://raw.githubusercontent.com/RoboDK/RoboDK-API/master/Python/robolink.py">https://raw.githubusercontent.com/RoboDK/RoboDK-API/master/Python/robolink.py</a><span> </span>僅支援 IPv4, 必須將 socket 傳送改為 IPv6, 可參考:<span> </span><a href="https://hub.packtpub.com/ipv6-unix-domain-sockets-and-network-interfaces/">https://hub.packtpub.com/ipv6-unix-domain-sockets-and-network-interfaces/</a></p>
-<p>假如要在電腦輔助設計室中跨網路執行 RoboDK remote API, 可以在 IPv6 環境下創建一個內部 IPv4 群網路進行測試.</p>
-<p>設定 RoboDK remote API 位於 Tools - Options - Other - RoboDK API, 啟動 RoboDK remote API server 後, 必須讓 RoboDK 通過操作系統的防火牆.</p>
-<h4>RoboDK on Virtualbox (<a href="https://robodk.com/forum/Thread-Running-RoboDK-on-an-oracle-Virtual-machine">reference</a>):</h4>
-<p>I recommend you to start RoboDK by selecting:<br/>C:/RoboDK/RoboDK-Safe-Start-VM.bat<br/><br/>Make sure to install graphic card drivers and allocate hardware accelerated GPU with support for OpenGL, if possible.<br/><br/>If it fails, we can better debug this issue by following these steps.<br/><br/>    Start RoboDK by double clicking the file:<br/>    C:/RoboDK/RoboDK-Debug.bat<br/>    Try to reproduce the problem in RoboDK until it crashes.<br/>    Right after the crash, provide the following file:<br/>    C:/RoboDK/bin/RoboDK.debug.txt</p>
-<h4>Hint:</h4>
-<p>MoveJ(self, target, blocking=True)<span> </span><a href="https://robodk.com/forum/Thread-Get-robot-pose-while-the-robot-is-moving-to-a-target">reference</a><br/>Moves a robot to a specific target ("Move Joint" mode). self function blocks until the robot finishes its movements.<br/>In  1 : joints/pose/item -&gt; target to move to. It can be the robot joints (Nx1 or 1xN), the pose (4x4) or an item (item pointer)<br/>In  2 (optional): blocking -&gt; True if we want the instruction to wait until the robot finished the movement (default=True)</p>
-<p>add Camera:<span> </span><a href="https://robodk.com/doc/en/PythonAPI/robolink.html#robolink.Robolink.Cam2D_Add">https://robodk.com/doc/en/PythonAPI/robolink.html#robolink.Robolink.Cam2D_Add</a></p>
-<h4>Temp py programs:</h4>
-<p><a href="https://robodk.com/forum/Thread-Convert-a-main-program-to-a-python-script">https://robodk.com/forum/Thread-Convert-a-main-program-to-a-python-script</a></p>
-<h4>Set Robot base:</h4>
-<div>
-<div class="syntaxhighlighter py" id="highlighter_851029">
-<table border="0" cellpadding="0" cellspacing="0">
-<tbody>
-<tr>
-<td class="gutter">
-<div class="line number1 index0 alt2">1</div>
-<div class="line number2 index1 alt1">2</div>
-<div class="line number3 index2 alt2">3</div>
-<div class="line number4 index3 alt1">4</div>
-</td>
-<td class="code">
-<div class="container">
-<div class="line number1 index0 alt2"><code class="py plain">RDK </code><code class="py keyword">=</code> <code class="py plain">robolink()</code></div>
-<div class="line number2 index1 alt1"> </div>
-<div class="line number3 index2 alt2"><code class="py plain">robot_base </code><code class="py keyword">=</code> <code class="py plain">RDK.Item(</code><code class="py string">'Robot Base Name'</code><code class="py plain">, ITEM_TYPE_FRAME)</code></div>
-<div class="line number4 index3 alt1"><code class="py plain">robot_base.setPose(</code><code class="py value">4x4</code> <code class="py plain">mat with the position)</code></div>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<p>參考:</p>
-<p>提供原始碼的<span> </span><a href="http://animatlab.com/">http://animatlab.com/</a></p>
-<h2>W9</h2>
-<h6><strong></strong>打期望分數</h6>
-<h2>W10</h2>
+<p>開始分組報告，要負責把一個github的倉儲推送去heroku，內容要包括機械設計系大樓教室的課表，可以的話把各個樓層都放上按鈕。</p>
+<p><span>教務主機查詢電腦輔助設計室排課時間表的python介紹</span></p>
+<h2><span>W9</span></h2>
+<p><span>打期望分數</span></p>
+<h2><span>W10</span></h2>
 <p>網際內容管理系統下半學期將有以下幾個主要教學目標:</p>
 <ol>
 <li>對<span> </span><span>Python Flask 網際程式</span>的架構能夠更加深入了解, 各學員不僅會利用<span> </span><a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">Beautifulsoup</a><span> </span>從學校教務主機擷取資料, 建立<span> </span><a href="https://www.heroku.com/">Heroku</a><span> </span>雲端應用程式, 列出各實驗室的排課資訊外, 能計算各實驗室的排課總時數, 同時也能將查得的資料分別存入 SQLite 與 PostgreSQL 資料庫 (flaskg 範例<a href="https://github.com/mdecourse/flaskg">倉儲</a>與<a href="https://flaskg.herokuapp.com/">網站</a>).</li>
@@ -967,7 +345,7 @@
 </td>
 <td class="code">
 <div class="container">
-<div class="line number1 index0 alt2"><code class="js string">"c:\Program Files\Oracle\VirtualBox\VBoxManage.exe"</code> <code class="js plain">internalcommands sethduuid Ubwcm2021.vdi</code></div>
+<div class="line number1 index0 alt2"><code class="js string">"c:\Program Files\Oracle\VirtualBox\VBoxManage.exe"</code><span> </span><code class="js plain">internalcommands sethduuid Ubwcm2021.vdi</code></div>
 </div>
 </td>
 </tr>
@@ -991,7 +369,7 @@
 </td>
 <td class="code">
 <div class="container">
-<div class="line number1 index0 alt2"><code class="js plain">Acquire::http::Proxy </code><code class="js string">"http://proxy_username:proxy_password@[Proxy_server_ipv6_address]:3128"</code><code class="js plain">;</code></div>
+<div class="line number1 index0 alt2"><code class="js plain">Acquire::http::Proxy<span> </span></code><code class="js string">"http://proxy_username:proxy_password@[Proxy_server_ipv6_address]:3128"</code><code class="js plain">;</code></div>
 </div>
 </td>
 </tr>
@@ -1041,15 +419,15 @@
 <div class="line number1 index0 alt2"><code class="py plain">:: cd Python</code></div>
 <div class="line number2 index1 alt1"> </div>
 <div class="line number3 index2 alt2"><code class="py plain">:: Install RoboDK API</code></div>
-<div class="line number4 index3 alt1"><code class="py plain">python.exe </code><code class="py keyword">-</code><code class="py plain">m pip install  </code><code class="py string">"./Python/."</code> <code class="py keyword">-</code><code class="py plain">I</code></div>
+<div class="line number4 index3 alt1"><code class="py plain">python.exe<span> </span></code><code class="py keyword">-</code><code class="py plain">m pip install <span> </span></code><code class="py string">"./Python/."</code><span> </span><code class="py keyword">-</code><code class="py plain">I</code></div>
 <div class="line number5 index4 alt2"> </div>
-<div class="line number6 index5 alt1"><code class="py plain">:: Install pylint (linting </code><code class="py keyword">for</code> <code class="py plain">VScode)</code></div>
-<div class="line number7 index6 alt2"><code class="py plain">python.exe </code><code class="py keyword">-</code><code class="py plain">m pip install </code><code class="py string">"pylint&gt;=2.3"</code> <code class="py keyword">-</code><code class="py keyword">-</code><code class="py plain">retries</code><code class="py keyword">=</code><code class="py value">2</code></div>
+<div class="line number6 index5 alt1"><code class="py plain">:: Install pylint (linting<span> </span></code><code class="py keyword">for</code><span> </span><code class="py plain">VScode)</code></div>
+<div class="line number7 index6 alt2"><code class="py plain">python.exe<span> </span></code><code class="py keyword">-</code><code class="py plain">m pip install<span> </span></code><code class="py string">"pylint&gt;=2.3"</code><span> </span><code class="py keyword">-</code><code class="py keyword">-</code><code class="py plain">retries</code><code class="py keyword">=</code><code class="py value">2</code></div>
 <div class="line number8 index7 alt1"> </div>
-<div class="line number9 index8 alt2"><code class="py plain">:: Install rope (easy variable renaming </code><code class="py keyword">in</code> <code class="py plain">VScode)</code></div>
-<div class="line number10 index9 alt1"><code class="py plain">python.exe </code><code class="py keyword">-</code><code class="py plain">m pip install </code><code class="py string">"rope&gt;=0.14"</code> <code class="py keyword">-</code><code class="py keyword">-</code><code class="py plain">retries</code><code class="py keyword">=</code><code class="py value">2</code></div>
+<div class="line number9 index8 alt2"><code class="py plain">:: Install rope (easy variable renaming<span> </span></code><code class="py keyword">in</code><span> </span><code class="py plain">VScode)</code></div>
+<div class="line number10 index9 alt1"><code class="py plain">python.exe<span> </span></code><code class="py keyword">-</code><code class="py plain">m pip install<span> </span></code><code class="py string">"rope&gt;=0.14"</code><span> </span><code class="py keyword">-</code><code class="py keyword">-</code><code class="py plain">retries</code><code class="py keyword">=</code><code class="py value">2</code></div>
 <div class="line number11 index10 alt2"> </div>
-<div class="line number12 index11 alt1"><code class="py plain">:: Display </code><code class="py functions">all</code> <code class="py plain">installed packages</code></div>
+<div class="line number12 index11 alt1"><code class="py plain">:: Display<span> </span></code><code class="py functions">all</code><span> </span><code class="py plain">installed packages</code></div>
 <div class="line number13 index12 alt2"><code class="py plain">python.exe Python_Versions.py</code></div>
 <div class="line number14 index13 alt1"> </div>
 <div class="line number15 index14 alt2"><code class="py plain">pause</code></div>
@@ -1063,10 +441,10 @@
 <p>和apick_and_place.py(注意go之前IP要設定目前連線網路的IP</p>
 <div>
 <div class="syntaxhighlighter py" id="highlighter_299197">
-<table border="0" cellpadding="0" cellspacing="0">
+<table border="0" cellpadding="0" cellspacing="0" style="width: 673.888px;">
 <tbody>
 <tr>
-<td class="gutter">
+<td class="gutter" style="width: 22px;">
 <div class="line number1 index0 alt2">1</div>
 <div class="line number2 index1 alt1">2</div>
 <div class="line number3 index2 alt2">3</div>
@@ -1255,86 +633,86 @@
 <div class="line number186 index185 alt1">186</div>
 <div class="line number187 index186 alt2">187</div>
 </td>
-<td class="code">
+<td class="code" style="width: 536.888px;">
 <div class="container">
 <div class="line number1 index0 alt2"><code class="py comments"># KMOLab Portable RoboDK pick and place</code></div>
-<div class="line number2 index1 alt1"><code class="py keyword">from</code> <code class="py plain">robolink </code><code class="py keyword">import</code> <code class="py keyword">*</code>    <code class="py comments"># API to communicate with robodk</code></div>
-<div class="line number3 index2 alt2"><code class="py keyword">from</code> <code class="py plain">robodk </code><code class="py keyword">import</code> <code class="py keyword">*</code>      <code class="py comments"># robodk robotics toolbox</code></div>
+<div class="line number2 index1 alt1"><code class="py keyword">from</code><span> </span><code class="py plain">robolink<span> </span></code><code class="py keyword">import</code><span> </span><code class="py keyword">*</code>   <span> </span><code class="py comments"># API to communicate with robodk</code></div>
+<div class="line number3 index2 alt2"><code class="py keyword">from</code><span> </span><code class="py plain">robodk<span> </span></code><code class="py keyword">import</code><span> </span><code class="py keyword">*</code>     <span> </span><code class="py comments"># robodk robotics toolbox</code></div>
 <div class="line number4 index3 alt1"> </div>
 <div class="line number5 index4 alt2"><code class="py comments"># Setup global parameters</code></div>
-<div class="line number6 index5 alt1"><code class="py plain">BALL_DIAMETER </code><code class="py keyword">=</code> <code class="py value">100</code> <code class="py comments"># diameter of one ball</code></div>
-<div class="line number7 index6 alt2"><code class="py plain">APPROACH </code><code class="py keyword">=</code> <code class="py value">100</code>      <code class="py comments"># approach distance to grab each part, in mm</code></div>
-<div class="line number8 index7 alt1"><code class="py plain">nTCPs </code><code class="py keyword">=</code> <code class="py value">6</code>           <code class="py comments"># number of TCP's in the tool</code></div>
+<div class="line number6 index5 alt1"><code class="py plain">BALL_DIAMETER<span> </span></code><code class="py keyword">=</code><span> </span><code class="py value">100</code><span> </span><code class="py comments"># diameter of one ball</code></div>
+<div class="line number7 index6 alt2"><code class="py plain">APPROACH<span> </span></code><code class="py keyword">=</code><span> </span><code class="py value">100</code>     <span> </span><code class="py comments"># approach distance to grab each part, in mm</code></div>
+<div class="line number8 index7 alt1"><code class="py plain">nTCPs<span> </span></code><code class="py keyword">=</code><span> </span><code class="py value">6</code>          <span> </span><code class="py comments"># number of TCP's in the tool</code></div>
 <div class="line number9 index8 alt2"> </div>
 <div class="line number10 index9 alt1"><code class="py comments">#----------------------------------------------</code></div>
 <div class="line number11 index10 alt2"><code class="py comments"># Function definitions</code></div>
 <div class="line number12 index11 alt1"> </div>
-<div class="line number13 index12 alt2"><code class="py keyword">def</code> <code class="py plain">box_calc(BALLS_SIDE</code><code class="py keyword">=</code><code class="py value">4</code><code class="py plain">, BALLS_MAX</code><code class="py keyword">=</code><code class="py color1">None</code><code class="py plain">):</code></div>
+<div class="line number13 index12 alt2"><code class="py keyword">def</code><span> </span><code class="py plain">box_calc(BALLS_SIDE</code><code class="py keyword">=</code><code class="py value">4</code><code class="py plain">, BALLS_MAX</code><code class="py keyword">=</code><code class="py color1">None</code><code class="py plain">):</code></div>
 <div class="line number14 index13 alt1"><code class="py spaces">    </code><code class="py comments">"""Calculate a list of points (ball center) as if the balls were stored in a box"""</code></div>
-<div class="line number15 index14 alt2"><code class="py spaces">    </code><code class="py keyword">if</code> <code class="py plain">BALLS_MAX </code><code class="py keyword">is</code> <code class="py color1">None</code><code class="py plain">: BALLS_MAX </code><code class="py keyword">=</code> <code class="py plain">BALLS_SIDE</code><code class="py keyword">*</code><code class="py keyword">*</code><code class="py value">3</code></div>
-<div class="line number16 index15 alt1"><code class="py spaces">    </code><code class="py plain">xyz_list </code><code class="py keyword">=</code> <code class="py plain">[]</code></div>
-<div class="line number17 index16 alt2"><code class="py spaces">    </code><code class="py keyword">for</code> <code class="py plain">h </code><code class="py keyword">in</code> <code class="py functions">range</code><code class="py plain">(BALLS_SIDE):</code></div>
-<div class="line number18 index17 alt1"><code class="py spaces">        </code><code class="py keyword">for</code> <code class="py plain">i </code><code class="py keyword">in</code> <code class="py functions">range</code><code class="py plain">(BALLS_SIDE):</code></div>
-<div class="line number19 index18 alt2"><code class="py spaces">            </code><code class="py keyword">for</code> <code class="py plain">j </code><code class="py keyword">in</code> <code class="py functions">range</code><code class="py plain">(BALLS_SIDE):</code></div>
-<div class="line number20 index19 alt1"><code class="py spaces">                </code><code class="py plain">xyz_list </code><code class="py keyword">=</code> <code class="py plain">xyz_list </code><code class="py keyword">+</code> <code class="py plain">[[(i</code><code class="py keyword">+</code><code class="py value">0.5</code><code class="py plain">)</code><code class="py keyword">*</code><code class="py plain">BALL_DIAMETER, (j</code><code class="py keyword">+</code><code class="py value">0.5</code><code class="py plain">)</code><code class="py keyword">*</code><code class="py plain">BALL_DIAMETER, (h</code><code class="py keyword">+</code><code class="py value">0.5</code><code class="py plain">)</code><code class="py keyword">*</code><code class="py plain">BALL_DIAMETER]]</code></div>
-<div class="line number21 index20 alt2"><code class="py spaces">                </code><code class="py keyword">if</code> <code class="py functions">len</code><code class="py plain">(xyz_list) &gt;</code><code class="py keyword">=</code> <code class="py plain">BALLS_MAX:</code></div>
-<div class="line number22 index21 alt1"><code class="py spaces">                    </code><code class="py keyword">return</code> <code class="py plain">xyz_list</code></div>
-<div class="line number23 index22 alt2"><code class="py spaces">    </code><code class="py keyword">return</code> <code class="py plain">xyz_list</code></div>
+<div class="line number15 index14 alt2"><code class="py spaces">    </code><code class="py keyword">if</code><span> </span><code class="py plain">BALLS_MAX<span> </span></code><code class="py keyword">is</code><span> </span><code class="py color1">None</code><code class="py plain">: BALLS_MAX<span> </span></code><code class="py keyword">=</code><span> </span><code class="py plain">BALLS_SIDE</code><code class="py keyword">*</code><code class="py keyword">*</code><code class="py value">3</code></div>
+<div class="line number16 index15 alt1"><code class="py spaces">    </code><code class="py plain">xyz_list<span> </span></code><code class="py keyword">=</code><span> </span><code class="py plain">[]</code></div>
+<div class="line number17 index16 alt2"><code class="py spaces">    </code><code class="py keyword">for</code><span> </span><code class="py plain">h<span> </span></code><code class="py keyword">in</code><span> </span><code class="py functions">range</code><code class="py plain">(BALLS_SIDE):</code></div>
+<div class="line number18 index17 alt1"><code class="py spaces">        </code><code class="py keyword">for</code><span> </span><code class="py plain">i<span> </span></code><code class="py keyword">in</code><span> </span><code class="py functions">range</code><code class="py plain">(BALLS_SIDE):</code></div>
+<div class="line number19 index18 alt2"><code class="py spaces">            </code><code class="py keyword">for</code><span> </span><code class="py plain">j<span> </span></code><code class="py keyword">in</code><span> </span><code class="py functions">range</code><code class="py plain">(BALLS_SIDE):</code></div>
+<div class="line number20 index19 alt1"><code class="py spaces">                </code><code class="py plain">xyz_list<span> </span></code><code class="py keyword">=</code><span> </span><code class="py plain">xyz_list<span> </span></code><code class="py keyword">+</code><span> </span><code class="py plain">[[(i</code><code class="py keyword">+</code><code class="py value">0.5</code><code class="py plain">)</code><code class="py keyword">*</code><code class="py plain">BALL_DIAMETER, (j</code><code class="py keyword">+</code><code class="py value">0.5</code><code class="py plain">)</code><code class="py keyword">*</code><code class="py plain">BALL_DIAMETER, (h</code><code class="py keyword">+</code><code class="py value">0.5</code><code class="py plain">)</code><code class="py keyword">*</code><code class="py plain">BALL_DIAMETER]]</code></div>
+<div class="line number21 index20 alt2"><code class="py spaces">                </code><code class="py keyword">if</code><span> </span><code class="py functions">len</code><code class="py plain">(xyz_list) &gt;</code><code class="py keyword">=</code><span> </span><code class="py plain">BALLS_MAX:</code></div>
+<div class="line number22 index21 alt1"><code class="py spaces">                    </code><code class="py keyword">return</code><span> </span><code class="py plain">xyz_list</code></div>
+<div class="line number23 index22 alt2"><code class="py spaces">    </code><code class="py keyword">return</code><span> </span><code class="py plain">xyz_list</code></div>
 <div class="line number24 index23 alt1"> </div>
-<div class="line number25 index24 alt2"><code class="py keyword">def</code> <code class="py plain">pyramid_calc(BALLS_SIDE</code><code class="py keyword">=</code><code class="py value">4</code><code class="py plain">):</code></div>
+<div class="line number25 index24 alt2"><code class="py keyword">def</code><span> </span><code class="py plain">pyramid_calc(BALLS_SIDE</code><code class="py keyword">=</code><code class="py value">4</code><code class="py plain">):</code></div>
 <div class="line number26 index25 alt1"><code class="py spaces">    </code><code class="py comments">"""Calculate a list of points (ball center) as if the balls were place in a pyramid"""</code></div>
 <div class="line number27 index26 alt2"><code class="py spaces">    </code><code class="py comments">#the number of balls can be calculated as: int(BALLS_SIDE*(BALLS_SIDE+1)*(2*BALLS_SIDE+1)/6)</code></div>
-<div class="line number28 index27 alt1"><code class="py spaces">    </code><code class="py plain">BALL_DIAMETER </code><code class="py keyword">=</code> <code class="py value">100</code></div>
-<div class="line number29 index28 alt2"><code class="py spaces">    </code><code class="py plain">xyz_list </code><code class="py keyword">=</code> <code class="py plain">[]</code></div>
-<div class="line number30 index29 alt1"><code class="py spaces">    </code><code class="py plain">sqrt2 </code><code class="py keyword">=</code> <code class="py value">2</code><code class="py keyword">*</code><code class="py keyword">*</code><code class="py plain">(</code><code class="py value">0.5</code><code class="py plain">)</code></div>
-<div class="line number31 index30 alt2"><code class="py spaces">    </code><code class="py keyword">for</code> <code class="py plain">h </code><code class="py keyword">in</code> <code class="py functions">range</code><code class="py plain">(BALLS_SIDE):</code></div>
-<div class="line number32 index31 alt1"><code class="py spaces">        </code><code class="py keyword">for</code> <code class="py plain">i </code><code class="py keyword">in</code> <code class="py functions">range</code><code class="py plain">(BALLS_SIDE</code><code class="py keyword">-</code><code class="py plain">h):</code></div>
-<div class="line number33 index32 alt2"><code class="py spaces">            </code><code class="py keyword">for</code> <code class="py plain">j </code><code class="py keyword">in</code> <code class="py functions">range</code><code class="py plain">(BALLS_SIDE</code><code class="py keyword">-</code><code class="py plain">h):</code></div>
-<div class="line number34 index33 alt1"><code class="py spaces">                </code><code class="py plain">height </code><code class="py keyword">=</code> <code class="py plain">h</code><code class="py keyword">*</code><code class="py plain">BALL_DIAMETER</code><code class="py keyword">/</code><code class="py plain">sqrt2 </code><code class="py keyword">+</code> <code class="py plain">BALL_DIAMETER</code><code class="py keyword">/</code><code class="py value">2</code></div>
-<div class="line number35 index34 alt2"><code class="py spaces">                </code><code class="py plain">xyz_list </code><code class="py keyword">=</code> <code class="py plain">xyz_list </code><code class="py keyword">+</code> <code class="py plain">[[i</code><code class="py keyword">*</code><code class="py plain">BALL_DIAMETER </code><code class="py keyword">+</code> <code class="py plain">(h</code><code class="py keyword">+</code><code class="py value">1</code><code class="py plain">)</code><code class="py keyword">*</code><code class="py plain">BALL_DIAMETER</code><code class="py keyword">*</code><code class="py value">0.5</code><code class="py plain">, j</code><code class="py keyword">*</code><code class="py plain">BALL_DIAMETER </code><code class="py keyword">+</code> <code class="py plain">(h</code><code class="py keyword">+</code><code class="py value">1</code><code class="py plain">)</code><code class="py keyword">*</code><code class="py plain">BALL_DIAMETER</code><code class="py keyword">*</code><code class="py value">0.5</code><code class="py plain">, height]]</code></div>
-<div class="line number36 index35 alt1"><code class="py spaces">    </code><code class="py keyword">return</code> <code class="py plain">xyz_list</code></div>
+<div class="line number28 index27 alt1"><code class="py spaces">    </code><code class="py plain">BALL_DIAMETER<span> </span></code><code class="py keyword">=</code><span> </span><code class="py value">100</code></div>
+<div class="line number29 index28 alt2"><code class="py spaces">    </code><code class="py plain">xyz_list<span> </span></code><code class="py keyword">=</code><span> </span><code class="py plain">[]</code></div>
+<div class="line number30 index29 alt1"><code class="py spaces">    </code><code class="py plain">sqrt2<span> </span></code><code class="py keyword">=</code><span> </span><code class="py value">2</code><code class="py keyword">*</code><code class="py keyword">*</code><code class="py plain">(</code><code class="py value">0.5</code><code class="py plain">)</code></div>
+<div class="line number31 index30 alt2"><code class="py spaces">    </code><code class="py keyword">for</code><span> </span><code class="py plain">h<span> </span></code><code class="py keyword">in</code><span> </span><code class="py functions">range</code><code class="py plain">(BALLS_SIDE):</code></div>
+<div class="line number32 index31 alt1"><code class="py spaces">        </code><code class="py keyword">for</code><span> </span><code class="py plain">i<span> </span></code><code class="py keyword">in</code><span> </span><code class="py functions">range</code><code class="py plain">(BALLS_SIDE</code><code class="py keyword">-</code><code class="py plain">h):</code></div>
+<div class="line number33 index32 alt2"><code class="py spaces">            </code><code class="py keyword">for</code><span> </span><code class="py plain">j<span> </span></code><code class="py keyword">in</code><span> </span><code class="py functions">range</code><code class="py plain">(BALLS_SIDE</code><code class="py keyword">-</code><code class="py plain">h):</code></div>
+<div class="line number34 index33 alt1"><code class="py spaces">                </code><code class="py plain">height<span> </span></code><code class="py keyword">=</code><span> </span><code class="py plain">h</code><code class="py keyword">*</code><code class="py plain">BALL_DIAMETER</code><code class="py keyword">/</code><code class="py plain">sqrt2<span> </span></code><code class="py keyword">+</code><span> </span><code class="py plain">BALL_DIAMETER</code><code class="py keyword">/</code><code class="py value">2</code></div>
+<div class="line number35 index34 alt2"><code class="py spaces">                </code><code class="py plain">xyz_list<span> </span></code><code class="py keyword">=</code><span> </span><code class="py plain">xyz_list<span> </span></code><code class="py keyword">+</code><span> </span><code class="py plain">[[i</code><code class="py keyword">*</code><code class="py plain">BALL_DIAMETER<span> </span></code><code class="py keyword">+</code><span> </span><code class="py plain">(h</code><code class="py keyword">+</code><code class="py value">1</code><code class="py plain">)</code><code class="py keyword">*</code><code class="py plain">BALL_DIAMETER</code><code class="py keyword">*</code><code class="py value">0.5</code><code class="py plain">, j</code><code class="py keyword">*</code><code class="py plain">BALL_DIAMETER<span> </span></code><code class="py keyword">+</code><span> </span><code class="py plain">(h</code><code class="py keyword">+</code><code class="py value">1</code><code class="py plain">)</code><code class="py keyword">*</code><code class="py plain">BALL_DIAMETER</code><code class="py keyword">*</code><code class="py value">0.5</code><code class="py plain">, height]]</code></div>
+<div class="line number36 index35 alt1"><code class="py spaces">    </code><code class="py keyword">return</code><span> </span><code class="py plain">xyz_list</code></div>
 <div class="line number37 index36 alt2"> </div>
-<div class="line number38 index37 alt1"><code class="py keyword">def</code> <code class="py plain">balls_setup(frame, positions):</code></div>
+<div class="line number38 index37 alt1"><code class="py keyword">def</code><span> </span><code class="py plain">balls_setup(frame, positions):</code></div>
 <div class="line number39 index38 alt2"><code class="py spaces">    </code><code class="py comments">"""Place a list of balls in a reference frame. The reference object (ball) must have been previously copied to the clipboard."""</code></div>
-<div class="line number40 index39 alt1"><code class="py spaces">    </code><code class="py plain">nballs </code><code class="py keyword">=</code> <code class="py functions">len</code><code class="py plain">(positions)</code></div>
-<div class="line number41 index40 alt2"><code class="py spaces">    </code><code class="py plain">step </code><code class="py keyword">=</code> <code class="py value">1.0</code><code class="py keyword">/</code><code class="py plain">(nballs </code><code class="py keyword">-</code> <code class="py value">1</code><code class="py plain">)</code></div>
-<div class="line number42 index41 alt1"><code class="py spaces">    </code><code class="py keyword">for</code> <code class="py plain">i </code><code class="py keyword">in</code> <code class="py functions">range</code><code class="py plain">(nballs):</code></div>
-<div class="line number43 index42 alt2"><code class="py spaces">        </code><code class="py plain">newball </code><code class="py keyword">=</code> <code class="py plain">frame.Paste()</code></div>
-<div class="line number44 index43 alt1"><code class="py spaces">        </code><code class="py plain">newball.setName(</code><code class="py string">'ball '</code> <code class="py keyword">+</code> <code class="py functions">str</code><code class="py plain">(i)) </code><code class="py comments">#set item name</code></div>
-<div class="line number45 index44 alt2"><code class="py spaces">        </code><code class="py plain">newball.setPose(transl(positions[i])) </code><code class="py comments">#set item position with respect to parent</code></div>
-<div class="line number46 index45 alt1"><code class="py spaces">        </code><code class="py plain">newball.setVisible(</code><code class="py color1">True</code><code class="py plain">, </code><code class="py color1">False</code><code class="py plain">) </code><code class="py comments">#make item visible but hide the reference frame</code></div>
-<div class="line number47 index46 alt2"><code class="py spaces">        </code><code class="py plain">newball.Recolor([</code><code class="py value">1</code><code class="py keyword">-</code><code class="py plain">step</code><code class="py keyword">*</code><code class="py plain">i, step</code><code class="py keyword">*</code><code class="py plain">i, </code><code class="py value">0.2</code><code class="py plain">, </code><code class="py value">1</code><code class="py plain">]) </code><code class="py comments">#set RGBA color</code></div>
+<div class="line number40 index39 alt1"><code class="py spaces">    </code><code class="py plain">nballs<span> </span></code><code class="py keyword">=</code><span> </span><code class="py functions">len</code><code class="py plain">(positions)</code></div>
+<div class="line number41 index40 alt2"><code class="py spaces">    </code><code class="py plain">step<span> </span></code><code class="py keyword">=</code><span> </span><code class="py value">1.0</code><code class="py keyword">/</code><code class="py plain">(nballs<span> </span></code><code class="py keyword">-</code><span> </span><code class="py value">1</code><code class="py plain">)</code></div>
+<div class="line number42 index41 alt1"><code class="py spaces">    </code><code class="py keyword">for</code><span> </span><code class="py plain">i<span> </span></code><code class="py keyword">in</code><span> </span><code class="py functions">range</code><code class="py plain">(nballs):</code></div>
+<div class="line number43 index42 alt2"><code class="py spaces">        </code><code class="py plain">newball<span> </span></code><code class="py keyword">=</code><span> </span><code class="py plain">frame.Paste()</code></div>
+<div class="line number44 index43 alt1"><code class="py spaces">        </code><code class="py plain">newball.setName(</code><code class="py string">'ball '</code><span> </span><code class="py keyword">+</code><span> </span><code class="py functions">str</code><code class="py plain">(i))<span> </span></code><code class="py comments">#set item name</code></div>
+<div class="line number45 index44 alt2"><code class="py spaces">        </code><code class="py plain">newball.setPose(transl(positions[i]))<span> </span></code><code class="py comments">#set item position with respect to parent</code></div>
+<div class="line number46 index45 alt1"><code class="py spaces">        </code><code class="py plain">newball.setVisible(</code><code class="py color1">True</code><code class="py plain">,<span> </span></code><code class="py color1">False</code><code class="py plain">)<span> </span></code><code class="py comments">#make item visible but hide the reference frame</code></div>
+<div class="line number47 index46 alt2"><code class="py spaces">        </code><code class="py plain">newball.Recolor([</code><code class="py value">1</code><code class="py keyword">-</code><code class="py plain">step</code><code class="py keyword">*</code><code class="py plain">i, step</code><code class="py keyword">*</code><code class="py plain">i,<span> </span></code><code class="py value">0.2</code><code class="py plain">,<span> </span></code><code class="py value">1</code><code class="py plain">])<span> </span></code><code class="py comments">#set RGBA color</code></div>
 <div class="line number48 index47 alt1"> </div>
-<div class="line number49 index48 alt2"><code class="py keyword">def</code> <code class="py plain">cleanup_balls(parentnodes):</code></div>
+<div class="line number49 index48 alt2"><code class="py keyword">def</code><span> </span><code class="py plain">cleanup_balls(parentnodes):</code></div>
 <div class="line number50 index49 alt1"><code class="py spaces">    </code><code class="py comments">"""Delete all child items whose name starts with \"ball\", from the provided list of parent items."""</code></div>
-<div class="line number51 index50 alt2"><code class="py spaces">    </code><code class="py plain">todelete </code><code class="py keyword">=</code> <code class="py plain">[]</code></div>
-<div class="line number52 index51 alt1"><code class="py spaces">    </code><code class="py keyword">for</code> <code class="py plain">item </code><code class="py keyword">in</code> <code class="py plain">parentnodes:</code></div>
-<div class="line number53 index52 alt2"><code class="py spaces">        </code><code class="py plain">todelete </code><code class="py keyword">=</code> <code class="py plain">todelete </code><code class="py keyword">+</code> <code class="py plain">item.Childs()</code></div>
+<div class="line number51 index50 alt2"><code class="py spaces">    </code><code class="py plain">todelete<span> </span></code><code class="py keyword">=</code><span> </span><code class="py plain">[]</code></div>
+<div class="line number52 index51 alt1"><code class="py spaces">    </code><code class="py keyword">for</code><span> </span><code class="py plain">item<span> </span></code><code class="py keyword">in</code><span> </span><code class="py plain">parentnodes:</code></div>
+<div class="line number53 index52 alt2"><code class="py spaces">        </code><code class="py plain">todelete<span> </span></code><code class="py keyword">=</code><span> </span><code class="py plain">todelete<span> </span></code><code class="py keyword">+</code><span> </span><code class="py plain">item.Childs()</code></div>
 <div class="line number54 index53 alt1"> </div>
-<div class="line number55 index54 alt2"><code class="py spaces">    </code><code class="py keyword">for</code> <code class="py plain">item </code><code class="py keyword">in</code> <code class="py plain">todelete:</code></div>
-<div class="line number56 index55 alt1"><code class="py spaces">        </code><code class="py keyword">if</code> <code class="py plain">item.Name().startswith(</code><code class="py string">'ball'</code><code class="py plain">):</code></div>
+<div class="line number55 index54 alt2"><code class="py spaces">    </code><code class="py keyword">for</code><span> </span><code class="py plain">item<span> </span></code><code class="py keyword">in</code><span> </span><code class="py plain">todelete:</code></div>
+<div class="line number56 index55 alt1"><code class="py spaces">        </code><code class="py keyword">if</code><span> </span><code class="py plain">item.Name().startswith(</code><code class="py string">'ball'</code><code class="py plain">):</code></div>
 <div class="line number57 index56 alt2"><code class="py spaces">            </code><code class="py plain">item.Delete()</code></div>
 <div class="line number58 index57 alt1"> </div>
-<div class="line number59 index58 alt2"><code class="py keyword">def</code> <code class="py plain">TCP_On(toolitem, tcp_id):</code></div>
+<div class="line number59 index58 alt2"><code class="py keyword">def</code><span> </span><code class="py plain">TCP_On(toolitem, tcp_id):</code></div>
 <div class="line number60 index59 alt1"><code class="py spaces">    </code><code class="py comments">"""Attach the closest object to the toolitem Htool pose,</code></div>
 <div class="line number61 index60 alt2"><code class="py spaces">    </code><code class="py comments">furthermore, it will output appropriate function calls on the generated robot program (call to TCP_On)"""</code></div>
 <div class="line number62 index61 alt1"><code class="py spaces">    </code><code class="py plain">toolitem.AttachClosest()</code></div>
-<div class="line number63 index62 alt2"><code class="py spaces">    </code><code class="py plain">toolitem.RDK().RunMessage(</code><code class="py string">'Set air valve %i on'</code> <code class="py keyword">%</code> <code class="py plain">(tcp_id</code><code class="py keyword">+</code><code class="py value">1</code><code class="py plain">))</code></div>
-<div class="line number64 index63 alt1"><code class="py spaces">    </code><code class="py plain">toolitem.RDK().RunProgram(</code><code class="py string">'TCP_On(%i)'</code> <code class="py keyword">%</code> <code class="py plain">(tcp_id</code><code class="py keyword">+</code><code class="py value">1</code><code class="py plain">));</code></div>
+<div class="line number63 index62 alt2"><code class="py spaces">    </code><code class="py plain">toolitem.RDK().RunMessage(</code><code class="py string">'Set air valve %i on'</code><span> </span><code class="py keyword">%</code><span> </span><code class="py plain">(tcp_id</code><code class="py keyword">+</code><code class="py value">1</code><code class="py plain">))</code></div>
+<div class="line number64 index63 alt1"><code class="py spaces">    </code><code class="py plain">toolitem.RDK().RunProgram(</code><code class="py string">'TCP_On(%i)'</code><span> </span><code class="py keyword">%</code><span> </span><code class="py plain">(tcp_id</code><code class="py keyword">+</code><code class="py value">1</code><code class="py plain">));</code></div>
 <div class="line number65 index64 alt2"><code class="py spaces">        </code> </div>
-<div class="line number66 index65 alt1"><code class="py keyword">def</code> <code class="py plain">TCP_Off(toolitem, tcp_id, itemleave</code><code class="py keyword">=</code><code class="py value">0</code><code class="py plain">):</code></div>
+<div class="line number66 index65 alt1"><code class="py keyword">def</code><span> </span><code class="py plain">TCP_Off(toolitem, tcp_id, itemleave</code><code class="py keyword">=</code><code class="py value">0</code><code class="py plain">):</code></div>
 <div class="line number67 index66 alt2"><code class="py spaces">    </code><code class="py comments">"""Detaches the closest object attached to the toolitem Htool pose,</code></div>
 <div class="line number68 index67 alt1"><code class="py spaces">    </code><code class="py comments">furthermore, it will output appropriate function calls on the generated robot program (call to TCP_Off)"""</code></div>
 <div class="line number69 index68 alt2"><code class="py spaces">    </code><code class="py plain">toolitem.DetachAll(itemleave)</code></div>
-<div class="line number70 index69 alt1"><code class="py spaces">    </code><code class="py plain">toolitem.RDK().RunMessage(</code><code class="py string">'Set air valve %i off'</code> <code class="py keyword">%</code> <code class="py plain">(tcp_id</code><code class="py keyword">+</code><code class="py value">1</code><code class="py plain">))</code></div>
-<div class="line number71 index70 alt2"><code class="py spaces">    </code><code class="py plain">toolitem.RDK().RunProgram(</code><code class="py string">'TCP_Off(%i)'</code> <code class="py keyword">%</code> <code class="py plain">(tcp_id</code><code class="py keyword">+</code><code class="py value">1</code><code class="py plain">));</code></div>
+<div class="line number70 index69 alt1"><code class="py spaces">    </code><code class="py plain">toolitem.RDK().RunMessage(</code><code class="py string">'Set air valve %i off'</code><span> </span><code class="py keyword">%</code><span> </span><code class="py plain">(tcp_id</code><code class="py keyword">+</code><code class="py value">1</code><code class="py plain">))</code></div>
+<div class="line number71 index70 alt2"><code class="py spaces">    </code><code class="py plain">toolitem.RDK().RunProgram(</code><code class="py string">'TCP_Off(%i)'</code><span> </span><code class="py keyword">%</code><span> </span><code class="py plain">(tcp_id</code><code class="py keyword">+</code><code class="py value">1</code><code class="py plain">));</code></div>
 <div class="line number72 index71 alt1"> </div>
 <div class="line number73 index72 alt2"> </div>
 <div class="line number74 index73 alt1"><code class="py comments">#----------------------------------------------------------</code></div>
 <div class="line number75 index74 alt2"><code class="py comments"># The program starts here:</code></div>
 <div class="line number76 index75 alt1"> </div>
 <div class="line number77 index76 alt2"><code class="py comments"># Any interaction with RoboDK must be done through RDK:</code></div>
-<div class="line number78 index77 alt1"><code class="py plain">RDK </code><code class="py keyword">=</code> <code class="py plain">Robolink(robodk_path</code><code class="py keyword">=</code><code class="py string">"C:/robodk\robodk522_portable/bin/RoboDK.exe"</code><code class="py plain">, robodk_ip</code><code class="py keyword">=</code><code class="py string">'192.168.1.111'</code><code class="py plain">)</code></div>
+<div class="line number78 index77 alt1"><code class="py plain">RDK<span> </span></code><code class="py keyword">=</code><span> </span><code class="py plain">Robolink(robodk_path</code><code class="py keyword">=</code><code class="py string">"C:/robodk\robodk522_portable/bin/RoboDK.exe"</code><code class="py plain">, robodk_ip</code><code class="py keyword">=</code><code class="py string">'192.168.1.111'</code><code class="py plain">)</code></div>
 <div class="line number79 index78 alt2"> </div>
 <div class="line number80 index79 alt1"><code class="py comments"># Turn off automatic rendering (faster)</code></div>
 <div class="line number81 index80 alt2"><code class="py plain">RDK.Render(</code><code class="py color1">False</code><code class="py plain">)</code></div>
@@ -1342,61 +720,61 @@
 <div class="line number83 index82 alt2"><code class="py comments">#RDK.Set_Simulation_Speed(500); # set the simulation speed</code></div>
 <div class="line number84 index83 alt1"> </div>
 <div class="line number85 index84 alt2"><code class="py comments"># Gather required items from the station tree</code></div>
-<div class="line number86 index85 alt1"><code class="py plain">robot </code><code class="py keyword">=</code> <code class="py plain">RDK.Item(</code><code class="py string">'Fanuc M-710iC/50'</code><code class="py plain">)</code></div>
-<div class="line number87 index86 alt2"><code class="py plain">robot_tools </code><code class="py keyword">=</code> <code class="py plain">robot.Childs()</code></div>
+<div class="line number86 index85 alt1"><code class="py plain">robot<span> </span></code><code class="py keyword">=</code><span> </span><code class="py plain">RDK.Item(</code><code class="py string">'Fanuc M-710iC/50'</code><code class="py plain">)</code></div>
+<div class="line number87 index86 alt2"><code class="py plain">robot_tools<span> </span></code><code class="py keyword">=</code><span> </span><code class="py plain">robot.Childs()</code></div>
 <div class="line number88 index87 alt1"><code class="py comments">#robottool = RDK.Item('MainTool')</code></div>
-<div class="line number89 index88 alt2"><code class="py plain">frame1 </code><code class="py keyword">=</code> <code class="py plain">RDK.Item(</code><code class="py string">'Table 1'</code><code class="py plain">)</code></div>
-<div class="line number90 index89 alt1"><code class="py plain">frame2 </code><code class="py keyword">=</code> <code class="py plain">RDK.Item(</code><code class="py string">'Table 2'</code><code class="py plain">)</code></div>
+<div class="line number89 index88 alt2"><code class="py plain">frame1<span> </span></code><code class="py keyword">=</code><span> </span><code class="py plain">RDK.Item(</code><code class="py string">'Table 1'</code><code class="py plain">)</code></div>
+<div class="line number90 index89 alt1"><code class="py plain">frame2<span> </span></code><code class="py keyword">=</code><span> </span><code class="py plain">RDK.Item(</code><code class="py string">'Table 2'</code><code class="py plain">)</code></div>
 <div class="line number91 index90 alt2"> </div>
 <div class="line number92 index91 alt1"><code class="py comments"># Copy a ball as an object (same as CTRL+C)</code></div>
-<div class="line number93 index92 alt2"><code class="py plain">ballref </code><code class="py keyword">=</code> <code class="py plain">RDK.Item(</code><code class="py string">'reference ball'</code><code class="py plain">)</code></div>
+<div class="line number93 index92 alt2"><code class="py plain">ballref<span> </span></code><code class="py keyword">=</code><span> </span><code class="py plain">RDK.Item(</code><code class="py string">'reference ball'</code><code class="py plain">)</code></div>
 <div class="line number94 index93 alt1"><code class="py plain">ballref.Copy()</code></div>
 <div class="line number95 index94 alt2"> </div>
 <div class="line number96 index95 alt1"><code class="py comments"># Run a pre-defined station program (in RoboDK) to replace the two tables</code></div>
-<div class="line number97 index96 alt2"><code class="py plain">prog_reset </code><code class="py keyword">=</code> <code class="py plain">RDK.Item(</code><code class="py string">'Replace objects'</code><code class="py plain">)</code></div>
+<div class="line number97 index96 alt2"><code class="py plain">prog_reset<span> </span></code><code class="py keyword">=</code><span> </span><code class="py plain">RDK.Item(</code><code class="py string">'Replace objects'</code><code class="py plain">)</code></div>
 <div class="line number98 index97 alt1"><code class="py plain">prog_reset.RunProgram()</code></div>
 <div class="line number99 index98 alt2"> </div>
 <div class="line number100 index99 alt1"><code class="py comments"># Call custom procedure to remove old objects</code></div>
 <div class="line number101 index100 alt2"><code class="py plain">cleanup_balls([frame1, frame2])</code></div>
 <div class="line number102 index101 alt1"> </div>
 <div class="line number103 index102 alt2"><code class="py comments"># Make a list of positions to place the objects</code></div>
-<div class="line number104 index103 alt1"><code class="py plain">frame1_list </code><code class="py keyword">=</code> <code class="py plain">pyramid_calc(</code><code class="py value">4</code><code class="py plain">)</code></div>
-<div class="line number105 index104 alt2"><code class="py plain">frame2_list </code><code class="py keyword">=</code> <code class="py plain">pyramid_calc(</code><code class="py value">4</code><code class="py plain">)</code></div>
+<div class="line number104 index103 alt1"><code class="py plain">frame1_list<span> </span></code><code class="py keyword">=</code><span> </span><code class="py plain">pyramid_calc(</code><code class="py value">4</code><code class="py plain">)</code></div>
+<div class="line number105 index104 alt2"><code class="py plain">frame2_list<span> </span></code><code class="py keyword">=</code><span> </span><code class="py plain">pyramid_calc(</code><code class="py value">4</code><code class="py plain">)</code></div>
 <div class="line number106 index105 alt1"> </div>
 <div class="line number107 index106 alt2"><code class="py comments"># Programmatically place the objects with a custom-made procedure</code></div>
 <div class="line number108 index107 alt1"><code class="py plain">balls_setup(frame1, frame1_list)</code></div>
 <div class="line number109 index108 alt2"> </div>
 <div class="line number110 index109 alt1"><code class="py comments"># Delete previously generated tools</code></div>
-<div class="line number111 index110 alt2"><code class="py keyword">for</code> <code class="py plain">tool </code><code class="py keyword">in</code> <code class="py plain">robot_tools:</code></div>
-<div class="line number112 index111 alt1"><code class="py spaces">    </code><code class="py keyword">if</code> <code class="py plain">tool.Name().startswith(</code><code class="py string">'TCP'</code><code class="py plain">):</code></div>
+<div class="line number111 index110 alt2"><code class="py keyword">for</code><span> </span><code class="py plain">tool<span> </span></code><code class="py keyword">in</code><span> </span><code class="py plain">robot_tools:</code></div>
+<div class="line number112 index111 alt1"><code class="py spaces">    </code><code class="py keyword">if</code><span> </span><code class="py plain">tool.Name().startswith(</code><code class="py string">'TCP'</code><code class="py plain">):</code></div>
 <div class="line number113 index112 alt2"><code class="py spaces">        </code><code class="py plain">tool.Delete()</code></div>
 <div class="line number114 index113 alt1"><code class="py spaces">        </code> </div>
 <div class="line number115 index114 alt2"><code class="py comments"># Calculate tool frames for the suction cup tool of 6 suction cups</code></div>
-<div class="line number116 index115 alt1"><code class="py plain">TCP_list </code><code class="py keyword">=</code> <code class="py plain">[]</code></div>
-<div class="line number117 index116 alt2"><code class="py keyword">for</code> <code class="py plain">i </code><code class="py keyword">in</code> <code class="py functions">range</code><code class="py plain">(nTCPs):</code></div>
-<div class="line number118 index117 alt1"><code class="py spaces">    </code><code class="py plain">TCPi_pose </code><code class="py keyword">=</code> <code class="py plain">transl(</code><code class="py value">0</code><code class="py plain">,</code><code class="py value">0</code><code class="py plain">,</code><code class="py value">100</code><code class="py plain">)</code><code class="py keyword">*</code><code class="py plain">rotz((</code><code class="py value">360</code><code class="py keyword">/</code><code class="py plain">nTCPs)</code><code class="py keyword">*</code><code class="py plain">i</code><code class="py keyword">*</code><code class="py plain">pi</code><code class="py keyword">/</code><code class="py value">180</code><code class="py plain">)</code><code class="py keyword">*</code><code class="py plain">transl(</code><code class="py value">125</code><code class="py plain">,</code><code class="py value">0</code><code class="py plain">,</code><code class="py value">0</code><code class="py plain">)</code><code class="py keyword">*</code><code class="py plain">roty(pi</code><code class="py keyword">/</code><code class="py value">2</code><code class="py plain">)</code></div>
-<div class="line number119 index118 alt2"><code class="py spaces">    </code><code class="py plain">TCPi </code><code class="py keyword">=</code> <code class="py plain">robot.AddTool(TCPi_pose, </code><code class="py string">'TCP %i'</code> <code class="py keyword">%</code> <code class="py plain">(i</code><code class="py keyword">+</code><code class="py value">1</code><code class="py plain">))</code></div>
+<div class="line number116 index115 alt1"><code class="py plain">TCP_list<span> </span></code><code class="py keyword">=</code><span> </span><code class="py plain">[]</code></div>
+<div class="line number117 index116 alt2"><code class="py keyword">for</code><span> </span><code class="py plain">i<span> </span></code><code class="py keyword">in</code><span> </span><code class="py functions">range</code><code class="py plain">(nTCPs):</code></div>
+<div class="line number118 index117 alt1"><code class="py spaces">    </code><code class="py plain">TCPi_pose<span> </span></code><code class="py keyword">=</code><span> </span><code class="py plain">transl(</code><code class="py value">0</code><code class="py plain">,</code><code class="py value">0</code><code class="py plain">,</code><code class="py value">100</code><code class="py plain">)</code><code class="py keyword">*</code><code class="py plain">rotz((</code><code class="py value">360</code><code class="py keyword">/</code><code class="py plain">nTCPs)</code><code class="py keyword">*</code><code class="py plain">i</code><code class="py keyword">*</code><code class="py plain">pi</code><code class="py keyword">/</code><code class="py value">180</code><code class="py plain">)</code><code class="py keyword">*</code><code class="py plain">transl(</code><code class="py value">125</code><code class="py plain">,</code><code class="py value">0</code><code class="py plain">,</code><code class="py value">0</code><code class="py plain">)</code><code class="py keyword">*</code><code class="py plain">roty(pi</code><code class="py keyword">/</code><code class="py value">2</code><code class="py plain">)</code></div>
+<div class="line number119 index118 alt2"><code class="py spaces">    </code><code class="py plain">TCPi<span> </span></code><code class="py keyword">=</code><span> </span><code class="py plain">robot.AddTool(TCPi_pose,<span> </span></code><code class="py string">'TCP %i'</code><span> </span><code class="py keyword">%</code><span> </span><code class="py plain">(i</code><code class="py keyword">+</code><code class="py value">1</code><code class="py plain">))</code></div>
 <div class="line number120 index119 alt1"><code class="py spaces">    </code><code class="py plain">TCP_list.append(TCPi)</code></div>
 <div class="line number121 index120 alt2"> </div>
-<div class="line number122 index121 alt1"><code class="py plain">TCP_0 </code><code class="py keyword">=</code> <code class="py plain">TCP_list[</code><code class="py value">0</code><code class="py plain">]</code></div>
+<div class="line number122 index121 alt1"><code class="py plain">TCP_0<span> </span></code><code class="py keyword">=</code><span> </span><code class="py plain">TCP_list[</code><code class="py value">0</code><code class="py plain">]</code></div>
 <div class="line number123 index122 alt2"> </div>
 <div class="line number124 index123 alt1"><code class="py comments"># Turn on automatic rendering</code></div>
 <div class="line number125 index124 alt2"><code class="py plain">RDK.Render(</code><code class="py color1">True</code><code class="py plain">)</code></div>
 <div class="line number126 index125 alt1"> </div>
-<div class="line number127 index126 alt2"><code class="py comments"># Move balls    </code></div>
+<div class="line number127 index126 alt2"><code class="py comments"># Move balls   </code></div>
 <div class="line number128 index127 alt1"><code class="py plain">robot.setPoseTool(TCP_list[</code><code class="py value">0</code><code class="py plain">])</code></div>
-<div class="line number129 index128 alt2"><code class="py plain">nballs_frame1 </code><code class="py keyword">=</code> <code class="py functions">len</code><code class="py plain">(frame1_list)</code></div>
-<div class="line number130 index129 alt1"><code class="py plain">nballs_frame2 </code><code class="py keyword">=</code> <code class="py functions">len</code><code class="py plain">(frame2_list)</code></div>
-<div class="line number131 index130 alt2"><code class="py plain">idTake </code><code class="py keyword">=</code> <code class="py plain">nballs_frame1 </code><code class="py keyword">-</code> <code class="py value">1</code></div>
-<div class="line number132 index131 alt1"><code class="py plain">idLeave </code><code class="py keyword">=</code> <code class="py value">0</code></div>
-<div class="line number133 index132 alt2"><code class="py plain">idTCP </code><code class="py keyword">=</code> <code class="py value">0</code></div>
-<div class="line number134 index133 alt1"><code class="py plain">target_app_frame </code><code class="py keyword">=</code> <code class="py plain">transl(</code><code class="py value">2</code><code class="py keyword">*</code><code class="py plain">BALL_DIAMETER, </code><code class="py value">2</code><code class="py keyword">*</code><code class="py plain">BALL_DIAMETER, </code><code class="py value">4</code><code class="py keyword">*</code><code class="py plain">BALL_DIAMETER)</code><code class="py keyword">*</code><code class="py plain">roty(pi)</code><code class="py keyword">*</code><code class="py plain">transl(</code><code class="py value">0</code><code class="py plain">,</code><code class="py value">0</code><code class="py plain">,</code><code class="py keyword">-</code><code class="py plain">APPROACH)</code></div>
+<div class="line number129 index128 alt2"><code class="py plain">nballs_frame1<span> </span></code><code class="py keyword">=</code><span> </span><code class="py functions">len</code><code class="py plain">(frame1_list)</code></div>
+<div class="line number130 index129 alt1"><code class="py plain">nballs_frame2<span> </span></code><code class="py keyword">=</code><span> </span><code class="py functions">len</code><code class="py plain">(frame2_list)</code></div>
+<div class="line number131 index130 alt2"><code class="py plain">idTake<span> </span></code><code class="py keyword">=</code><span> </span><code class="py plain">nballs_frame1<span> </span></code><code class="py keyword">-</code><span> </span><code class="py value">1</code></div>
+<div class="line number132 index131 alt1"><code class="py plain">idLeave<span> </span></code><code class="py keyword">=</code><span> </span><code class="py value">0</code></div>
+<div class="line number133 index132 alt2"><code class="py plain">idTCP<span> </span></code><code class="py keyword">=</code><span> </span><code class="py value">0</code></div>
+<div class="line number134 index133 alt1"><code class="py plain">target_app_frame<span> </span></code><code class="py keyword">=</code><span> </span><code class="py plain">transl(</code><code class="py value">2</code><code class="py keyword">*</code><code class="py plain">BALL_DIAMETER,<span> </span></code><code class="py value">2</code><code class="py keyword">*</code><code class="py plain">BALL_DIAMETER,<span> </span></code><code class="py value">4</code><code class="py keyword">*</code><code class="py plain">BALL_DIAMETER)</code><code class="py keyword">*</code><code class="py plain">roty(pi)</code><code class="py keyword">*</code><code class="py plain">transl(</code><code class="py value">0</code><code class="py plain">,</code><code class="py value">0</code><code class="py plain">,</code><code class="py keyword">-</code><code class="py plain">APPROACH)</code></div>
 <div class="line number135 index134 alt2"> </div>
-<div class="line number136 index135 alt1"><code class="py keyword">while</code> <code class="py plain">idTake &gt;</code><code class="py keyword">=</code> <code class="py value">0</code><code class="py plain">:</code></div>
+<div class="line number136 index135 alt1"><code class="py keyword">while</code><span> </span><code class="py plain">idTake &gt;</code><code class="py keyword">=</code><span> </span><code class="py value">0</code><code class="py plain">:</code></div>
 <div class="line number137 index136 alt2"><code class="py spaces">    </code><code class="py comments"># ------------------------------------------------------------------</code></div>
 <div class="line number138 index137 alt1"><code class="py spaces">    </code><code class="py comments"># first priority: grab as many balls as possible</code></div>
 <div class="line number139 index138 alt2"><code class="py spaces">    </code><code class="py comments"># the tool is empty at this point, so take as many balls as possible (up to a maximum of 6 -&gt; nTCPs)</code></div>
-<div class="line number140 index139 alt1"><code class="py spaces">    </code><code class="py plain">ntake </code><code class="py keyword">=</code> <code class="py functions">min</code><code class="py plain">(nTCPs, idTake </code><code class="py keyword">+</code> <code class="py value">1</code><code class="py plain">)</code></div>
+<div class="line number140 index139 alt1"><code class="py spaces">    </code><code class="py plain">ntake<span> </span></code><code class="py keyword">=</code><span> </span><code class="py functions">min</code><code class="py plain">(nTCPs, idTake<span> </span></code><code class="py keyword">+</code><span> </span><code class="py value">1</code><code class="py plain">)</code></div>
 <div class="line number141 index140 alt2"> </div>
 <div class="line number142 index141 alt1"><code class="py spaces">    </code><code class="py comments"># approach to frame 1</code></div>
 <div class="line number143 index142 alt2"><code class="py spaces">    </code><code class="py plain">robot.setPoseFrame(frame1)</code></div>
@@ -1405,36 +783,36 @@
 <div class="line number146 index145 alt1"><code class="py spaces">    </code><code class="py plain">robot.MoveJ(target_app_frame)</code></div>
 <div class="line number147 index146 alt2"> </div>
 <div class="line number148 index147 alt1"><code class="py spaces">    </code><code class="py comments"># grab ntake balls from frame 1</code></div>
-<div class="line number149 index148 alt2"><code class="py spaces">    </code><code class="py keyword">for</code> <code class="py plain">i </code><code class="py keyword">in</code> <code class="py functions">range</code><code class="py plain">(ntake):</code></div>
-<div class="line number150 index149 alt1"><code class="py spaces">        </code><code class="py plain">TCPi </code><code class="py keyword">=</code> <code class="py plain">TCP_list[i]</code></div>
+<div class="line number149 index148 alt2"><code class="py spaces">    </code><code class="py keyword">for</code><span> </span><code class="py plain">i<span> </span></code><code class="py keyword">in</code><span> </span><code class="py functions">range</code><code class="py plain">(ntake):</code></div>
+<div class="line number150 index149 alt1"><code class="py spaces">        </code><code class="py plain">TCPi<span> </span></code><code class="py keyword">=</code><span> </span><code class="py plain">TCP_list[i]</code></div>
 <div class="line number151 index150 alt2"><code class="py spaces">        </code><code class="py plain">robot.setPoseTool(TCPi)</code></div>
 <div class="line number152 index151 alt1"><code class="py spaces">        </code><code class="py comments"># calculate target wrt frame1: rotation about Y is needed since Z and X axis are inverted</code></div>
-<div class="line number153 index152 alt2"><code class="py spaces">        </code><code class="py plain">target </code><code class="py keyword">=</code> <code class="py plain">transl(frame1_list[idTake])</code><code class="py keyword">*</code><code class="py plain">roty(pi)</code><code class="py keyword">*</code><code class="py plain">rotx(</code><code class="py value">30</code><code class="py keyword">*</code><code class="py plain">pi</code><code class="py keyword">/</code><code class="py value">180</code><code class="py plain">)</code></div>
-<div class="line number154 index153 alt1"><code class="py spaces">        </code><code class="py plain">target_app </code><code class="py keyword">=</code> <code class="py plain">target</code><code class="py keyword">*</code><code class="py plain">transl(</code><code class="py value">0</code><code class="py plain">,</code><code class="py value">0</code><code class="py plain">,</code><code class="py keyword">-</code><code class="py plain">APPROACH)</code></div>
-<div class="line number155 index154 alt2"><code class="py spaces">        </code><code class="py plain">idTake </code><code class="py keyword">=</code> <code class="py plain">idTake </code><code class="py keyword">-</code> <code class="py value">1</code>       </div>
+<div class="line number153 index152 alt2"><code class="py spaces">        </code><code class="py plain">target<span> </span></code><code class="py keyword">=</code><span> </span><code class="py plain">transl(frame1_list[idTake])</code><code class="py keyword">*</code><code class="py plain">roty(pi)</code><code class="py keyword">*</code><code class="py plain">rotx(</code><code class="py value">30</code><code class="py keyword">*</code><code class="py plain">pi</code><code class="py keyword">/</code><code class="py value">180</code><code class="py plain">)</code></div>
+<div class="line number154 index153 alt1"><code class="py spaces">        </code><code class="py plain">target_app<span> </span></code><code class="py keyword">=</code><span> </span><code class="py plain">target</code><code class="py keyword">*</code><code class="py plain">transl(</code><code class="py value">0</code><code class="py plain">,</code><code class="py value">0</code><code class="py plain">,</code><code class="py keyword">-</code><code class="py plain">APPROACH)</code></div>
+<div class="line number155 index154 alt2"><code class="py spaces">        </code><code class="py plain">idTake<span> </span></code><code class="py keyword">=</code><span> </span><code class="py plain">idTake<span> </span></code><code class="py keyword">-</code><span> </span><code class="py value">1</code>       </div>
 <div class="line number156 index155 alt1"><code class="py spaces">        </code><code class="py plain">robot.MoveL(target_app)</code></div>
 <div class="line number157 index156 alt2"><code class="py spaces">        </code><code class="py plain">robot.MoveL(target)</code></div>
 <div class="line number158 index157 alt1"><code class="py spaces">        </code><code class="py plain">TCP_On(TCPi, i)</code></div>
 <div class="line number159 index158 alt2"><code class="py spaces">        </code><code class="py plain">robot.MoveL(target_app)</code></div>
 <div class="line number160 index159 alt1"><code class="py spaces"> </code> </div>
 <div class="line number161 index160 alt2"><code class="py spaces">    </code><code class="py comments"># ------------------------------------------------------------------</code></div>
-<div class="line number162 index161 alt1"><code class="py spaces">    </code><code class="py comments"># second priority: unload the tool     </code></div>
+<div class="line number162 index161 alt1"><code class="py spaces">    </code><code class="py comments"># second priority: unload the tool    </code></div>
 <div class="line number163 index162 alt2"><code class="py spaces">    </code><code class="py comments"># approach to frame 2 and place the tool balls into table 2</code></div>
 <div class="line number164 index163 alt1"><code class="py spaces">    </code><code class="py plain">robot.setPoseTool(TCP_0)</code></div>
 <div class="line number165 index164 alt2"><code class="py spaces">    </code><code class="py plain">robot.MoveJ(target_app_frame)</code></div>
 <div class="line number166 index165 alt1"><code class="py spaces">    </code><code class="py plain">robot.MoveJ([</code><code class="py value">0</code><code class="py plain">,</code><code class="py value">0</code><code class="py plain">,</code><code class="py value">0</code><code class="py plain">,</code><code class="py value">0</code><code class="py plain">,</code><code class="py value">10</code><code class="py plain">,</code><code class="py keyword">-</code><code class="py value">200</code><code class="py plain">])</code></div>
-<div class="line number167 index166 alt2"><code class="py spaces">    </code><code class="py plain">robot.setPoseFrame(frame2)    </code></div>
+<div class="line number167 index166 alt2"><code class="py spaces">    </code><code class="py plain">robot.setPoseFrame(frame2)   </code></div>
 <div class="line number168 index167 alt1"><code class="py spaces">    </code><code class="py plain">robot.MoveJ(target_app_frame)</code></div>
-<div class="line number169 index168 alt2"><code class="py spaces">    </code><code class="py keyword">for</code> <code class="py plain">i </code><code class="py keyword">in</code> <code class="py functions">range</code><code class="py plain">(ntake):</code></div>
-<div class="line number170 index169 alt1"><code class="py spaces">        </code><code class="py plain">TCPi </code><code class="py keyword">=</code> <code class="py plain">TCP_list[i]</code></div>
+<div class="line number169 index168 alt2"><code class="py spaces">    </code><code class="py keyword">for</code><span> </span><code class="py plain">i<span> </span></code><code class="py keyword">in</code><span> </span><code class="py functions">range</code><code class="py plain">(ntake):</code></div>
+<div class="line number170 index169 alt1"><code class="py spaces">        </code><code class="py plain">TCPi<span> </span></code><code class="py keyword">=</code><span> </span><code class="py plain">TCP_list[i]</code></div>
 <div class="line number171 index170 alt2"><code class="py spaces">        </code><code class="py plain">robot.setPoseTool(TCPi)</code></div>
-<div class="line number172 index171 alt1"><code class="py spaces">        </code><code class="py keyword">if</code> <code class="py plain">idLeave &gt; nballs_frame2</code><code class="py keyword">-</code><code class="py value">1</code><code class="py plain">:</code></div>
-<div class="line number173 index172 alt2"><code class="py spaces">            </code><code class="py keyword">raise</code> <code class="py plain">Exception(</code><code class="py string">"No room left to place objects in Table 2"</code><code class="py plain">)</code></div>
+<div class="line number172 index171 alt1"><code class="py spaces">        </code><code class="py keyword">if</code><span> </span><code class="py plain">idLeave &gt; nballs_frame2</code><code class="py keyword">-</code><code class="py value">1</code><code class="py plain">:</code></div>
+<div class="line number173 index172 alt2"><code class="py spaces">            </code><code class="py keyword">raise</code><span> </span><code class="py plain">Exception(</code><code class="py string">"No room left to place objects in Table 2"</code><code class="py plain">)</code></div>
 <div class="line number174 index173 alt1"><code class="py spaces">        </code> </div>
 <div class="line number175 index174 alt2"><code class="py spaces">        </code><code class="py comments"># calculate target wrt frame1: rotation of 180 about Y is needed since Z and X axis are inverted</code></div>
-<div class="line number176 index175 alt1"><code class="py spaces">        </code><code class="py plain">target </code><code class="py keyword">=</code> <code class="py plain">transl(frame2_list[idLeave])</code><code class="py keyword">*</code><code class="py plain">roty(pi)</code><code class="py keyword">*</code><code class="py plain">rotx(</code><code class="py value">30</code><code class="py keyword">*</code><code class="py plain">pi</code><code class="py keyword">/</code><code class="py value">180</code><code class="py plain">)</code></div>
-<div class="line number177 index176 alt2"><code class="py spaces">        </code><code class="py plain">target_app </code><code class="py keyword">=</code> <code class="py plain">target</code><code class="py keyword">*</code><code class="py plain">transl(</code><code class="py value">0</code><code class="py plain">,</code><code class="py value">0</code><code class="py plain">,</code><code class="py keyword">-</code><code class="py plain">APPROACH)</code></div>
-<div class="line number178 index177 alt1"><code class="py spaces">        </code><code class="py plain">idLeave </code><code class="py keyword">=</code> <code class="py plain">idLeave </code><code class="py keyword">+</code> <code class="py value">1</code>       </div>
+<div class="line number176 index175 alt1"><code class="py spaces">        </code><code class="py plain">target<span> </span></code><code class="py keyword">=</code><span> </span><code class="py plain">transl(frame2_list[idLeave])</code><code class="py keyword">*</code><code class="py plain">roty(pi)</code><code class="py keyword">*</code><code class="py plain">rotx(</code><code class="py value">30</code><code class="py keyword">*</code><code class="py plain">pi</code><code class="py keyword">/</code><code class="py value">180</code><code class="py plain">)</code></div>
+<div class="line number177 index176 alt2"><code class="py spaces">        </code><code class="py plain">target_app<span> </span></code><code class="py keyword">=</code><span> </span><code class="py plain">target</code><code class="py keyword">*</code><code class="py plain">transl(</code><code class="py value">0</code><code class="py plain">,</code><code class="py value">0</code><code class="py plain">,</code><code class="py keyword">-</code><code class="py plain">APPROACH)</code></div>
+<div class="line number178 index177 alt1"><code class="py spaces">        </code><code class="py plain">idLeave<span> </span></code><code class="py keyword">=</code><span> </span><code class="py plain">idLeave<span> </span></code><code class="py keyword">+</code><span> </span><code class="py value">1</code>       </div>
 <div class="line number179 index178 alt2"><code class="py spaces">        </code><code class="py plain">robot.MoveL(target_app)</code></div>
 <div class="line number180 index179 alt1"><code class="py spaces">        </code><code class="py plain">robot.MoveL(target)</code></div>
 <div class="line number181 index180 alt2"><code class="py spaces">        </code><code class="py plain">TCP_Off(TCPi, i, frame2)</code></div>
@@ -1449,12 +827,15 @@
 </tr>
 </tbody>
 </table>
-</div>
-</div>
 <h2>W14</h2>
 <p>分組組員創建共同倉儲</p>
 <h2>W15</h2>
 <p>創建分組倉儲</p>
 <p>倉儲:<a href="https://40923148.github.io/wcm2021-ag4/content/index.html">https://40923148.github.io/wcm2021-ag4/content/index.html</a></p>
-<p></p>
-<p></p>
+<h2>W16</h2>
+<p><span>fossil 介紹及解說</span></p>
+<p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/jb_1E7UDF3U" width="560"></iframe></span></p>
+</div>
+</div>
+</div>
+</div>
