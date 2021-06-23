@@ -134,68 +134,11 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">W10 << <a href='W10.html'>Previous</a> <a href='W12.html'>Next</a> >> W12<br /><h1>W11</h1>
-<h4>1. OBS + Youtube 分組直播錄影測試:</h4>
-<p><span>首次進行 Youtube 直播需要等待 24 小時後才可啟用.</span></p>
-<p>假如是在 Mac 環境安裝 OBS, 必須至 System Preferences - Security &amp; Privacy 處允許 OBS 使用 Camera 與 Screen Recording.</p>
-<p>在 IPv6 環境下進行各分組桌面操作直播錄影</p>
-<p>登入 @gm 帳號後連結至 Youtube 選擇 Live stream, 取得直播金鑰</p>
-<p>將直播金鑰輸入 OBS, 啟動顯示器擷取, 透過串流訊號將桌面操作影像傳至 Youtube 進行直播錄影.</p>
-<p>根據<span> </span><a href="http://mde.tw/cd2021/content/task2.html">http://mde.tw/cd2021/content/task2.html</a><span> </span>進行 IPv6 + 區域網路操控進行測試.</p>
-<p>參考<span> </span><a href="http://mde.tw/cd2021/content/task3.html">http://mde.tw/cd2021/content/task3.html</a><span> </span>使用各組網際簡報內容引導直撥錄影.</p>
-<h4>2. 各分組從<span> </span><a href="http://mde.tw/wcm2021/content/W10.html">http://mde.tw/wcm2021/content/W10.html</a><span> </span>網際程式中選擇一項, 負責從近端執行部署至 Heroku.</h4>
-<h4>自行利用 Ubuntu 建立可啟動 CMSiMDE 動態系統與 Fossil SCM 伺服器的目的:</h4>
-<p>建立完整的 Python 網際程式開發環境.</p>
-<p>開發的程式碼可採用 Fossil SCM 與 Github 同步的方式進行分散式版次管理.</p>
-<p>Ubuntu 20.04 on Virtualbox, 從<span> </span><a href="http://a.kmol.info:88/Ub2004.vdi">http://a.kmol.info:88/Ub2004.vdi</a><span> </span>取得 已經安裝 Ubuntu 的虛擬硬碟進行後續設定. 或者自行下載 Ubuntu 20.04 Desktop 版 iso 檔案自行安裝帶有桌面的虛擬主機.</p>
-<h4><span>先更改 vdi 的 uuid</span>:</h4>
-<div>
-<div class="syntaxhighlighter js" id="highlighter_85897">
-<table border="0" cellpadding="0" cellspacing="0">
-<tbody>
-<tr>
-<td class="gutter">
-<div class="line number1 index0 alt2">1</div>
-</td>
-<td class="code">
-<div class="container">
-<div class="line number1 index0 alt2"><code class="js string">"c:\Program Files\Oracle\VirtualBox\VBoxManage.exe"</code><span> </span><code class="js plain">internalcommands sethduuid Ubwcm2021.vdi</code></div>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<h4>設定虛擬主機網路連線:</h4>
-<p>接著將 Ubuntu 虛擬主機的網路以 Bridged 串接到 Windows 10 已經連線的網路卡.</p>
-<h4>登入系統後進行更新:</h4>
-<p>由於 /etc/netplan/net.yaml 中採用 DHCP6 連外, 因此透過 ifconfig 可以取得網路連線資訊.</p>
-<p>但因電腦輔助設計室採純 IPv6 設定, 因此必須透過雙網路協定代理主機上網才可執行下列 apt 指令.</p>
-<p>因此要以 sudo vi  /etc/apt/apt.conf 建立<span> </span><span>apt 代理主機設定檔</span>, 內容如下:</p>
-<div>
-<div class="syntaxhighlighter js" id="highlighter_9252">
-<table border="0" cellpadding="0" cellspacing="0">
-<tbody>
-<tr>
-<td class="gutter">
-<div class="line number1 index0 alt2">1</div>
-</td>
-<td class="code">
-<div class="container">
-<div class="line number1 index0 alt2"><code class="js plain">Acquire::http::Proxy<span> </span></code><code class="js string">"http://proxy_username:proxy_password@[Proxy_server_ipv6_address]:3128"</code><code class="js plain">;</code></div>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<p>之後就可以完成下列更新指令執行:</p>
-<p>sudo apt update</p>
-<p>sudo apt upgrade</p>
-<p>sudo apt autoremove</p>
-<br />W10 << <a href='W10.html'>Previous</a> <a href='W12.html'>Next</a> >> W12</div>
+    <div id="tipue_search_content">解說影片 << <a href='解說影片.html'>Previous</a> <a href='OBS.html'>Next</a> >> OBS<br /><h1>ROBOTDK</h1>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/VBtnhGJXwWA" width="560"></iframe></p>
+<br/><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"></span></span></span></span>FOSSIL
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/jb_1E7UDF3U" width="560"></iframe></p>
+<br />解說影片 << <a href='解說影片.html'>Previous</a> <a href='OBS.html'>Next</a> >> OBS</div>
         
     <!-- footer -->
       <div class="container">
